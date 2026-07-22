@@ -1,0 +1,58 @@
+{
+  "date": "2026-07-22",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时的可核验信号集中在游戏引擎的 AI 协作接口、以自有素材训练的生成式游戏实践，以及研发代理的长期协作能力。本轮仅确认三项高质量动态，未以旧闻或赞助稿凑足五条。",
+  "items": [
+    {
+      "title": "Unity 7 将延续 Unity 6 架构，并把 AI 协作接入引擎工具链",
+      "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1400&q=85",
+      "imageAlt": "游戏设备与控制器",
+      "paragraphs": [
+        "Unity 公布下一代引擎路线。GamesIndustry.biz 报道称，Unity 7 将承接 Unity 6 的架构与现有工作流，并提供命令行工具、公开 API，以及用于连接 AI 编程代理的免费 MCP；团队可自行决定是否采用 AI 工具。",
+        "这意味着 AI 正从编辑器内的单点功能转向跨美术、制作与开发工具的协作层。"
+      ],
+      "url": "https://www.gamesindustry.biz/unity-7-to-launch-in-q1-2027-new-engine-is-a-direct-continuation-of-unity-6"
+    },
+    {
+      "title": "Studio Atelico 将自有素材训练与在端生成式能力放入首款游戏验证",
+      "paragraphs": [
+        "Studio Atelico 正以回合制生物对战游戏 Bobium Brawlers 验证其 AI-first 生态。公司称模型训练使用本工作室艺术家的作品、可在设备端运行，且正在起草创作者权利协议以限制训练和使用范围并参与收益。",
+        "上述训练、授权与产品效果均为公司说法，尚无独立审计结果。这提供了一个把生成式内容、数据来源与创作者授权一并纳入生产流程的具体案例。"
+      ],
+      "url": "https://www.gamesindustry.biz/ethical-low-power-and-on-device-studio-atelicos-vision-for-the-future-of-generative-ai"
+    },
+    {
+      "title": "Codex 0.145.0 强化跨会话与多代理研发协作",
+      "paragraphs": [
+        "OpenAI 在 Codex 官方仓库发布 0.145.0，加入可恢复、搜索与持久化的任务历史，并扩展了外部工具设置、MCP、插件、会话与项目记忆的导入。选择加入的多代理模式也支持配置子代理模型、推理级别与并发度。",
+        "这类能力使研发代理更适合在复杂项目的长期上下文、工具目录和任务历史中持续协作。"
+      ],
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.145.0"
+    }
+  ],
+  "focus": {
+    "title": "Unity 7 的工具链路线最值得关注。",
+    "body": "它将命令行、公开 API 和代理连接点纳入主流游戏引擎演进，并保留团队的采用选择权，可能比单个生成模型更快影响日常制作协作。"
+  },
+  "workflow": {
+    "title": "研发协作的两个新连接点",
+    "items": [
+      {
+        "heading": "Unity 7：引擎工具链连接",
+        "body": "命令行、公开 API 与 MCP 连接点组合，便于把资产检查、生产管理和编码代理放入同一工作流。"
+      },
+      {
+        "heading": "Codex 0.145.0：长期协作基础",
+        "body": "以可恢复历史、持久记忆和可配置多代理为核心，适合跨任务追踪与长期协作。"
+      }
+    ]
+  },
+  "trend": {
+    "title": "AI 正从“生成一个结果”转向“进入受约束、可协作的生产系统”。",
+    "points": [
+      "游戏引擎开始开放面向外部工具和代理的接口。",
+      "生成式内容的竞争点延伸到训练来源、设备端部署与创作者授权。",
+      "研发代理的价值重心转向项目记忆、可恢复上下文与多代理编排。"
+    ]
+  }
+}
