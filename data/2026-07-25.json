@@ -1,0 +1,54 @@
+{
+  "date": "2026-07-25",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时内，可由官方材料或可信媒体直接核验、且与 AI 游戏产业或研发链条有实质关联的新增信息只有两项，低于优先目标的五条。本期不以旧闻、营销稿或泛泛概念补足数量；直接的游戏产品发布仍然稀少，值得留意的信号集中在长程编码智能体的供给与开放模型的政策环境。",
+  "items": [
+    {
+      "title": "Claude Opus 5 发布并进入 GitHub Copilot",
+      "paragraphs": [
+        "Anthropic 的官方发行说明已列出 Claude Opus 5；GitHub 随后宣布该模型正在向 Copilot Pro+、Max、Business 与 Enterprise 用户逐步开放，可在 VS Code、Visual Studio、Copilot CLI、云端智能体、移动端及多种 IDE 中选择。GitHub 对其定位是面向需要多步骤推理、工具调用与长程执行的复杂编码任务；相关性能描述属于 GitHub 的早期测试结论。",
+        "这项变化的价值在于，游戏团队可在既有的代码和自动化入口中评估更强的长程代理模型，而不必另行搭建接入层。它并不等同于自动化生产已被验证，但会加快关卡脚本、构建修复、回归验证等可审计任务的模型对比。"
+      ],
+      "url": "https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot"
+    },
+    {
+      "title": "英伟达、微软等企业为开放权重模型向美国立法者发声",
+      "paragraphs": [
+        "路透社报道，英伟达、微软及其他科技公司公开向美国立法者主张支持开源 AI 模型。这是围绕开放权重模型监管边界的一次产业政策表态，而非新的模型或游戏平台发布；报道未把企业立场当作监管结论。",
+        "对游戏和创作工具团队而言，开放模型的可用性会影响本地部署、私有素材处理和成本结构，但真正的影响仍取决于后续规则如何界定发布、分发与责任。当前更应把它视为政策方向信号，而不是既成的合规豁免。"
+      ],
+      "url": "https://www.reuters.com/world/asia-pacific/nvidia-microsoft-other-tech-giants-back-open-source-ai-models-2026-07-24/"
+    }
+  ],
+  "focus": {
+    "title": "今日最值得关注",
+    "body": "Claude Opus 5 进入 GitHub Copilot。模型能力升级只有落在团队日常使用的 IDE、CLI 与云端智能体入口后，才会真正改变研发节奏；这次分发扩展让游戏研发团队具备了可直接对比长程编码代理效果的现实条件。"
+  },
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Update 1",
+        "body": "GitHub 宣布其 MCP Server 支持下一版 MCP 规范。对于把仓库、议题和自动化上下文接入编码智能体的团队，这类兼容性更新的价值在于降低工具链协议漂移风险，但仍应在接入前核对权限范围与实际客户端支持情况。 https://github.blog/changelog/2026-07-23-github-mcp-server-supports-the-next-mcp-specification"
+      },
+      {
+        "heading": "Update 2",
+        "body": "GitHub 将 Claude Opus 5 加入 Copilot 的多端模型选择器，并要求 Business 与 Enterprise 管理员在设置中启用相应策略。它提供了一个清晰的协作实践：将高能力模型的使用绑定到组织级开关、计费与已有审批环境，而非绕过团队治理单独接入。 https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot"
+      },
+      {
+        "heading": "Update 3",
+        "body": "OpenAI 与 Hugging Face 公布模型评估期间的安全事件初步复盘。对使用长程代理的研发团队，隔离、最小网络权限、异常监控与人工升级路径应被视为工作流本身，而不是上线后的附加项。 https://openai.com/index/hugging-face-model-evaluation-security-incident/"
+      }
+    ]
+  },
+  "trend": {
+    "title": "结论：AI 游戏研发的近期竞争不只在模型能力，更在于能否把高能力智能体接入现有工具链，同时保持权限、审计和安全边界。",
+    "points": [
+      "更强的编码模型正通过 Copilot 等既有入口扩散，模型选择与组织策略将成为工程配置的一部分。",
+      "MCP 等协议的兼容性进展继续降低上下文接入成本，但权限与调用范围仍需由团队明确约束。",
+      "开放模型的政策讨论升温，私有部署与本地创作管线的可行性将越来越受监管框架影响。",
+      "---",
+      "查看网页版日报：https://tu-cg.github.io/ai-game-daily/"
+    ]
+  }
+}
