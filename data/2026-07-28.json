@@ -1,0 +1,78 @@
+{
+  "date": "2026-07-28",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时的有效信号集中在游戏上线后的 AI 运维和交易支持，以及生成式内容涉及真实人物时的合规边界。五项保留信息中，腾讯和 G2A 的产品进展分别来自分发稿与公司材料，均按其声明处理。",
+  "items": [
+    {
+      "title": "AWS 发布游戏后端与基础设施智能体工作流",
+      "paragraphs": [
+        "AWS 在其游戏技术博客公开了“Game Backend & Infrastructure Agentic Workflows”参考实现，面向同时使用 Amazon GameLift Servers 与 EKS 的游戏运维团队。该方案以 Bedrock AgentCore 编排多个专长智能体，通过 MCP 服务对基础设施、成本和可观测性数据提供只读访问，并在输入输出处接入 Guardrails。",
+        "它把 Agent 的价值从内容生成延伸到游戏上线后的容量、故障和成本决策。实现以只读权限、身份认证、审计日志和人工部署步骤为边界，提供了可复用的生产运维范式；文中示例的节省与流失数据为 AWS 自述案例。"
+      ],
+      "url": "https://aws.amazon.com/blogs/gametech/how-agentic-ai-is-transforming-game-infrastructure-management/"
+    },
+    {
+      "title": "腾讯分发稿称上线景德镇瓷器主题 AI 文化游戏",
+      "paragraphs": [
+        "越南《投资评论》刊载的 PR Newswire 分发稿称，腾讯推出了《Digital Jingdezhen: Porcelain Craft Adventure》，将其描述为以 AI 驱动的文化遗产游戏。该材料来自项目方传播渠道，并非独立评测；目前可确认的是该项目对外发布及其产品定位。",
+        "它为“生成式互动加文化资产”的产品路线提供了面向公众的案例，文化素材权利链、史实准确性与生成内容可控性仍将决定此类项目能否持续运营。"
+      ],
+      "url": "https://vir.com.vn/tencent-launches-ai-game-on-jingdezhen-porcelain-heritage-157456.html"
+    },
+    {
+      "title": "G2A 将 AI 支持助手 Dave 扩展至卖家支持场景",
+      "paragraphs": [
+        "G2A 的支持中心已将 Dave 标注为 AI 助手，可在用户进入支持流程时通过对话识别问题并尝试直接解决，必要时再转人工。行业媒体今日报道称该能力面向卖家支持进一步铺开；关于节省人工或处理量的说法均来自公司传播，尚无独立审计。",
+        "AI 的首个规模化入口未必是面向玩家的玩法，也可能是高频、可转交且可审计的运营支持；客服 Agent 需要将升级人工、错误兜底和责任归属视为产品能力。"
+      ],
+      "url": "https://supporthub.g2a.com/marketplace/en/Problem-Solving/i-have-a-different-problem-how-can-i-contact-g2a-support"
+    },
+    {
+      "title": "欧盟 AI 法案的深伪透明度要求进入游戏合规视野",
+      "paragraphs": [
+        "GamesIndustry.biz 对欧盟 AI Act 深伪透明度规则进行了游戏行业解读，指出使用或重建现实人物、地点的作品需要更谨慎地判断是否产生合成或操纵内容，以及如何向用户作出标识。该文是行业法律分析，不构成监管机关的个案执法结论。",
+        "生成式角色、语音和写实世界素材使游戏不再天然处于“娱乐内容例外”之外，真实人物授权、生成标识和资产来源记录应提前嵌入内容管线。"
+      ],
+      "url": "https://www.gamesindustry.biz/why-new-eu-deepfake-legislation-means-games-need-to-be-careful-when-featuring-real-world-people-and-locations"
+    },
+    {
+      "title": "OpenAI Codex 开源主线更新多智能体与插件协作基础",
+      "paragraphs": [
+        "OpenAI Codex 的公开仓库今日合入多项与协作工作流有关的改动，包括在配置表示之间保留多智能体设置、为多智能体工作者测试开发者指令继承，以及并行准备 MCP 与插件推荐。仓库同时继续调整线程历史、会话投影和远程执行的网络策略回调。",
+        "这些是源码层面的持续改动，尚不等同于稳定版功能承诺；其价值在于让研发代理向可恢复的线程上下文、明确的指令继承和受约束的工具发现演进。"
+      ],
+      "url": "https://github.com/openai/codex/commits/main"
+    }
+  ],
+  "focus": {
+    "title": "今日最值得关注",
+    "body": "AWS 的游戏基础设施智能体工作流。相比只展示“AI 能做什么”，它给出了上线后运维的权限模型、MCP 接入、可观测性和安全护栏，正面回答了游戏团队把智能体接入真实生产系统时最关键的治理问题。"
+  },
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Update 1",
+        "body": "OpenAI Codex 的公开主线在本周连续完善多智能体配置保留、线程历史投影与指令继承。其价值在于让长程协作任务能够恢复上下文并保持负责人设定；但这些仍是源码变更，采用前应以正式版本与自身环境验证为准。 https://github.com/openai/codex/commits/main"
+      },
+      {
+        "heading": "Update 2",
+        "body": "AWS 的参考实现把游戏运维拆为编排、GameLift、EKS 和成本四类专长 Agent，并默认使用只读工具权限、身份认证、日志与 Guardrails。它是将“先小权限、可观测、可转人工”落实到 Agent 工作流的具体范例。 https://aws.amazon.com/blogs/gametech/how-agentic-ai-is-transforming-game-infrastructure-management/"
+      },
+      {
+        "heading": "Update 3",
+        "body": "GitHub Copilot 在本周完成 Claude Opus 5 的多端逐步接入，并把 Business、Enterprise 的使用交给组织级策略控制。这种把高能力模型选择放入既有 IDE、CLI 与管理开关的方式，适合团队在统一权限和计费边界内做对照试验。 https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot"
+      }
+    ]
+  },
+  "trend": {
+    "title": "结论：AI 游戏的近期落地正从“能否生成内容”转向“能否在有权限、可追溯和可转交的生产流程中持续运行”。",
+    "points": [
+      "游戏 AI 的落点扩展到上线后的基础设施和交易支持，读写权限与升级人工成为产品设计核心。",
+      "真实人物、语音和地点进入生成管线后，透明标识、授权和资产溯源正在成为发行前置条件。",
+      "多智能体协作的竞争焦点是历史、指令和插件权限能否跨会话稳定继承。",
+      "---",
+      "查看网页版日报：https://tu-cg.github.io/ai-game-daily/"
+    ]
+  }
+}
