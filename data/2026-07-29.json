@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-29",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时内，可由官方材料或可信媒体直接核验、且与 AI 游戏产品或研发链条有实质关联的新增信息只有三项，低于优先目标的五条。本期不以旧闻、营销软文或概念稿补足数量；信号集中在游戏引擎的 MCP 接口，以及研发智能体的协作上下文和工具发现。",
+  "items": [
+    {
+      "title": "Unity 更新 AI 工具说明，统一编辑器助手、生成器与 MCP Server 的入口",
+      "paragraphs": [
+        "Unity 新发布或更新的官方说明页将其 AI 能力明确归纳为编辑器内 AI 助手、AI 生成器、AI gateway 和 Unity MCP Server。该页面是产品说明而非独立性能评测，确认的是 Unity 正在把 AI 功能作为编辑器及外部编码代理都可调用的一组能力来呈现。",
+        "游戏引擎的 AI 竞争正在从单项生成工具，转向代理能否带着项目上下文进入引擎并完成受约束的操作。对团队而言，MCP 接口的权限控制、变更审阅和项目可复现性将比单次生成质量更关键。"
+      ],
+      "url": "https://unity.com/resources/what-is-unity-ai"
+    },
+    {
+      "title": "OpenAI Codex 开源主线补强协作消息、父级任务和 MCP 插件编排",
+      "paragraphs": [
+        "OpenAI Codex 的公开主线合入了对纯文本协作工具消息的支持、嵌套 Codex 请求的父级任务跟踪、MCP 发现预校验的旧版错误处理，以及将推荐插件与工具建议解耦等改动。它们是开源主线的源码变更，尚不等同于稳定版功能承诺。",
+        "这些改动直接指向多人或多代理研发的两个实际问题：任务树如何保留责任和上下文，以及工具推荐如何不被插件选择绑死。对游戏研发的长链路协作而言，这类基础设施决定代理系统能否被审计、恢复和逐步接入现有工具链。"
+      ],
+      "url": "https://github.com/openai/codex/commits/main"
+    },
+    {
+      "title": "Games for Change 与亚利桑那州立大学启动涵盖 AI 与游戏生态的研究合作",
+      "paragraphs": [
+        "GamesIndustry.biz 报道，Games for Change 将与亚利桑那州立大学合作举办 2027 年节展；双方还计划围绕 AI、游戏生态及游戏支持职场学习开展研究。报道可确认合作与研究方向，尚未公布具体课题、方法或成果。",
+        "AI 游戏研究正与游戏教育、技能认证和劳动力发展一同进入机构化合作。后续若形成公开方法或数据集，可能为 AI 辅助学习型游戏与从业者培训提供较可复用的评估框架。"
+      ],
+      "url": "https://www.gamesindustry.biz/games-for-change-festival-to-expand-and-move-to-new-cities"
+    }
+  ],
+  "focus": {
+    "title": "今日最值得关注",
+    "body": "Unity 对 AI 工具与 MCP Server 的统一表述最值得关注。它显示引擎厂商正在把“让代理进编辑器”放到与内置生成能力并列的位置，未来的分水岭将是项目上下文、权限和审阅流程是否能真正融入日常制作。"
+  },
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Update 1",
+        "body": "OpenAI Codex 本周继续完善协作工具消息、嵌套任务追踪及 MCP 发现的兼容性处理。其价值是让多代理任务更容易保留上下文与工具调用边界；但这些仍为源码级变化，采用前应以正式版本和本地环境验证为准。 https://github.com/openai/codex/commits/main"
+      },
+      {
+        "heading": "Update 2",
+        "body": "Unity 的 AI 工具说明把编辑器助手、生成器、gateway 和 MCP Server 放入同一工作流视图。对团队的启示是将代理接入引擎时，优先设计可审阅的命令边界与项目状态，而不是仅评估提示词效果。 https://unity.com/resources/what-is-unity-ai"
+      },
+      {
+        "heading": "Update 3",
+        "body": "AWS 的游戏基础设施智能体参考实现采用只读 MCP、身份认证、日志和 Guardrails 来约束工具调用。这为游戏团队把代理接到运维流程时的最小权限与可观测性实践提供了具体参考。 https://aws.amazon.com/blogs/gametech/how-agentic-ai-is-transforming-game-infrastructure-management/"
+      }
+    ]
+  },
+  "trend": {
+    "title": "结论：AI 游戏的近期进展正在从“增加一个生成能力”转向“让代理在引擎与生产系统中安全地协作”。",
+    "points": [
+      "引擎侧开始把 MCP 与编辑器内 AI 能力并列，代理接入将成为工具链的标准问题。",
+      "多代理协作的价值越来越依赖任务谱系、消息兼容性和工具发现，而非单一模型的对话质量。",
+      "AI 与游戏的机构化研究开始连接教育和就业场景，评估方法与数据透明度会成为后续关键。"
+    ]
+  }
+}
