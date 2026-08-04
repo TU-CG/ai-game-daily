@@ -1,0 +1,52 @@
+{
+  "date": "2026-08-04",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "当日可核验的变化集中在 AI 代理与生成式创作工具的工程底座：传输与接口兼容性、模型接入、运行环境与可追溯性均有持续更新。",
+  "items": [
+    {
+      "title": "OpenAI Codex 增加代码模式双 WebSocket 传输与 MCP 回归门禁",
+      "paragraphs": [
+        "OpenAI 在 Codex 代码库中为代码模式加入双 WebSocket 传输，并增加 MCP 客户端一致性回归门禁。此次同批改动还让执行环境可按环境遵守 login shell 策略，exec resume --last 优先使用状态数据库，并加入 Agent Plugin 的 MCP 配置解析。"
+      ],
+      "url": "https://github.com/openai/codex/commit/60c722e07514d46d980034319dfcbfe4e74e659f"
+    },
+    {
+      "title": "ComfyUI 修复 MiniMax H3 VAE 设备参数与无交换分区内存锁定",
+      "paragraphs": [
+        "ComfyUI 修复了 MiniMax H3 VAE 在原始参数与输入设备之间的转换处理，同时调整 Linux 无交换分区系统的内存锁定逻辑，避免锁定过多内存。两项改动均已合入主分支。"
+      ],
+      "url": "https://github.com/Comfy-Org/ComfyUI/commit/16e3f3034f2bba1fff6c70cbd759339778555cd6"
+    },
+    {
+      "title": "Cline 升级至 AI SDK 7 并补充 ACP 开发脚本",
+      "paragraphs": [
+        "Cline 在主分支升级至 AI SDK 7，新增用于 ACP 开发的脚本；同时，编辑器端新增对 Chutes 提供商的识别，并在供应商没有 API Key 时给出明确错误。项目还合入一轮依赖、示例与工作区覆盖相关的安全清理。"
+      ],
+      "url": "https://github.com/cline/cline/commit/8f0ff70215a4d8d8c69851621ef6cf38416ed8f8"
+    },
+    {
+      "title": "OpenHands 1.9.0 加入活动日志导出与自动化界面调整",
+      "paragraphs": [
+        "OpenHands 发布 1.9.0。主分支新增活动日志导出，将 Canvas 默认模型设为 GLM 5.2，并让自动化超时上限从部署配置派生；自动化界面也开始由接口清单驱动。"
+      ],
+      "url": "https://github.com/OpenHands/OpenHands/commit/6790df06ea689f4bbc612213671d61d3ac2c6fbe"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "本周无更新",
+        "body": "本周无更新"
+      }
+    ]
+  },
+  "trend": {
+    "title": "AI 研发工具的竞争正在从单点模型能力转向代理运行时、工具互操作与生产环境治理的共同完善。",
+    "points": [
+      "MCP 与 ACP 等协议接口继续进入回归测试、插件解析和开发脚本等日常工程环节。",
+      "生成式内容工具开始同时处理模型节点兼容性与资源占用等运行层问题。",
+      "活动日志、环境策略与自动化超时配置被纳入代理系统的可观测与可控范围。"
+    ]
+  }
+}
