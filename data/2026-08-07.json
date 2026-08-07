@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-07",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "当日公开更新集中在生成式创作的采样稳定性、MCP 授权恢复与研发代理的模型和成本可观测性。",
+  "items": [
+    {
+      "title": "ComfyUI 修复 MiniMax 音频采样并扩展采样器支持",
+      "paragraphs": [
+        "ComfyUI 对 MiniMax 音频采样中的采样器问题作出修复并加入更多采样器支持，同时避免 res_multistep 采样器创建无用噪声。相关改动面向节点式生成工作流中的音频采样与多步采样环节。"
+      ],
+      "url": "https://github.com/Comfy-Org/ComfyUI/commits/master"
+    },
+    {
+      "title": "Codex 改进 MCP OAuth 重新授权后的服务恢复",
+      "paragraphs": [
+        "OpenAI 在 Codex 代码库中加入 MCP 服务在 OAuth 重新授权后的恢复处理，并让连接器安装链接遵从配置的 ChatGPT 来源。扩展回合输入也开始使用步骤级环境。"
+      ],
+      "url": "https://github.com/openai/codex/commits/main"
+    },
+    {
+      "title": "Cline 4.1.6 刷新模型目录并修正遥测归属",
+      "paragraphs": [
+        "Cline 发布 4.1.6，为 Cline provider 提供 meta/muse-spark-1.2-contributor 并刷新模型目录。该版本还将运行中的 SDK 错误遥测归属到实际使用的模型。"
+      ],
+      "url": "https://github.com/cline/cline/releases/tag/v4.1.6"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "OpenHands 在活动记录和导出中显示单次运行的 LLM 成本",
+        "body": "OpenHands 在 Activity Log 及其导出中加入每次运行的 LLM 成本展示，为团队按运行记录审阅代理开销提供了更细的追踪粒度。",
+        "url": "https://github.com/OpenHands/OpenHands/commit/82bdd88269afaa5298f79a6c1f282221126d807e"
+      },
+      {
+        "heading": "Gemini CLI 0.54.0 强化模型回退与凭据传输处理",
+        "body": "Gemini CLI 0.54.0 在模型回退时轮换会话 ID，并要求 GoogleCredentialsAuthProvider 使用 HTTPS；版本还处理了函数调用推理签名在历史处理中的保留问题。相关调整让会话切换与凭据传输规则更明确。",
+        "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.54.0"
+      }
+    ]
+  },
+  "trend": {
+    "title": "AI 游戏研发链条中的 AI 工具正从功能接入转向运行稳定性与可追踪协作。",
+    "points": [
+      "生成式内容：节点式工作流持续收敛音频与多步采样的稳定性。",
+      "工具连接：OAuth 重新授权和步骤级环境开始成为 MCP 工具接入的维护重点。",
+      "研发治理：模型归属和单次运行成本逐步进入代理工具的日常记录。"
+    ]
+  }
+}
