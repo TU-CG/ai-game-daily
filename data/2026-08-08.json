@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-08",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "当日公开更新集中在生成式内容节点、可感知环境的智能体交互，以及研发代理的连接、审查和自动化能力。",
+  "items": [
+    {"title":"ComfyUI 0.31.0 接入 SeeDance 2.5 与分层图像合成节点","paragraphs":["ComfyUI 0.31.0 纳入 ByteDance SeeDance 2.5 模型支持，并新增 ImageCompositor 节点，提供图层状态合成、边界框图层和 Seedream Layer Separation。"],"url":"https://github.com/Comfy-Org/ComfyUI/commits/master"},
+    {"title":"微软开源 Agent Terrarium，把编码智能体放入可交互的桌面世界","paragraphs":["Agent Terrarium 使用 Rust 运行模拟、物理、智能体分派和游戏逻辑，React 通过 Tauri IPC 绘制世界状态，并规划 VS Code Webview 版本。","四级意识模型让角色接收直接消息、世界事件、社交事件或完整世界状态；角色可选择 Copilot SDK、OpenAI 兼容端点或 NPC 模式。"],"url":"https://commandline.microsoft.com/agent-terrarium-rust-human-agent-interaction/"},
+    {"title":"Codex 加入 MCP 事件发现订阅与托管模型自动审查","paragraphs":["Codex 加入 MCP 事件发现和订阅、code-mode host gRPC 协议，并在响应元数据中包含沙箱模式与工具命名空间清单。","同日代码为托管模型强制启用自动审查，并让 Guardian 审查会话复用父会话压缩结果。"],"url":"https://github.com/openai/codex/commits/main"},
+    {"title":"Cline 补强远程 MCP 的 OAuth 处理与定时运行记录","paragraphs":["Cline 让 SSE MCP 服务在 401 时呈现 OAuth 授权流程，为未配置的 stdio MCP 服务分配初始化预算，并让 CLI 展示工具返回文本。","Hub 定时运行报告加入执行上下文，插件设置和团队提示词接入核心运行时。"],"url":"https://github.com/cline/cline/commits/main"},
+    {"title":"OpenHands 推出 1.11.0 与 1.12.0，并扩展自动化协作界面","paragraphs":["OpenHands 自动化界面新增标签筛选与识别，并提供启动本地或 Cloud 子会话的类型化动作；Agent Canvas 增加启动提示并更新模型端点说明。"],"url":"https://github.com/OpenHands/OpenHands/commits/main"}
+  ],
+  "workflow":{"title":"AI 研发工作流追踪","items":[{"heading":"Gemini CLI 为 Caretaker 维护流程补齐事件、评测和人工交接","body":"Care­taker 相关提交增加 issue 评论处理、规范事件、Cloud Run 与 Pub/Sub 部署入口，并加入 golden issue、Firestore 同步和 triage judge runner。","url":"https://github.com/google-gemini/gemini-cli/commits/main"}]},
+  "trend":{"title":"AI 游戏相关工具正在把生成、代理协作与互动呈现并行产品化，重点从单次调用转向可组合、可审查的持续运行。","points":["生成式内容继续扩展到可控分层合成。","角色化世界状态成为智能体交互原型。","MCP、自动审查和人工交接形成共同工具链。"]}
+}
