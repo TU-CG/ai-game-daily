@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-18",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "当日新增集中在高分辨率视频与音频生成节点，以及支持长会话协作、版本同步的研发智能体界面。",
+  "items": [
+    {"title":"ComfyUI 为 Seedance 2.5 增加 1080p 输出，并接入 FishAudio 基础节点","paragraphs":["ComfyUI 的主分支新增 Seedance 2.5 的 1080p 分辨率选项，为节点式视频生成工作流提供更高分辨率的输出配置。","同日合入的 FishAudio 基础节点把该音频模型接入 ComfyUI 的 Partner Nodes 体系，扩展了在同一工作流中编排视频与音频生成的能力。"],"url":"https://github.com/Comfy-Org/ComfyUI/commits/master"},
+    {"title":"Codex 加入智能体任务总览、会话消息排队和实时交互请求","paragraphs":["OpenAI 在 Codex 主分支中新增智能体总览仪表板，并允许向已有会话排队发送消息；相关改动同时强化了终端界面的智能体导航。","同批提交还让实时会话展示交互请求，并提高 GPT-5.6 的最大上下文窗口。项目继续更新 MCP 依赖与执行请求追踪能力。"],"url":"https://github.com/openai/codex/commits/main"},
+    {"title":"OpenHands 发布 1.14.0 并增加自动化 Git Sync 页面","paragraphs":["OpenHands 在主分支发布 1.14.0。新版默认将 Agent Canvas 模型设为 Kimi K3，并在工作区分组视图和云端 Files 页面中展示完整的文件夹结构。","项目在自动化功能中加入 Git Sync 页面，同时增加 LLM 预检校验，以阻止保存配置错误的模型档案。"],"url":"https://github.com/OpenHands/OpenHands/commits/main"}
+  ],
+  "workflow":{"title":"AI 研发工作流追踪","items":[{"title":"Cline 增加提供商感知的网页搜索工具，并改进运行中服务更新","paragraphs":["Cline 在过去一周加入按模型提供商配置的网页搜索工具与设置开关；同时调整 Hub 更新逻辑，使正在承载会话的服务不会被并发安装或自动更新提前替换。"],"url":"https://github.com/cline/cline/commits/main"}]},
+  "trend":{"title":"今日趋势","points":["结论：创作侧正在把高分辨率视频与音频节点合并进同一编排环境，研发侧则把多智能体可见性、会话续接和版本同步作为长期协作的基础能力。","生成式内容：视频清晰度与音频节点成为资产工作流中可独立组合的控制环节。","智能体协作：总览看板、排队消息和实时交互请求让并行任务更容易被人工掌握。","工程协同：Git 同步、模型配置预检与服务更新保护共同降低了长时间自动化任务的中断风险。"]}
+}
