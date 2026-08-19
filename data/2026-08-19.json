@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-19",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "当日有效动态集中在 AI 原生游戏引擎的设计路线，以及大型游戏业务资产交易。",
+  "items": [
+    {
+      "title": "Immens 公布 AI 原生游戏引擎路线",
+      "paragraphs": [
+        "由三位曾任职 Epic 的开发者成立的 Immens 正在开发一款游戏引擎。团队称其设计重点不是用提示词直接生成游戏，而是让 AI 能够理解可扩展的代码库，协助小团队和个人扩展引擎、添加定制系统。",
+        "该团队表示引擎将采用开放标准，计划与 Blender、Maya 及生成式工具互操作；目前正准备展示使用生成式 AI 编辑内容流程的概念验证。"
+      ],
+      "url": "https://www.gamesindustry.biz/three-epic-veterans-are-building-an-ai-powered-game-engine-to-break-the-industrys-doom-cycle"
+    },
+    {
+      "title": "Reuters：阿里巴巴拟出售灵犀互娱",
+      "paragraphs": [
+        "Reuters 援引知情人士报道，阿里巴巴拟以超过 20 亿美元的交易出售灵犀互娱，买方为 Trustar Capital。",
+        "报道称该交易尚未公开，交易条款仍可能变化。"
+      ],
+      "url": "https://www.reuters.com/world/china/alibaba-sell-lingxi-games-more-than-2-bln-deal-source-says-2026-08-18/"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      "本周无更新。"
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：AI 在游戏行业的当日动态同时落在底层生产工具与业务资产配置两端。",
+      "引擎工具：新团队将 AI 的可读代码库、可扩展性和开放互操作作为引擎设计目标。",
+      "生成式内容：概念验证开始把生成式编辑纳入引擎内的内容修改流程。",
+      "公司与资本：大型游戏业务交易继续与企业把资源转向 AI 的战略调整并行出现。"
+    ]
+  }
+}
