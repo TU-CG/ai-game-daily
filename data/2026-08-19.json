@@ -1,38 +1,59 @@
 {
   "date": "2026-08-19",
   "title": "每日 AI 游戏综合日报",
-  "summary": "当日有效动态集中在 AI 原生游戏引擎的设计路线，以及大型游戏业务资产交易。",
+  "summary": "当日有效更新集中在 AI 原生游戏引擎、游戏市场研究系统，以及可用于内容生产和研发协作的 AI 工具。",
   "items": [
     {
       "title": "Immens 公布 AI 原生游戏引擎路线",
       "paragraphs": [
-        "由三位曾任职 Epic 的开发者成立的 Immens 正在开发一款游戏引擎。团队称其设计重点不是用提示词直接生成游戏，而是让 AI 能够理解可扩展的代码库，协助小团队和个人扩展引擎、添加定制系统。",
-        "该团队表示引擎将采用开放标准，计划与 Blender、Maya 及生成式工具互操作；目前正准备展示使用生成式 AI 编辑内容流程的概念验证。"
+        "由多名前 Epic 员工创立的 Immens 正在开发游戏引擎。团队表示，其 AI 路线不是通过提示词直接生成游戏，而是让 AI 理解可扩展的代码库，帮助小团队为引擎添加定制系统和工具。",
+        "Immens 计划使用开放标准，并与 Blender、Maya 及生成式工具互操作。"
       ],
       "url": "https://www.gamesindustry.biz/three-epic-veterans-are-building-an-ai-powered-game-engine-to-break-the-industrys-doom-cycle"
     },
     {
-      "title": "Reuters：阿里巴巴拟出售灵犀互娱",
+      "title": "GYLD 获 100 万美元融资推进 Critical Compass 游戏研究系统",
       "paragraphs": [
-        "Reuters 援引知情人士报道，阿里巴巴拟以超过 20 亿美元的交易出售灵犀互娱，买方为 Trustar Capital。",
-        "报道称该交易尚未公开，交易条款仍可能变化。"
+        "游戏发行与投资机构 GYLD 完成 100 万美元种子轮融资，用于其游戏研究系统 Critical Compass。该系统分析游戏特征与潜在受众，GYLD 称其已支持超过 45 个项目的融资和发行成果。",
+        "GYLD 表示，Critical Compass 使用面向游戏行业的 AI 代理收集市场、商店、社区与竞品信息，由人工分析师审阅并对建议负责。"
       ],
-      "url": "https://www.reuters.com/world/china/alibaba-sell-lingxi-games-more-than-2-bln-deal-source-says-2026-08-18/"
+      "url": "https://www.gamesindustry.biz/gyld-closes-oversubscribed-1m-seed-round-to-fund-proprietary-games-research-system"
+    },
+    {
+      "title": "ComfyUI 为 MiniMax 增加提示词嵌入支持",
+      "paragraphs": [
+        "ComfyUI 主分支加入 MiniMax 的提示词嵌入支持。该更新扩展了节点式生成工作流中对 MiniMax 模型文本条件的处理方式。"
+      ],
+      "url": "https://github.com/Comfy-Org/ComfyUI/commit/e5a38e3f7b91619ff295ffbbeddff35d8e381677"
+    },
+    {
+      "title": "Cline 显示模型原生网页搜索支持状态",
+      "paragraphs": [
+        "Cline 更新桌面端设置页，使网页搜索开关明确显示哪些已连接的提供商和模型支持原生网页搜索，并在没有兼容模型时给出提示。",
+        "该实现将界面状态与运行时的模型工具支持判断共用同一份能力清单。"
+      ],
+      "url": "https://github.com/cline/cline/commit/cf07572a07712821054989e867f4c8e5e50c2dbe"
     }
   ],
   "workflow": {
     "title": "AI 研发工作流追踪",
     "items": [
-      "本周无更新。"
+      {
+        "title": "Cline 增加模型驱动的图像生成能力",
+        "paragraphs": [
+          "Cline 在过去一周加入模型驱动的图像生成支持，并补充混合图像模型、流式响应及模型能力校验处理。"
+        ],
+        "url": "https://github.com/cline/cline/commit/8bbdde2a5c1f972864fe1b954f639c21fac61a40"
+      }
     ]
   },
   "trend": {
     "title": "今日趋势",
     "points": [
-      "结论：AI 在游戏行业的当日动态同时落在底层生产工具与业务资产配置两端。",
-      "引擎工具：新团队将 AI 的可读代码库、可扩展性和开放互操作作为引擎设计目标。",
-      "生成式内容：概念验证开始把生成式编辑纳入引擎内的内容修改流程。",
-      "公司与资本：大型游戏业务交易继续与企业把资源转向 AI 的战略调整并行出现。"
+      "结论：AI 游戏相关动态正在同时进入引擎架构、项目研究和日常研发工具。",
+      "引擎产品把代码库可理解性与可扩展性作为 AI 接入基础。",
+      "游戏研究系统将 AI 代理的信息收集与人工分析复核结合。",
+      "内容生成与研发协作工具继续完善模型能力识别和工作流控制。"
     ]
   }
 }
