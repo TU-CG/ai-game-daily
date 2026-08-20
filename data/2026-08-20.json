@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-20",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时的有效更新集中在一款已上线游戏对生成式过场内容的公开修订。",
+  "items": [
+    {
+      "title": "Vapor World 将替换 AI 生成的过场动画",
+      "paragraphs": [
+        "《Vapor World: Over The Mind》开发商 ALIVE Inc. 在游戏上线后回应玩家反馈，表示将移除并替换游戏中的全部 AI 生成过场动画。该作已加入 Xbox Game Pass。",
+        "多家游戏媒体对这一公开回应进行了报道；报道均将变更描述为开发方对上线后玩家反馈的处理。"
+      ],
+      "url": "https://www.trueachievements.com/news/vapor-world-over-the-mind-ai-cutscenes"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "本周无更新",
+        "body": "本周无更新。"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：面向玩家发布的生成式内容，正在被更明确地纳入上线后的内容修订流程。",
+      "已上线作品的过场内容可以因玩家反馈被整体替换。",
+      "媒体报道将生成式内容的使用与作品上线后的口碑反馈并置关注。",
+      "当日未出现可独立核验的引擎、智能 NPC 或游戏生产工具链更新。"
+    ]
+  }
+}
