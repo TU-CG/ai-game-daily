@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-21",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时的有效更新集中在面向普通用户的 AI 小游戏创作，以及 UEFN 与代理式编程工具的编辑器连接。",
+  "items": [
+    {
+      "title": "Meta 向美国用户推出 Pocket AI 小游戏创作应用",
+      "paragraphs": [
+        "Meta 开始向全美用户推出实验性应用 Pocket。用户可通过 AI 提示生成小型互动游戏，并将作品发布到可滚动浏览的信息流中。",
+        "报道显示，作品可响应触控与手机倾斜、使用音效和音乐片段，也可使用相册或相机内容；用户能够在个人主页分享、收藏、转创或转发这些作品。Pocket 此前已在巴西测试。"
+      ],
+      "url": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/"
+    },
+    {
+      "title": "Epic 在 UEFN 启用内置 Unreal MCP",
+      "paragraphs": [
+        "Epic Games 已在 Fortnite Unreal Editor（UEFN）中提供 Unreal Model Context Protocol 支持。创作者可在项目设置的 Beta Access 中启用 UEFN MCP Toolset，再将 Claude Code、Cursor 等代理式编程工具连接到编辑器。",
+        "该版本的内置 MCP 服务器可让代理读取、编写和编译 Verse 文件，搜索项目内 Verse 代码；也支持浏览和配置设备、编辑 Scene Graph 实体，以及启动、停止和排查游戏会话。报道指出，UE 5.8 的部分工具集尚不兼容 UEFN。"
+      ],
+      "url": "https://www.invenglobal.com/articles/24955/speeding-up-development-with-ai-uefn-supports-unreal-mcp-plugin-starting-aug-20"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "IRONMACE 披露用 Aura 协作制作《Dark and Darker》教程",
+        "body": "80 Level 发布的赞助访谈中，IRONMACE 总裁 Terence Park 介绍团队以功能大纲、示例资源和协作聊天推进《Dark and Darker》教程系统；设计人员使用 Aura 理解新资源、制作教程内容并提出后续功能需求。团队会将新示例资源提交至仓库，工程师仍参与流程；访谈所述效率和开发结果均为受访团队及工具方的陈述。来源：https://80.lv/articles/how-dark-and-darker-s-devs-used-aura-to-build-a-major-feature-in-half-the-time/"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：当天的产品更新同时把 AI 创作入口推向玩家侧，并把代理式编程能力嵌入游戏编辑器。",
+      "面向消费者的 AI 小游戏应用以提示生成、发布和二次创作为主要交互。",
+      "UEFN 的内置 MCP 把 Verse 编写、编译和编辑器操作放进同一代理连接。",
+      "游戏团队公开的工作流案例仍以设计、工程与仓库协作并行的方式使用编码助手。"
+    ]
+  }
+}
