@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-14",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "今日可核验更新集中在生成式图像、音频与节点式工作流的持续扩展；研发协作工具则继续完善线程管理和任务排队能力。",
+  "items": [
+    {
+      "title": "ComfyUI 0.33.0 发布并扩展游戏资产生成节点",
+      "paragraphs": [
+        "ComfyUI 发布 0.33.0，并加入 MiniMax Music 3 核心支持、MiniMax 音频引导节点，以及 Bria GenFill、Eraser、Expand 和 Increase Resolution 等合作节点，用于图像修补、扩展、放大及音频条件控制。"
+      ],
+      "url": "https://github.com/Comfy-Org/ComfyUI/commits/master"
+    },
+    {
+      "title": "ComfyUI 修复 MiniMax 音频在非动态显存模式下的工作流问题",
+      "paragraphs": [
+        "ComfyUI 修复非动态显存模式下 MiniMax 音乐生成无法工作的情况，并加入 MiniMax H3 峰值显存修复、解码缓冲优化和 MiniMaxH3AddGuide 节点。"
+      ],
+      "url": "https://github.com/Comfy-Org/ComfyUI/commits/master"
+    },
+    {
+      "title": "Codex 加入实验性线程队列 API",
+      "paragraphs": [
+        "OpenAI Codex 在 app server 中加入实验性线程队列 API，并保留线程订阅在回滚重载后的状态；相关提交还处理线程环境选择、任务退出和执行器断线恢复。"
+      ],
+      "url": "https://github.com/openai/codex/commits/main"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Codex 线程队列与可恢复代理协作",
+        "body": "Codex 的线程队列、线程回滚和断线恢复能力，可用于构建长时间运行且可恢复状态的代理协作流程。来源：https://github.com/openai/codex/commits/main"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：AI 游戏生产工具正从单一模型调用转向可组合的多模态工作流与可恢复的代理协作基础设施。",
+      "生成式内容继续以节点形式覆盖图像和音频生产。",
+      "显存、解码和跨设备兼容性成为持续维护重点。",
+      "线程排队、回滚和断线恢复逐步成为代理系统基础能力。"
+    ]
+  }
+}
