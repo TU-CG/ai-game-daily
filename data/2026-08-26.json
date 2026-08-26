@@ -25,7 +25,7 @@
     "items": [
       {
         "heading": "ComfyUI 0.34.0 加入 PixVerse V6 模型支持",
-        "body": "ComfyUI 0.34.0 的发布记录新增 PixVerse V6 的 Partner Node 支持，并更新工作流模板至 v0.11.48。该版本发布于本周，项目将此能力作为节点工作流的一部分提供。来源：https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.34.0"
+        "body": "ComfyUI 0.34.0 的发布记录新增 PixVerse V6 的 Partner Node 支持，并更新工作流模板至 v0.11.48。项目将此能力作为节点工作流的一部分提供。来源：https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.34.0"
       }
     ]
   },
