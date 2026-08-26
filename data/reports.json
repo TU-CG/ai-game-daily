@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-08-26",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "过去 24 小时的有效更新集中在游戏内实时 AI 推理，以及 AI 渲染与 UE5 图形工具链。",
+      "file": "2026-08-26.json"
+    },
+    {
       "date": "2026-08-25",
       "title": "每日 AI 游戏综合日报",
       "summary": "The9 披露其 AI 游戏平台 the9bit 已用专有 AI 辅助工具生成超过 18 万款游戏。",
