@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-26",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时的有效更新集中在游戏内实时 AI 推理，以及 AI 渲染与 UE5 图形工具链。",
+  "items": [
+    {
+      "title": "Parallel 展示《Colony》的实时 AI 推理与游戏内代理系统",
+      "paragraphs": [
+        "Google Cloud 游戏业务负责人 Jack Buser 在 Gamescom Dev 表示，Google 正在展位展示 Parallel 的生存模拟游戏《Colony》。据报道，游戏使用实时 AI 推理，让玩家近乎即时地生成 3D 饰品。",
+        "Buser 同时称，开发团队在游戏设计中使用代理式系统。Parallel 官网将《Colony》称为 AI 驱动的模拟游戏，并开放 Alpha 注册。"
+      ],
+      "url": "https://mobilegamer.biz/google-says-survival-game-colony-from-blockchain-studio-parallel-is-the-ai-game-to-watch/"
+    },
+    {
+      "title": "NVIDIA 发布 DLSS 4.5 与面向 UE5 Nanite 的 RTX Mega Geometry",
+      "paragraphs": [
+        "NVIDIA 在 Gamescom 公布 DLSS 4.5 Ray Reconstruction，称其第二代 Transformer 模型将降噪与 Super Resolution 合并为单一模型；该功能通过 NVIDIA App 面向全部 GeForce RTX GPU 提供，并在首发时支持 30 款游戏。",
+        "公司还宣布，RTX Mega Geometry 将首次让 UE5 的 Nanite 几何在光线追踪中以完整细节渲染；报道称该技术将纳入 Microsoft DirectX Raytracing 2.0 标准，供 UE5 作品使用。"
+      ],
+      "url": "https://www.gamesindustry.biz/nvidia-brings-ray-traced-nanite-native-anti-cheat-and-dlss-45-to-gamescom-2026-lineup"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "ComfyUI 0.34.0 加入 PixVerse V6 模型支持",
+        "body": "ComfyUI 0.34.0 的发布记录新增 PixVerse V6 的 Partner Node 支持，并更新工作流模板至 v0.11.48。该版本发布于本周，项目将此能力作为节点工作流的一部分提供。来源：https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.34.0"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：当天确认的更新同时落在游戏运行时 AI、AI 图形重建与节点式生成内容工作流。",
+      "游戏内的实时推理开始用于玩家可直接生成的 3D 内容及游戏设计代理系统。",
+      "图形工具链继续将 Transformer 重建模型与 UE5 的几何、光线追踪能力结合。",
+      "节点式生成工具新增视频模型支持，并以版本化工作流模板分发。"
+    ]
+  }
+}
