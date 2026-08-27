@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-27",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时的有效更新集中在自然语言生成游戏、生成式 AI 使用披露，以及面向游戏创作者生态的智能营销工具。",
+  "items": [
+    {
+      "title": "Combos 在 Gamescom 展示 Boo AI 游戏代理生成的玩家作品",
+      "paragraphs": [
+        "Converge.AI 在 Gamescom 2026 展示 AI 游戏创作平台 Combos，现场提供 10 多款由社区创作者制作的可玩作品。平台的 Boo AI 游戏代理可把自然语言想法转成浏览器游戏，并处理游戏设计、资产、声音、音乐和发布。",
+        "公司称平台已覆盖 110 多个国家、拥有超过 30 万名创作者和 1 万余款用户生成游戏；本次展示作品来自 Gamescom Creator Challenge。"
+      ],
+      "url": "https://www.prnewswire.com/news-releases/combos-makes-its-global-debut-at-gamescom-bringing-ai-created-games-by-everyday-creators-302859934.html"
+    },
+    {
+      "title": "SEGA 更新《Crazy Taxi: World Tour》Steam AI 披露",
+      "paragraphs": [
+        "SEGA 在《Crazy Taxi: World Tour》的 Steam 页面更新生成式 AI 披露，说明开发过程中使用生成式 AI 作为开发辅助工具，以让团队专注于创意工作。",
+        "页面同时明确，涉及演员的部分未使用人工智能技术；该披露替代了此前引发争议的笼统表述。"
+      ],
+      "url": "https://store.steampowered.com/app/2924540/Crazy_Taxi_World_Tour/"
+    },
+    {
+      "title": "GameSquare 发布面向游戏创作者生态的 Hatchet AI 平台",
+      "paragraphs": [
+        "GameSquare 宣布将 Stream Hatchet 扩展为 Hatchet，整合游戏原生创作者发现、活动追踪和投资回报分析，数据覆盖 Twitch、YouTube、Kick、TikTok 等 30 多个平台及超过 5,000 万名创作者。",
+        "平台新增无需手动配置的 AI Smart Search，可根据表现模式主动推荐创作者；公司称其服务对象包括游戏发行商、品牌和营销机构。"
+      ],
+      "url": "https://investors.gamesquare.com/news/news-details/2026/GameSquares-Hatchet-to-Launch-First-Of-Its-Kind-AI-Platform-for-Brands-Looking-to-Engage-with-Youth-Culture-Through-the-Creator-Economy-/default.aspx"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Elseland 公布 20 款全流程 AI 制作游戏",
+        "body": "Elseland 公布 20 款原创游戏，称这些作品在视觉设计、代码、叙事和音频等环节均使用 AI，展示从创意到可玩版本的团队生产流程。来源：https://www.businesswire.com/news/home/20260821556367/en/Elseland-Showcases-New-Possibilities-for-AI-Game-Creation-with-20-Original-Titles"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：AI 游戏动态从单点功能展示转向可发布作品、透明披露和创作者生态工具的组合。",
+      "自然语言代理正被用于把非程序员创意直接转成可玩的浏览器游戏。",
+      "平台方通过 Steam 披露区分开发辅助与最终内容，生成式 AI 使用透明度继续成为发行环节的一部分。",
+      "游戏营销与发行工作开始采用跨平台创作者数据和主动式 AI 匹配。"
+    ]
+  }
+}
