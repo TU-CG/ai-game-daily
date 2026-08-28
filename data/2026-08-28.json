@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-28",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时的有效更新集中在腾讯全流程游戏 AI 技术、Gamescom 游戏 AI 使用披露，以及 NVIDIA 云游戏的 AI 图形控制。",
+  "items": [
+    {
+      "title": "腾讯 Central Tech 在 Gamescom 展示覆盖全流程的游戏 AI 技术",
+      "paragraphs": [
+        "腾讯游戏以 Central Tech 统一品牌在 gamescom dev 与 Gamescom 展示 Motus AI、GIGA、MagicDawn、ACE、GVoice 和 WeTest。官方称其技术组合覆盖内容生产、玩法体验和长期运营，并已在多款游戏中部署。",
+        "Motus 连接绑定、智能蒙皮、动作生成、动作细化和实时角色交互；GIGA 用于视觉决策、语言—动作对齐和实时竞技决策；WeTest Acorn AI Studio 则让代理像玩家一样体验游戏并识别问题。"
+      ],
+      "url": "https://www.prnewswire.com/news-releases/tencent-games-central-tech-makes-its-gamescom-debut-accelerating-game-industry-innovation-with-full-pipeline-proprietary-ai-technologies-302861469.html"
+    },
+    {
+      "title": "TheGamer 审计 Gamescom 开幕夜：23.64% 展示游戏披露使用 AI",
+      "paragraphs": [
+        "TheGamer 对 Gamescom Opening Night Live 展示的 55 款游戏逐一查阅开发者采访、官方博客和 Steam 披露，统计出 13 款（23.64%）在开发或营销中使用 AI。",
+        "审计列出的用途包括生成式资产、AI 音频、NPC 交互和玩家自定义；其中多款团队表示 AI 仅用于占位内容或辅助开发，正式版本将移除或替换。"
+      ],
+      "url": "https://www.thegamer.com/gamescom-1-in-4-games-used-ai/"
+    },
+    {
+      "title": "NVIDIA 为 GeForce NOW 公布 DLSS 4.5 云端控制和 Gamescom 新作支持",
+      "paragraphs": [
+        "NVIDIA 宣布 GeForce NOW 将在秋季加入 DLSS 4.5 云端控制，Ultimate 会员可分别调节 Super Resolution、Dynamic Frame Generation 和 Ray Reconstruction，以在画质、延迟与光追效果之间取舍。",
+        "公告同时列出将在发售日加入云端的 CONTROL Resonant、Gears of War: E-Day、Onimusha: Way of the Sword、The Blood of Dawnwalker 和 STAR WARS Zero Company，并宣布 Firefox、更多 Steam 设备和 GOG 单点登录支持。"
+      ],
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-gamescom-2026/"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Unity-MCP 0.90.0 加入 McpPlugin 8.3.0 与辅助重新认证",
+        "body": "Unity-MCP 于 8 月 24 日发布 0.90.0，升级 McpPlugin 8.3.0，并加入针对失效机器凭据的辅助重新认证流程；该版本面向通过 MCP 连接编辑器与运行时的 AI 游戏开发。来源：https://github.com/IvanMurzak/Unity-MCP/releases/tag/0.90.0"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：AI 在游戏行业的公开信号正同时覆盖生产基础设施、发行披露和云端图形体验。",
+      "大型厂商开始以统一技术品牌打包动画、代理、测试、语音和渲染能力，而非单独展示某个模型。",
+      "Gamescom 级别的集中披露使 AI 使用从个案声明变成可统计、可比较的行业信号。",
+      "云游戏平台把 AI 超分、帧生成和光线重建做成可调控制，AI 图形能力继续从硬件绑定转向服务层。"
+    ]
+  }
+}
