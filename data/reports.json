@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-09-04",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "OpenAI 发布 Playco 游戏原型案例：GPT-6 Astra 支持快速生成、试玩和自验证。",
+      "file": "2026-09-04.json"
+    },
+    {
       "date": "2026-09-03",
       "title": "每日 AI 游戏综合日报",
       "summary": "过去 24 小时未发现经过原始材料核验、且不与此前报道重复的 AI 游戏行业实质更新。",
