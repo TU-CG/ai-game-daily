@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-05",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "腾讯游戏披露 AI 在概念、美术绑定、动作匹配、代码审查和制作管理中的协作边界。",
+  "items": [
+    {
+      "title": "腾讯游戏：AI 作为开发工具覆盖概念、美术绑定与代码审查",
+      "paragraphs": [
+        "GamesIndustry.biz 采访腾讯游戏全球业务运营、战略与合规负责人朱永毅。他表示，腾讯鼓励团队把 AI 当作提高效率的工具，而不是替代人员；团队可以保持较小规模，同时增加内容产出和迭代次数。",
+        "采访中列出的使用场景包括概念图、绑定、动作匹配、代码审查和制作管理机器人。腾讯对生成式内容采取更谨慎的做法，要求数据留在工作室范围内，并关注训练数据和生成内容的版权归属。"
+      ],
+      "url": "https://www.gamesindustry.biz/inside-tencents-long-term-strategy-live-service-ai-tools-and-evergreen-titles"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "OpenAI Game Builders Seoul 展示 AI 游戏制作协作流程",
+        "body": "Inven Global 报道 8 月 31 日在首尔举行的 OpenAI Game Builders Seoul：活动介绍了 Com2uS 的 Hive Axyl AI 游戏后端平台，开发者导师分享 AI 代码生成实践；40 支入选队伍进行 3 分钟方案展示和 5 小时现场开发。",
+        "url": "https://www.invenglobal.com/articles/25399/ai-game-hackathon-openai-game-builders-seoul-kicks-off"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：大型游戏公司正把 AI 先部署到可控的生产环节，再逐步评估内容生成。",
+      "概念、美术绑定、动作匹配、代码审查和制作管理形成较清晰的工具化落点。",
+      "版权、数据隔离和玩家接受度仍是生成式内容扩张前必须处理的约束。"
+    ]
+  }
+}
