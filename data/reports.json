@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-09-05",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "腾讯游戏披露 AI 在概念、美术绑定、动作匹配、代码审查和制作管理中的协作边界。",
+      "file": "2026-09-05.json"
+    },
+    {
       "date": "2026-09-04",
       "title": "每日 AI 游戏综合日报",
       "summary": "OpenAI 发布 Playco 游戏原型案例：GPT-6 Astra 支持快速生成、试玩和自验证。",
