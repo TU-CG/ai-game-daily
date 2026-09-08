@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-08",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "EA Sports 被报道称将在《NHL 27》中以生成式 AI 扩充比赛解说语音；其余候选未通过来源与时效筛选。",
+  "items": [
+    {
+      "title": "《NHL 27》被曝以生成式 AI 扩充比赛解说语音",
+      "paragraphs": [
+        "IGN 引述资深体育解说员 John Buccigross 称，EA Sports 正在《NHL 27》中使用生成式 AI 生成游戏内解说语音。他表示，EA 曾向他播放过以其声音生成的片段。",
+        "Buccigross 同时提到，生成内容偶尔会误解冰球术语，例如将观众席称作 chairs 而非 seats。该信息目前来自解说员在播客中的公开表述，并非 EA Sports 的独立产品公告；它反映了生成式语音正被用于补充体育游戏的解说覆盖。"
+      ],
+      "url": "https://www.ign.com/articles/nhl-27-is-using-ai-generated-voiceover-for-in-game-commentators-john-buccigross-says"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "本周无更新",
+        "body": "过去 7 天未发现可与本日报新闻区分、且能明确关联游戏研发或内容生产工作流的新增高质量材料。"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：体育游戏的生成式 AI 应用开始从文本和美术讨论，延伸到高频、情境化的解说内容补充。",
+      "解说语音的可用性取决于术语、语境和听感控制；公开示例中的术语误判说明人工审核仍不可省略。",
+      "对于此类功能，应区分开发方正式披露与外部参与者的公开说法，并持续关注授权、报酬与质量控制安排。"
+    ]
+  }
+}
