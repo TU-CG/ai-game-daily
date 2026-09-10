@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-10",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "Aura 1.0、n8n Assistant、Premiere 与 Acrobat 更新覆盖游戏开发验证、跨应用自动化和内容生产。",
+  "items": [
+    {
+      "title": "Aura 1.0 将游戏生成、项目记忆与试玩验证整合进开发流程",
+      "paragraphs": [
+        "Ramen 公布面向 Unity 和 Unreal Engine 的 Aura 1.0，加入项目记忆、多项目支持、自定义智能体和动态工作流，并扩展至 Mac 与 Epic Fab 商店。",
+        "根据公司公告，验证智能体可以在无需开发者操作的情况下试玩游戏，并行验证三个测试用例；项目记忆可保留跨对话的关键事实与变更。通过 Fab 获取的版本还为使用自定义 Unreal 引擎构建的开发者提供 C++ 源码支持。"
+      ],
+      "url": "https://www.businesswire.com/news/home/20260909618328/en/"
+    },
+    {
+      "title": "n8n 推出可构建、执行与调试自动化的 AI 助手",
+      "paragraphs": [
+        "n8n 发布 n8n Assistant，用户用自然语言描述需求后，助手可以规划流程，在画布中建立并连接节点，引导用户配置所需凭据，执行流程并根据运行记录修复错误。生成结果保留为标准 n8n 工作流，可由团队继续手动编辑和维护。",
+        "该功能替代此前的 AI Workflow Builder，目前仍处于预览阶段。新建的非企业 Cloud 实例默认启用；Docker 自托管支持从 n8n 2.36 起使用，需配置模型密钥和环境变量。凭据访问与工作流启用需要用户确认。"
+      ],
+      "url": "https://blog.n8n.io/introducing-n8n-assistant/"
+    },
+    {
+      "title": "Premiere 26.5 支持在剪辑流程内生成视频与音效",
+      "paragraphs": [
+        "Adobe 在 Premiere 26.5 中加入 Generative Media Tool，用户可直接通过文本提示生成视频或音效，并将结果作为可编辑片段用于序列。工具支持选择 Adobe Firefly 或合作伙伴模型，也能使用现有画面作为视觉参考继续迭代。",
+        "同一版本扩展了 Generative Extend 的素材支持范围，覆盖 360p 至 4K UHD、任意宽高比，以及隔行扫描或非方形像素素材。"
+      ],
+      "url": "https://community.adobe.com/announcements-727/what-s-new-in-adobe-premiere-26-5-september-2026-1641187"
+    },
+    {
+      "title": "Acrobat 将共享文档库、AI 摘要与 Adobe Express 模板连接起来",
+      "paragraphs": [
+        "Adobe 为 Acrobat 的 Productivity Agent 增加交互式报告、摘要幻灯片、个人播客与音频摘要。用户可将文档或网页链接放入 PDF Space，再将其中的信息转换为不同形式的内容。",
+        "企业功能 Knowledge Base 支持从 SharePoint 和 Google Drive 同步文件，并跨 PDF、Office 文件、网页、文本和邮件进行问答；Analyzer 可从大量文档中提取结构化信息。新增 Stylize 功能则调用 Adobe Express 模板，将源文档内容重新排版为报告或演示文稿。"
+      ],
+      "url": "https://news.adobe.com/news/2026/09/adobe-productivity-agent-in-acrobat-now-transforms-complex-documents"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Neural4D 在生成前加入四边面拓扑选项",
+        "body": "Neural4D 为 Text to 3D 和 Image to 3D 加入 Quad Mesh 选项，允许用户在生成前选择四边面拓扑，并指定 1,000 至 100,000 的目标面数。生成流程支持可选纹理与 PBR，结果可导出为 OBJ、FBX、GLB、USDZ、STL 或 BLEND，供后续编辑和动画制作使用。",
+        "url": "https://nasa.einnews.com/pr_news/940827196/neural4d-introduces-quad-mesh-generation-for-easier-3d-editing-and-animation"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：本期更新覆盖生成后的验证、现有软件内的编辑，以及跨文档和应用的数据连接。",
+      "开发自动化加入执行反馈：Aura 提供试玩验证，n8n Assistant 根据运行记录调试工作流。",
+      "内容生成进入日常软件：Premiere 可直接生成视频和音效，Acrobat 可将文档转换为多种内容形式。",
+      "资产与知识连接到后续工作：Neural4D 提供拓扑和导出选项，Acrobat 从共享文件库同步资料并调用设计模板。"
+    ]
+  }
+}
