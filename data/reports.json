@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-09-10",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "Aura 1.0、n8n Assistant、Premiere 与 Acrobat 更新覆盖游戏开发验证、跨应用自动化和内容生产。",
+      "file": "2026-09-10.json"
+    },
+    {
       "date": "2026-09-09",
       "title": "每日 AI 游戏综合日报",
       "summary": "过去 24 小时未发现经过原始材料核验、且不与此前报道重复的 AI 游戏行业实质更新。",
