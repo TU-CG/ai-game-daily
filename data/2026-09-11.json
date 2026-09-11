@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-11",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期关注 DoiT 的跨应用 MCP 操作与 Mastra 的工作区搜索；工作流追踪补充 Unity 官方技能插件、DaVinci Resolve 和 Mastra Factory 的近期更新。",
+  "items": [
+    {
+      "title": "DoiT 将云成本调查连接到 Linear、GitHub 与 Notion",
+      "paragraphs": [
+        "DoiT 为 Cloud Intelligence 加入远程 MCP 服务器连接，提供 Linear、GitHub、Notion 和 Atlassian 预设，也支持团队自建服务器。助手可在同一对话中结合云成本数据调用外部工具，例如先查询是否已有异常费用工单，再准备包含成本背景的新工单。",
+        "该功能已向全部 Cloud Intelligence 客户开放。管理员统一连接服务器并配置工具权限，使用者分别授权自己的第三方账户；写入操作会展示具体请求并等待确认。这套交互同时覆盖平台界面、Slack 和 DoiT MCP 服务入口。"
+      ],
+      "url": "https://www.doit.com/changelog/ai-assistant-with-mcp-servers"
+    },
+    {
+      "title": "Mastra 工作区新增跨数据源的关键词与语义搜索",
+      "paragraphs": [
+        "Mastra 发布 Filesystem Search，支持把磁盘、数据库或 API 中的内容建立为智能体可搜索的索引，并按关键词、语义相似度或混合模式查询。文件系统可使用本地目录，也可连接 S3、Google Drive 等远程来源。",
+        "该能力要求 @mastra/core 1.31.0 或更新版本。关键词搜索使用内存中的 BM25 索引，语义搜索连接向量数据库与嵌入模型；工作区可在启动时自动索引指定文件，并将搜索结果交给智能体使用。"
+      ],
+      "url": "https://mastra.ai/blog/introducing-filesystem-search"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Unity 发布官方编码智能体技能插件",
+        "body": "Unity 公布官方 Claude Code 插件，首批提供 29 项技能，覆盖 UI、渲染、精灵、音频、多人联网和商业化等引擎工作。其公开仓库列出 Claude Code、Codex 与 Grok 的安装方式，适用于 Unity 6 及以上版本；仓库明确说明当前分发的是技能，不包含 hooks 或 MCP 服务器。",
+        "url": "https://unity.com/blog/unity-plugin-for-claude-code"
+      },
+      {
+        "heading": "DaVinci Resolve 21.1 加入 AI 助手集成",
+        "body": "Blackmagic Design 在 DaVinci Resolve 21.1 公告中加入 AI 助手集成，可用于整理媒体和批量渲染。官方公告同时列出扩展相机格式支持、增强多机位流程，以及 Fusion 中新增的 25 项以上 Krokodove 图形工具。",
+        "url": "https://creativecow.net/blackmagic-design-announces-davinci-resolve-21-1/"
+      },
+      {
+        "heading": "Mastra Factory Beta 将问题处理拆成可配置阶段",
+        "body": "Mastra Factory Beta 连接 GitHub、Linear 和 Slack，以可配置看板组织问题接收、分诊、规划、开发和评审。各阶段可分别设为手动或自动，智能体在沙盒中工作，用户可查看代码差异、工具活动与工作区文件，并在执行过程中补充上下文或调整范围。",
+        "url": "https://mastra.ai/blog/announcing-mastra-factory-beta"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：从本期材料看，AI 工具更新集中在接入现有软件、检索项目资料和组织连续任务。",
+      "跨应用操作延伸到任务处理：DoiT 把云成本调查与外部工单系统连接起来，Resolve 将助手接入媒体整理和批量渲染。",
+      "项目知识成为助手的配套能力：Mastra 将关键词与语义搜索纳入工作区，Unity 将引擎实践封装为可安装技能。",
+      "自动化开始按阶段配置：Mastra Factory 分别设置分诊、规划和评审的执行模式，DoiT 则在具体写入请求前保留确认步骤。"
+    ]
+  }
+}
