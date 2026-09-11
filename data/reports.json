@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-09-11",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "本期关注 DoiT 的跨应用 MCP 操作与 Mastra 的工作区搜索；工作流追踪补充 Unity 官方技能插件、DaVinci Resolve 和 Mastra Factory 的近期更新。",
+      "file": "2026-09-11.json"
+    },
+    {
       "date": "2026-09-10",
       "title": "每日 AI 游戏综合日报",
       "summary": "Aura 1.0、n8n Assistant、Premiere 与 Acrobat 更新覆盖游戏开发验证、跨应用自动化和内容生产。",
