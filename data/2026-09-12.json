@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-12",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期收录 Basedash 对话式看板与 Intercom 连接器模板两项更新，并追踪 Cursor、Notion 的近期智能体工作流变化。过去 24 小时未找到通过时效、去重与来源核验的直接游戏行业实质新闻。",
+  "items": [
+    {
+      "title": "Basedash 支持通过对话创建完整看板并在 Slack 中共享",
+      "paragraphs": [
+        "Basedash 的聊天助手现可创建和编辑完整看板，包括排列图表、添加标签页，以及设置变量和筛选器。生成过程中，对话内会展示带真实图表数据的交互预览，用户可以直接查看标签页和筛选效果。",
+        "生成结果是可继续打开和编辑的正式看板，并遵循现有访问权限。从 Slack 发起对话时，助手会返回带名称的看板链接，供团队打开查看。"
+      ],
+      "url": "https://www.basedash.com/changelog/2026-09-11"
+    },
+    {
+      "title": "Intercom 为 Fin 正式提供 Stripe、Shopify 与 Statuspage 连接器模板",
+      "paragraphs": [
+        "Intercom 将数据连接器模板正式开放，首批覆盖 Stripe、Shopify 和 Statuspage。用户可以从工作区的连接器目录安装模板并修改配置，再直接提供给 Fin 智能体使用，或加入 Procedure 流程；此前需要手动配置连接器的技术细节。"
+      ],
+      "url": "https://www.intercom.com/changes/en/156987-connect-fin-to-your-tools-without-building-a-connector-from-scratch"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Cursor Projects 将持续项目交给协调智能体",
+        "body": "Cursor 推出 Projects 测试版，由协调智能体规划工作、分派实现任务并返回成果供用户检查。项目在云端运行，需要本机测试时可启动本地智能体；研究资料、产物和项目经验通过共享文件同步。Projects 还支持订阅 Slack 频道、按计划运行及跟踪拉取请求，官方表示正在向所有用户逐步开放。",
+        "url": "https://cursor.com/changelog"
+      },
+      {
+        "heading": "Notion 为两类智能体分别设置可用模型",
+        "body": "Notion 新增工作区模型控制，工作区所有者可分别选择 Notion Agent 与 Custom Agents 能使用的 AI 模型，并为 Custom Agents 设置默认模型。该设置向 Business 和 Enterprise 套餐开放，入口位于 Notion AI 的通用设置。",
+        "url": "https://www.notion.com/releases"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：本期材料显示，AI 应用协作正围绕可编辑成果、现成连接器和持续项目执行扩展。",
+      "对话结果进入团队工具：Basedash 将生成内容保存为可编辑看板，并通过 Slack 返回共享入口。",
+      "外部服务接入走向模板化：Intercom 将常见服务连接封装为可安装模板，供智能体直接调用或纳入流程。",
+      "持续执行与集中配置同步发展：Cursor 为长期项目提供协调和共享上下文，Notion 允许工作区统一设置智能体可用模型。"
+    ]
+  }
+}
