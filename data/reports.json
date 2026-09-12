@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-09-12",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "本期收录 Basedash 对话式看板与 Intercom 连接器模板两项更新，并追踪 Cursor、Notion 的近期智能体工作流变化。过去 24 小时未找到通过时效、去重与来源核验的直接游戏行业实质新闻。",
+      "file": "2026-09-12.json"
+    },
+    {
       "date": "2026-09-11",
       "title": "每日 AI 游戏综合日报",
       "summary": "本期关注 DoiT 的跨应用 MCP 操作与 Mastra 的工作区搜索；工作流追踪补充 Unity 官方技能插件、DaVinci Resolve 和 Mastra Factory 的近期更新。",
