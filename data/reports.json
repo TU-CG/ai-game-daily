@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-09-14",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "本期收录 Collibra 与 Databricks 的智能体数据集成更新，并追踪 Atlassian Rovo MCP v2 的正式发布。过去 24 小时未检索到通过时效、来源与去重核验的直接游戏行业实质新闻。",
+      "file": "2026-09-14.json"
+    },
+    {
       "date": "2026-09-13",
       "title": "每日 AI 游戏综合日报",
       "summary": "本期收录 LEVEL-5 对 AI 制作方式的新说明，并追踪 ServiceNow 的智能体构建与测试更新。AI 应用协作已独立检索，过去 24 小时暂无通过原始正文、时效与去重核验的新增条目。",
