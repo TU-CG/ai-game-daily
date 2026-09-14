@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-14",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期收录 Collibra 与 Databricks 的智能体数据集成更新，并追踪 Atlassian Rovo MCP v2 的正式发布。过去 24 小时未检索到通过时效、来源与去重核验的直接游戏行业实质新闻。",
+  "items": [
+    {
+      "title": "Collibra 新增 Databricks 文本分类智能体同步",
+      "paragraphs": [
+        "Collibra 的 Databricks AI 集成新增对 Agent Bricks 文本分类组件的采集支持。每个文本分类组件会登记为 AI Agent 资产，并关联为其提供数据的 Unity Catalog Volume 或 Table，用户可查看分类器用于归类文档或数据行的数据来源。",
+        "官方更新记录将该功能列为商业环境正式可用，并列出对应的 Edge 版本 2026.6.98 和 2026.3.189。"
+      ],
+      "url": "https://productresources.collibra.com/docs/collibra/latest/Content/ReleaseNotes/Archive/ref_release-202606.htm"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Atlassian Rovo MCP v2 正式开放更多协作工具",
+        "body": "Atlassian Rovo MCP v2 已正式可用，新增 Loom、Goals、Projects、Team、Focus、Talent 和 Bitbucket 支持，并扩展 Jira 与 Confluence 工具，覆盖附件、白板、数据库和冲刺等对象。新版提供独立 MCP 端点；第三方平台的插件和连接器正在更新，部分客户端可能需要重新添加连接。通过 MCP 网关接入时，还可使用完整工具列表端点，每页返回 50 个工具。",
+        "url": "https://developer.atlassian.com/cloud/rovo-mcp/changelog/"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：本期材料显示，AI 应用协作正在扩展可连接的工作对象，并补充智能体与数据来源之间的关联；有限样本尚不足以判断游戏行业整体变化。",
+      "协作接入范围扩大：Rovo MCP v2 将视频、代码托管与项目目标等更多产品纳入同一接入体系。",
+      "工具操作对象细化：Jira 与 Confluence 的 MCP 支持进一步覆盖附件、白板、数据库和冲刺。",
+      "智能体的数据关系更清晰：Collibra 将文本分类组件登记为智能体资产，并关联其输入数据所在的卷或表。"
+    ]
+  }
+}
