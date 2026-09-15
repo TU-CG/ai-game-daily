@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-15",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期收录 3 项 AI 应用协作与工具更新，涉及 MCP 协议兼容、插件调用结果反馈和搜索请求控制，并追踪 Gemini CLI 的近期稳定版变化。过去 24 小时未检索到通过时效、来源与去重核验的直接游戏行业实质新闻。",
+  "items": [
+    {
+      "title": "Google Cloud MCP 服务支持新版协议",
+      "paragraphs": [
+        "Google 宣布，Google 与 Google Cloud 的 MCP 服务已支持 Model Context Protocol 2026-07-28 版本。官方更新记录同时确认，此次变更向后兼容 2025-11-25 版本。"
+      ],
+      "url": "https://docs.cloud.google.com/mcp/release-notes"
+    },
+    {
+      "title": "Moveworks 为插件调用明确显示失败和空结果",
+      "paragraphs": [
+        "Moveworks 已向 Standard 客户发布工具调用结果反馈升级。助手遇到失败或空结果调用时，会明确显示失败或无结果状态，并给出用户下一步可采取的操作，避免将这些调用呈现为成功。",
+        "首批更新主要覆盖 Agent Studio Plugins；MCP 调用失败透明度、Hera 功能对齐以及更细化的操作错误信息尚未包含在此次发布中。"
+      ],
+      "url": "https://community.moveworks.com/product-updates/minor-ml-upgrade-clearer-outcomes-for-tool-calls-standard-release-3878"
+    },
+    {
+      "title": "Google Agent Search 开放按请求控制搜索附加功能",
+      "paragraphs": [
+        "Google Agent Search 的 searchAddonSpec 已在 v1 API 正式可用。采用可配置定价的应用可在程序发起的单次搜索请求中关闭附加功能，按每次请求选择是否使用相应能力。"
+      ],
+      "url": "https://docs.cloud.google.com/generative-ai-app-builder/docs/release-notes"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Gemini CLI 稳定版完善 MCP 认证与工作区信任处理",
+        "body": "Gemini CLI v0.59.0 稳定版修复了 MCP OAuth 元数据发现和认证过程中的服务器端请求伪造问题；同时调整工作区信任机制，在无法确认信任时默认拒绝，并在受限模式下过滤可用 MCP 服务。官方发布记录将这些改动列入该稳定版。",
+        "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.59.0"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：本期新增材料集中于 AI 工具接入的兼容性、执行反馈和请求控制，尚不足以判断游戏行业整体变化。",
+      "协议兼容持续推进：Google Cloud MCP 服务支持新版协议，同时保留旧版兼容。",
+      "调用结果表达更明确：Moveworks 将插件调用失败和空结果分别呈现，并补充后续操作提示。",
+      "请求配置更加细化：Agent Search 允许应用逐次选择搜索附加功能。"
+    ]
+  }
+}
