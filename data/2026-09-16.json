@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-16",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期收录 1 项开发者公开的 AI 游戏原型案例及 2 项 AI 协作更新，涵盖代码与资产制作、对话式集成开发和跨系统共享上下文；另追踪声音驱动的 Unity 场景生成研究与事件触发的项目协作流程。",
+  "items": [
+    {
+      "title": "独立开发者分享用 Astra 制作龙主题浏览器游戏原型",
+      "paragraphs": [
+        "开发者 Nightstar31415 在公开开发帖中介绍了一款以龙为主角的俯视角模拟游戏，并提供浏览器试玩链接。作者表示，自己不懂编程，通过向 AI 提出想法和反馈，经历约 200 次迭代，加入玩法、修复错误并调整性能；评论中说明项目使用 JavaScript/HTML5，资产也由其所称的 Astra 生成。上述制作过程与迭代次数均为作者自述。",
+        "作者描述的玩法包括狩猎、收集黄金、城市发展、声望变化和城市间冲突，并展示了游戏截图。项目目前仍处于原型阶段；在 Steam 发布是作者的后续意向，尚不是已完成的发行成果。"
+      ],
+      "url": "https://www.reddit.com/r/aigamedev/comments/1wh6npd/from_idea_to_game_dev_in_a_week/"
+    },
+    {
+      "title": "Frends MCP 开放从 AI 客户端创建、修改和诊断集成流程",
+      "paragraphs": [
+        "Frends 宣布 Frends MCP 已可用，可将客户的 Frends 环境连接到 Claude、ChatGPT 等 AI 客户端。开发者用自然语言描述需求后，系统可搜索任务目录、选择并配置连接器，生成完整的 Process 草稿；团队也可依据实际执行历史询问运行失败原因、慢流程和系统依赖关系。",
+        "草稿与变更须在 Frends 界面内由开发者审查和批准后才能进入生产。AI 操作绑定具名用户，并沿用该用户的既有权限；请求会被记录。Frends 表示已在正式发布前将这一能力用于客户交付。"
+      ],
+      "url": "https://frends.com/press/frends-launches-frends-mcp-to-let-teams-build-and-maintain-integrations-from-their-ai-clients"
+    },
+    {
+      "title": "Egnyte 发布供内部与外部智能体使用的 Context Layer",
+      "paragraphs": [
+        "Egnyte 发布现已可用的 Context Layer，将内容、人员、项目、业务系统及组织知识之间的关系整理为任务相关的上下文映射。它通过实时连接随信息变化更新，并供 Egnyte AI、任务型智能体、工作流及通过 MCP 接入的外部 AI 平台使用，访问范围沿用现有用户权限。",
+        "同步公布的建筑、工程与施工功能包括文档自动分类和元数据提取、Project Center 中的 AI Actions，以及 AI Marketplace 中可单独配置或组合使用的任务型智能体。公告称这些行业功能也已可用。"
+      ],
+      "url": "https://www.egnyte.com/press-releases/egnyte-launches-context-layer-to-power-more-accurate-ai-agents-across-business-workflows"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "EchoForge 团队复盘从空间录音到 Unity 场景的研究流程",
+        "body": "ESGI 的 Anamaria Buliga 与 Kamil Tebani 在近期访谈中说明，EchoForge 用 YAMNet 识别声音事件，结合录音中的粗略方向、时间段与置信度，形成可解释的音频场景图，再转换为 Unity 可读取的地形、植被、水域和声源区域布局。团队将成果定位为研究原型：它生成声音所暗示的合理场景，不会精确还原真实几何、物体位置或尺度；更复杂声音识别与实时生成仍属后续方向。",
+        "url": "https://80.lv/articles/echoforge-uses-spatial-sound-to-build-3d-worlds-in-unity"
+      },
+      {
+        "heading": "Linear Loops 将项目变更接到文档编辑与 Slack 通知",
+        "body": "Linear 扩展 Loops 的事件触发范围，覆盖项目与战略事项的状态、负责人、日期和里程碑变化，以及迭代周期和任务变化。Loop 可据此修改 Linear 文档，并结合工作区及连接工具的上下文向 Slack 发布更新；官方示例是项目日期变动后自动修改发布计划并通知相关人员。每次运行会开启一段 Linear Agent 对话，团队可在运行结束后继续审查、补充上下文或安排后续操作。",
+        "url": "https://linear.app/changelog/2026-09-14-loops-for-product-management"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：本期材料展示了 AI 参与游戏原型迭代，以及协作工具把上下文、执行和人工审查接入具体流程的进展；单个开发者案例不足以代表普遍研发效率。",
+      "游戏制作案例覆盖多种工作：本期原型作者将玩法迭代、调试、性能调整与资产生成都纳入 AI 辅助过程。",
+      "协作流程保留明确的人类介入点：Frends 要求生产变更审批，Linear 允许团队在自动运行后继续审查和引导。",
+      "跨工具执行更依赖共享上下文：Egnyte 提供任务相关的关系映射，Linear 用项目事件联动文档和 Slack。"
+    ]
+  }
+}
