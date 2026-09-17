@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-17",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时内，本期核验并收录 1 项 AI 创作协作更新：Figma 开放 Weave 工具社区发布。游戏研发主线未找到同时满足时效、实质变化与去重要求的新材料；七日追踪补充 AFTER LIGHT 的制作复盘和 Notion 的团队智能体工作流。",
+  "items": [
+    {
+      "title": "Figma 开放 Weave 工具社区发布，生成流程可直接在设计画布运行",
+      "paragraphs": [
+        "Figma 开放将 Weave 中构建的工具发布到 Figma Community，供用户直接在 Figma Design 画布运行。付费 Weave 用户可发布工具，拥有 Figma Full seat 的用户可运行这些工具，将制作好的多步骤图像生成流程交给其他设计者复用。",
+        "官方展示的工具包括将情绪板转换为房间效果图、按指定比例扩展图片并为文字留白，以及从文字生成建筑概念草图。其中，Image Reframer 可指定主体在新画面中的位置，扩展部分匹配原图的光照、阴影和透视。这次新增的是社区发布能力；此前官方已提供一批预制 Weave 工具。"
+      ],
+      "url": "https://www.figma.com/blog/try-these-5-weave-tools-and-share-your-own/"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "AFTER LIGHT 开发者复盘从生成动画到 Unity 游戏资产的流程",
+        "body": "开发者 Platypus 在七日内的开发日志中介绍，正在制作的 AFTER LIGHT 将 3D 场景与 2D 像素角色结合，由 Codex 配合 Unity 插件和 Blender MCP 推进制作。作者用 GPT Image 生成角色参考图，再用 MiniMax H3 Max 生成短动作视频，经 ffmpeg 抽帧、缩放和选帧后形成精灵动画；声音使用 ElevenLabs 接口生成。资产可保存为 PNG 和 Aseprite 格式，角色徽章丢失等不一致仍需手工修补。这是作者披露的在研游戏流程，尚非已发行作品的制作结案。",
+        "url": "https://community.openai.com/t/ai-game-studio-dev-log-by-platypus/1397035"
+      },
+      {
+        "heading": "Notion 3.7 将团队技能、子智能体与外部工具接入同一流程",
+        "body": "Notion 的七日内更新允许团队在共享技能库维护可复用指令，并导出 SKILL.md 及支持文件供本地智能体使用；内容变更后会提示重新下载。Custom Agent 可调用具有独立指令、上下文、权限和模型的其他 Custom Agents，再汇总结果，例如把问题分别交给缺陷分流与指标分析智能体，最后生成 Slack 更新。Custom MCP 连接可接入 GitHub、Amplitude 等工具，对外部工具的修改需用户确认；这一连接能力处于 Business 和 Enterprise 方案的测试阶段。",
+        "url": "https://www.notion.com/en-gb/releases/2026-09-15"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：本期可核验材料集中在创作流程的共享复用与明确分工；过去 24 小时缺少合格的游戏研发新案例，不据此推断行业整体进度。",
+      "生成流程开始作为工具共享：Figma 将 Weave 多步骤流程交付到社区，使用者可在设计画布直接运行。",
+      "游戏资产制作仍包含人工整理：AFTER LIGHT 的公开流程同时使用视频抽帧、格式转换和 Aseprite 修补。",
+      "团队协作同时覆盖指令与任务：Notion 让团队共享技能，并由主智能体分派子任务、汇总结果。"
+    ]
+  }
+}
