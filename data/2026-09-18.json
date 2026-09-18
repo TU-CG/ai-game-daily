@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-18",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期收录游戏研发 AI 使用调查，以及自有机器上的智能体执行、AI 客户端向内容平台上传文件两项协作更新。过去 24 小时未找到通过时效与去重核验的具名游戏制作新案例；七日工作流追踪补充 Autodesk 的素材识别与自动流转技术预览。",
+  "items": [
+    {
+      "title": "CESA 公布游戏研发 AI 使用调查，人工确认与修订是主要管理做法",
+      "paragraphs": [
+        "CESA 发布《游戏产业报告 2026》预览版，披露分别面向游戏开发者和 CESA 会员企业的两项调查。受访游戏开发者中，85.8% 表示在工作中使用生成式 AI；会员企业最期待的效果是业务效率和生产力提升。这一数字描述受访者的使用情况，公告未将其表述为已实现的效率增幅。",
+        "在生成式 AI 的管理与运用措施中，选择由人进行确认、修订和监修的回答最多，指定或限制使用工具、避免直接采用原始输出也较常见。公告没有披露可对应到具体游戏的制作成果；报告完整版计划于 12 月上旬推出。"
+      ],
+      "url": "https://www.cesa.or.jp/information/info6/001290/cesa_2026.html"
+    },
+    {
+      "title": "AgentRQ 新增 Machines，可在自有电脑运行智能体并远程接管终端",
+      "paragraphs": [
+        "AgentRQ v0.7.0 新增 Machines：用户在自有电脑安装并注册 agentrqd 后，可在控制面板选择机器与工作区目录启动智能体。智能体使用该机器已有的代码仓库和工具链，页面显示机器状态、智能体数量及资源读数；守护程序提供 Linux、macOS 和 Windows 版本。",
+        "浏览器中的终端支持实时查看、键盘输入、窗口尺寸调整及中断操作，用户可以从其他设备介入正在执行的任务。两名用户同时查看同一终端时，界面会显示另一位查看者。官方说明，守护程序目前启动的程序类型限定为 claude-code 和 acp-gateway。"
+      ],
+      "url": "https://agentrq.com/blog/run-agents-on-your-own-machines"
+    },
+    {
+      "title": "Easy MCP AI 支持 AI 客户端直接上传文件至 WordPress 媒体库",
+      "paragraphs": [
+        "Easy MCP AI v1.7.18 在更新日志中新增从 AI 客户端向 WordPress 媒体库上传文件的能力，让已连接的客户端可以把文件写入网站的媒体管理流程。同版还新增无法打开浏览器的 MCP 客户端所需的设备登录，并扩展调用审计记录，包含用户、客户端和耗时等信息。"
+      ],
+      "url": "https://easymcpai.com/changelog"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Autodesk Flow Capture 将素材语义检索连接到自动整理与审阅",
+        "body": "Autodesk 在七日内介绍 Flow Capture 的 Smart Search 与 Smart Actions 技术预览。系统使用 TwelveLabs 模型分析视频、音频和图像，用户可用自然语言定位素材中的匹配片段；新素材完成索引后，可按描述的条件自动加标签、设置状态、加入播放列表、创建评论、设置入出点或发送通知。官方以发现穿帮镜头并汇集到审阅列表为示例，说明列表还可通过 AAF 和 Media Composer 中的 Flow Capture 面板进入 Avid 剪辑流程。这是已开放的技术预览与官方示例，未披露具体游戏团队的使用成果。",
+        "url": "https://blogs.autodesk.com/media-and-entertainment/2026/09/15/ai-video-search-flow-capture-smart-search-actions/"
+      }
+    ]
+  },
+  "trend": {
+    "title": "今日趋势",
+    "points": [
+      "结论：本期材料集中呈现人工介入、跨设备执行和内容流转的具体做法，尚不足以判断游戏研发效率的整体变化。",
+      "人工参与仍有明确位置：CESA 调查记录了确认、修订与监修，AgentRQ 则提供执行中的终端接管。",
+      "协作延伸到已有工作环境：AgentRQ 可在自有电脑及既有工具链上运行智能体，Easy MCP AI 可将客户端文件上传到 WordPress。",
+      "内容识别开始连接后续动作：Flow Capture 技术预览把素材匹配结果用于自动整理、通知和审阅流转。"
+    ]
+  }
+}
