@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-21",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，本期核验收录两项 AI 协作更新，涉及子智能体会话、任务投递回执和跨应用资料归档。游戏研发主线未找到同时满足时效与去重要求的新增新闻；七日工作流追踪补充一个独立游戏团队的制作复盘，以及跨仓库研发协作流程。",
+  "items": [
+    {
+      "title": "LobsterAI 新增子智能体会话展示与微信任务投递回执",
+      "paragraphs": [
+        "网易有道开源项目 LobsterAI 发布 2026.9.20 版本，新增子智能体会话可见性功能，以及定时任务向微信投递结果的回执功能。发布说明同时列出微信目标标识保留大小写、重新发送被拒时给出解释的修复。",
+        "同版为应用内的智能体浏览器增加 Passkey／WebAuthn 支持。以上为官方发布说明列出的已发布功能；说明未提供具名游戏团队采用这些能力的研发案例。"
+      ],
+      "url": "https://github.com/netease-youdao/LobsterAI/releases/tag/2026.9.20"
+    },
+    {
+      "title": "ForeverLM 接入 Claude Code 会话文件，并开放 Zoom 录音处理工具",
+      "paragraphs": [
+        "ForeverLM 的 0.69.0 更新允许 Claude Code 中的助手将自身会话文件交给 import_review_chat，连同会话标识导入用户提问、助手回答、表格、来源链接及时间记录。后续再次调用可将归档同步至会话文件的最新内容；0.68.0 同时加入通过插件持续保存资料讨论的流程。",
+        "0.70.0 为尚未由 Zoom 转换的录音提供待处理列表，用户可选择在 Zoom 中转换或忽略。助手也可通过 list_unconverted_zoom_recordings 和 resolve_unconverted_zoom_recording 执行对应操作；转换完成后，ForeverLM 再归档并转录录音。"
+      ],
+      "url": "https://docs.foreverlm.com/changelog"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "GiGA BRAIN TACTICS：AI 实现与 Unity 人工测试反复迭代",
+        "body": "本周，GiGA BRAIN TACTICS 的开发者以双人团队身份分享 Unity roguelite 自动战斗游戏的制作流程：提出想法、描述任务、让 AI 实现，再到 Unity 测试、找问题并迭代。作者在回复中称主要使用 ChatGPT／Codex 与 Claude；随着战斗、界面、成长、本地化、音频和存档系统相互影响，团队开始更系统地记录需求、系统说明与既有决定，并加强改动测试。该材料属于开发者自述；Steam 页面列出开发商 One Solution Games，游戏仍为尚未发售状态。",
+        "url": "https://www.reddit.com/r/aigamedev/comments/1wknczy/our_journey_into_ai_gamedev_here_are_the_results/"
+      },
+      {
+        "heading": "Sourcegraph：由总体计划分派跨仓库修改，再处理 CI 与冲突",
+        "body": "Sourcegraph 本周发布的 Agentic Batch Changes 将 Deep Search 与批量修改执行引擎连接：先与用户制定计划，确定性修改可使用脚本，需要逐仓判断的工作则可委派给 Claude Code 或 Codex，并通过 Sourcegraph MCP 提供上下文。流程可纳入测试与代码检查，遇到需要决定的问题时暂停询问；推送后可获取 CI 日志、调整计划或交由编程智能体修复，并处理合并冲突、追踪合并状态。官方披露的 beta 案例包括约 80 个仓库的 GitHub Actions 漏洞排查和补丁工作，未公开客户名称。",
+        "url": "https://sourcegraph.com/changelog/agentic-batch-changes-ga"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期材料集中于协作过程的可见性、记录保存和分步验证；游戏制作证据仍主要来自开发者公开复盘。",
+      "子任务与交付状态进一步显式呈现：LobsterAI 将子智能体会话展示和微信定时任务回执纳入新版。",
+      "跨应用协作保留更多原始资料：ForeverLM 支持从 Claude Code 会话文件归档完整对话，并衔接 Zoom 录音转换与转录。",
+      "人工测试与决策仍出现在研发流程中：GiGA BRAIN TACTICS 团队自行测试迭代，Sourcegraph 在跨仓库修改中保留用户决策环节。"
+    ]
+  }
+}
