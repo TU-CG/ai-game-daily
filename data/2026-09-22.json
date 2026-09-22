@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-22",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，本期收录一项 AI 协作产品更新。游戏研发主线未找到同时满足时效、实质内容与去重要求的新增新闻；七日工作流追踪补充一项开发者菜单制作实验，以及多智能体任务交接流程。",
+  "items": [
+    {
+      "title": "LittleHorse 发布 Saddle Command Center 1.3，加入智能体创建与预制任务执行组件",
+      "paragraphs": [
+        "LittleHorse 宣布 Saddle Command Center 1.3 已可使用，新增 AI 智能体创建功能、预制任务执行组件和智能体技能，并提供 JavaScript WfSpec SDK。该平台用于把人员、应用、AI 智能体及微服务纳入可观测的流程；JavaScript 开发者可通过新增 SDK 定义工作流。",
+        "公告同时披露 Sejal Learning Systems 已将 LittleHorse 嵌入其 AI 学习交付系统，用于编排无状态 AI 工作组件。Sejal 的系统架构负责人称，现有部署在未增加硬件的情况下取得 3 至 4 倍速度提升；这是客户自述，公告未提供独立测试数据。"
+      ],
+      "url": "https://www.globenewswire.com/news-release/2026/09/21/3365406/0/en/littlehorse-saddle-command-center-delivers-the-missing-action-layer-for-orchestrating-ai-successfully-using-the-business-as-code-paradigm.html"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "SBS Games：用 Unity 插件制作菜单，再按人工规则审查与测试",
+        "body": "SBS Games 的 Shahar Bar 分享了一次 Unity 6.4 菜单制作实验：Codex 配合 Unity 插件、CLI 与 Pipeline 包读取编辑器场景，按参考图搭建可编辑文字、六个按钮和导航。开发者要求替换模糊背景，并让智能体读取自己的十条 UI 规则；后续修改包括安全区域、层级结构和可复用按钮预制件。作者称，智能体在 Play Mode 检查点击、绘制顺序与布局，并在四种编辑器屏幕设置下通过检查。该材料为开发者自述的单次实验，参考图并非其游戏；按钮尚未连接玩法，也未进行手机真机测试。",
+        "url": "https://sbsgames.dev/blog/codex-unity-plugin"
+      },
+      {
+        "heading": "Agent Swarm：等待多个任务结果后续作，并记录分派依据",
+        "body": "Agent Swarm 本周发布说明列出任务结果驱动的续作流程：协调智能体可延后自己的任务，等待一个或多个被观察任务结束后再继续，例如汇总多个工作智能体的输出。路由同时保存分派理由与决策时的状态，区分显式指定与引擎默认选择。Swarm Extensions v1 允许通过 REST、MCP 和控制台管理钩子扩展包，主智能体可管理扩展生命周期，操作人员可限制并审计其启用；完整工作智能体还可录制浏览器 QA 会话供审查。",
+        "url": "https://docs.agent-swarm.dev/docs/releases/2026-09-21"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期可核验材料集中于任务编排、交接记录和人工验收；尚无符合今日筛选要求的新增游戏生产案例。",
+      "AI 与应用的协作继续以工作流承载：LittleHorse 将智能体创建、预制任务组件与 JavaScript 工作流定义纳入同一版本。",
+      "多智能体协作开始明确记录依赖与分派过程：Agent Swarm 支持等待多个任务结果，并保存路由决策依据。",
+      "游戏制作实验保留人工规则与执行验证：SBS Games 的菜单案例包含开发者要求、UI 规则审查和编辑器测试，完成范围仍限于菜单原型。"
+    ]
+  }
+}
