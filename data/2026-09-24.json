@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-24",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，本期收录一项 AI 协作更新，涉及人与智能体共享工作上下文，以及桌面智能体跨应用执行任务。游戏研发主线未找到同时满足时效、核验与去重要求的新增团队案例；七日工作流追踪补充一项已发布游戏的 MCP 内容编辑能力。",
+  "items": [
+    {
+      "title": "UiPath 发布 Cartographer 与 Delegate，连接共享工作上下文和跨应用任务",
+      "paragraphs": [
+        "UiPath 宣布 Cartographer 和桌面智能体 Delegate 正式可用。Cartographer 从文档、系统和人员提供的信息中整理并维护 Map of Work，供人和智能体共同读取；事实附带来源及核验者，遇到相互矛盾的回答时会要求澄清，修改须由负责人批准。",
+        "据官方说明，用户可用自然语言描述任务或演示操作，Delegate 随后在应用和业务系统之间执行，沿用平台的身份、权限和审计控制。同场展示的 Decision Ledger 与完整的自主测试体系仍处于预览或后续建设阶段，不能视为已完整交付。"
+      ],
+      "url": "https://www.uipath.com/blog/product-and-updates/biggest-product-announcements-fusion-2026"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "Boundless AI Fantasy：让外部智能体直接编辑游戏内容",
+        "body": "《Boundless AI Fantasy》开发者在首周更新记录中说明，游戏已加入 MCP 编辑器服务器。游戏运行时，本机上的 Hermes、Claude、Codex 等外部智能体可通过 HTTP 创建或修改角色、技能、地点、网格地图、任务和战役，配置说明随游戏提供。开发者明确将接口用途限定为内容实体制作，不参与游玩时的角色扮演；由游戏内 AI 自动生成内容及动态改变世界的后续方案仍在规划中。",
+        "url": "https://steamcommunity.com/games/3750150/announcements/detail/701027957162902225"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期材料呈现出共享上下文、跨应用执行和游戏内容编辑三种具体协作形式；新增游戏团队制作案例仍缺少合格证据。",
+      "共享上下文保留人工核验：Cartographer 为事实记录来源和核验者，并把矛盾澄清与修改批准交给人。",
+      "桌面协作覆盖跨应用执行：Delegate 接受任务描述或操作演示，在平台权限下完成操作。",
+      "游戏编辑器向外部智能体开放制作接口：Boundless AI Fantasy 的 MCP 已覆盖角色、地图、任务和战役编辑。"
+    ]
+  }
+}
