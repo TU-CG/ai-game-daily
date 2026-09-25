@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-25",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，本期收录三项实质更新：Meta 展示可在手机与浏览器间接续的 AI 游戏制作流程，Cloudflare 与 Nodus 分别更新智能体的工具接入和远程执行能力。Meta 工具仍在创作者测试及逐步开放阶段；未找到满足核验与去重要求的新增具名游戏团队制作复盘。七日工作流追踪补充 Hex 的应用内分析与定时交付流程。",
+  "items": [
+    {
+      "title": "Meta 推出 Horizon Create 与 Horizon Studio，开放游戏创作工具候补申请",
+      "paragraphs": [
+        "Meta 介绍了基于 Meta Horizon Engine 的两款 AI 游戏创作工具。手机应用 Horizon Create 接受文字描述或模板，生成可试玩的 2D、3D 游戏，并允许继续描述美术、角色、故事和进度系统的修改。浏览器端 Horizon Studio 在自然语言操作之外提供场景排列、资产替换、脚本参数调整和空间布局编辑。",
+        "两端共享资产、系统与迭代历史，项目可以相互接续。官方称发布后的游戏可获得在 Facebook、Instagram 和 Horizon 分发的资格。目前产品正与创作者社区测试，早期访问逐步开放，用户需加入候补名单；这些能力不代表已向所有开发者全面开放。"
+      ],
+      "url": "https://developers.meta.com/blog/meta-connect-recap-horizon-create-and-horizon-studio/"
+    },
+    {
+      "title": "Cloudflare MCP 服务门户正式可用，增加自主智能体认证与连接管理",
+      "paragraphs": [
+        "Cloudflare 宣布 MCP server portals 面向全部客户正式可用。门户将获准接入的 MCP 服务器汇集为一个端点，AI 客户端由此访问工具、提示词和资源，Cloudflare Access 记录相应活动。",
+        "相较公开测试阶段，门户增加了用于自主智能体和机器间访问的服务令牌认证，以及重新连接服务器、变更授权的会话管理。更新还包括为不支持动态客户端注册的服务配置静态 OAuth 客户端凭据、Code Mode 策略，以及通过 Gateway 进行 HTTP 日志记录和数据防泄漏扫描。"
+      ],
+      "url": "https://developers.cloudflare.com/changelog/post/2026-09-24-mcp-portals-ga/"
+    },
+    {
+      "title": "Nodus 接入编码智能体，将任务提交、日志检查和结果取回串成远程流程",
+      "paragraphs": [
+        "Nodus 更新日志公布了面向 Claude Code、Codex、Cursor 等 MCP 客户端的接入流程。托管 MCP 通过浏览器授权连接，本地 MCP 使用 SDK 登录并可准备本地项目文件；托管连接使用已验证的上传资产或已连接的 GitHub 仓库。工作负载、沙箱和托管智能体分别设置读写权限。",
+        "智能体可在付费执行前验证请求，提交带明确预算的已审查命令，检查状态和日志、取消任务，并取回输出元数据或经校验的下载结果。稳定请求键用于核查状态不明的提交，避免重复创建任务。用户可在控制台断开客户端，但断开连接不会取消它已经提交的工作。"
+      ],
+      "url": "https://www.nodus-compute.ai/changelog/"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "Hex：在已发布数据应用中继续分析，并定时交付 CSV",
+        "body": "Hex 的更新允许用户在已发布的 Generative Apps 中直接开启智能体对话，追问指标并继续分析；可通过提及单元格、页签、区域及筛选条件指定上下文。定时通知现在也能附带 CSV 导出。官方明确，导出使用项目底层单元格的输出，不包含在应用界面中完成的变换，因此安排发送前需核对单元格数据与接收对象。",
+        "url": "https://learn.hex.tech/changelog"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期新增材料集中在可接续的创作过程和可执行的工具连接；游戏制作工具已有具体功能说明，具名团队的新增落地复盘仍不足。",
+      "游戏创作结合生成与手动编辑：Meta 将手机提示词迭代、浏览器场景编辑和项目历史接续放入同一流程，目前仍逐步开放。",
+      "协作入口覆盖身份与任务生命周期：Cloudflare 增加自主智能体认证，Nodus 提供远程提交、检查、取消和结果取回。",
+      "分析协作延伸至结果交付：Hex 在已发布应用内承接追问，并通过定时通知分发底层单元格的 CSV 输出。"
+    ]
+  }
+}
