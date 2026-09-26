@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-26",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，核验后收录 Databricks 在外部智能体接入和文档处理协作方面的一组更新。游戏研发方向未找到满足时效、具体制作事实与去重要求的新增材料。七日工作流追踪补充 Cursor 的部署监测与代码审查，以及 UiPath 的浏览器编码代理预览。",
+  "items": [
+    {
+      "title": "Databricks 将 Genie One MCP 正式开放，并扩展文档处理代理流程",
+      "paragraphs": [
+        "Databricks 宣布 Genie One MCP 服务正式可用，通过 Unity Gateway 向 Claude、ChatGPT、Cursor 等客户端提供数据问答。外部智能体可提交自然语言问题，由 Genie 查询企业数据、生成 SQL 并返回带来源链接的答案；每次请求执行 Unity Catalog 权限检查。服务支持继续对话、查询进度、取回查询结果和取消任务，兼容 MCP Apps 的客户端还可展示交互式结果。",
+        "Genie Code 同时新增端到端文档处理流程，可编排 PDF 等文件的解析、分类、字段提取和校验，生成 Lakeflow 作业。用户可以审阅、修改生成的 SQL 与任务再运行；提供标注数据后，代理可逐字段评估提取质量，提出需人工批准的修改，并重新评估。该流程使用 Databricks AI Functions，运行需要相应计算资源及数据访问权限。"
+      ],
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "Cursor：从 PR 监测计划接续到部署检查与人工审查",
+        "body": "Cursor 的 Rollouts 连接 Origin 或 GitHub、部署系统及 Datadog 等遥测服务。PR 创建后，它生成可由人工编辑的监测计划，再由部署事件触发日志、指标和追踪检查，按环境回报结果。发现回归时，可按配置创建待审查的回退 PR，或交给云端代理修复，目前不会自行合并或回滚。同批上线的 Security Review 根据代码库上下文审查非草稿 PR，并报告漏洞、攻击路径及修复建议；两者面向 Teams 和 Enterprise 套餐开放。",
+        "url": "https://cursor.com/changelog"
+      },
+      {
+        "heading": "UiPath：Studio Web 编码代理进入公开预览",
+        "body": "UiPath Autopilot 可在 Studio Web 中规划、构建、调试和解释自动化，覆盖 Maestro、Agent、API 工作流等项目。用户在运行或发布前审阅生成改动。RPA 工作流、Coded Apps 和 Functions 当前仅支持读取和编辑文件，尚不能在 Studio Web 中通过 CLI 发布、运行和验证。官方更正说明该能力实际已在本周较早时候上线，因此本期作为七日流程追踪收录。",
+        "url": "https://docs.uipath.com/autopilot/other/latest/release-notes/september-2026"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期可核验材料集中在跨工具执行和人工审阅，新增具名游戏制作案例仍不足，不能据此判断游戏行业整体采用情况。",
+      "数据协作从问答延伸到任务执行：Genie One 对外提供数据查询，Genie Code 编排文档处理并评估提取结果。",
+      "研发协作覆盖部署后的检查：Cursor 将 PR、部署事件和遥测结果连接，并保留人工处理回退的环节。",
+      "代理能力按项目类型逐步开放：UiPath 的浏览器编码代理仍处公开预览，部分项目仅支持文件读写。"
+    ]
+  }
+}
