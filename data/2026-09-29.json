@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-29",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，收录一项独立游戏研发自述和一项浏览器 AI 协作更新：Godot 开发者披露代码与 3D 资产的实际制作分工，Cloudflare 为 Kitesurf 增加网页工具调用能力。七日工作流追踪补充 Nuclino 的文档组织与评论协作扩展。",
+  "items": [
+    {
+      "title": "Godot 独立开发者披露 AI 编码与 3D 资产制作流程",
+      "paragraphs": [
+        "开发者 Jealous-Street6221 展示了一款使用 Godot 制作的开放世界冒险游戏，并介绍其 AI 辅助流程。作者称，项目于今年 2 月开始开发，7 月开始引入 AI；早期使用 DeepSeek V4-Flash 辅助编码，之后转用 GPT-5.6 Sol 和 GPT-6 Sol。项目仍在开发中，作者估计完成度约为 10%。",
+        "部分美术模型由 Tripo 和 Hunyuan3D 生成，再由作者导入 Blender 手工减面与烘焙贴图；建筑等其他资产从 Fab 购买，动画则混合使用 Fab 资产包和手工关键帧制作。上述流程及进度均为开发者自述，帖子未提供可独立核验的效率测量，也未宣称游戏已完成或发布。"
+      ],
+      "url": "https://www.reddit.com/r/aigamedev/comments/1ws9liz/month_2_of_developing_a_game_with_ai/"
+    },
+    {
+      "title": "Cloudflare Kitesurf 支持 WebMCP，AI 可直接调用网页暴露的工具",
+      "paragraphs": [
+        "Cloudflare 宣布，运行在 Workers 上的实验性浏览器 Kitesurf 新增 WebMCP 支持。AI 代理可通过 Chrome DevTools MCP 发现并执行网站暴露的工具；官方以 Cloudflare Radar 的页面导航和位置设置工具展示交互方式。该能力已扩展到 Kitesurf 会话，使用的是网站提供的工具接口，并不代表任意网站的全部操作都已自动开放给代理。",
+        "本次更新同时补齐 Kitesurf 对 Browser Run API 的覆盖，可通过 CDP、Playwright、Puppeteer 或 MCP 使用；截图、提取 HTML、生成 PDF 等 Quick Actions 也可从 Worker 脚本内调用。官方披露的是浏览器及跨工具调用能力，未提供具体游戏团队的应用案例。"
+      ],
+      "url": "https://blog.cloudflare.com/kitesurf-update/"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "Nuclino：外部 AI 助手可组织工作区、阅读评论并添加行内反馈",
+        "body": "Nuclino 本周扩展了现有 MCP 服务的操作范围。连接的 AI 助手现在可以创建和更新工作区、移动条目与集合、读取评论、添加顶层或行内评论，以及建立条目之间的内部链接。这些是对已有连接能力的扩展，覆盖文档组织与反馈协作；并非本周首次推出 MCP 服务。",
+        "url": "https://blog.nuclino.com/new-in-nuclino-expanded-mcp-capabilities-comment-reactions-and-more"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期材料呈现的共同方向是把 AI 接入具体制作和协作步骤；游戏案例仍处于开发阶段，工具更新则明确了可执行的操作范围。",
+      "资产制作保留人工加工：Godot 案例将生成模型、Blender 减面和贴图烘焙串联，并混用购买资产与手工动画。",
+      "浏览器协作增加直接调用路径：Kitesurf 支持代理发现和执行网页提供的工具，并接入常用浏览器自动化接口。",
+      "知识库协作扩展到组织与反馈：Nuclino 的 MCP 更新覆盖工作区管理、内容移动、评论和内部链接。"
+    ]
+  }
+}
