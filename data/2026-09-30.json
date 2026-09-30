@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-30",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，核验并去重后收录 3 条 AI 协作更新，涉及生产问题调查、跨应用内容工作和工具结果检查。游戏研发主线未找到符合时效与核验要求的新案例或实质工具更新；七日工作流追踪补充一项开发者公开的自动化实作。",
+  "items": [
+    {
+      "title": "Honeycomb Canvas 扩展 MCP 连接器，支持团队共同调查生产问题",
+      "paragraphs": [
+        "Honeycomb 宣布 Canvas MCP 连接器正式可用，可接入 GitHub、Linear、Atlassian、Sentry 等工具，将源代码、工单及团队讨论与遥测数据放在共同调查环境中。团队成员可以共享调查结果、编辑查询，并查看代理提示和工具调用。",
+        "Canvas 还可创建或更新触发器、服务级别目标和看板，修改需要人工批准，自动调查期间代理不能执行这些编辑。同期推出的 AI Ecosystem 仍处于早期访问阶段，可从多个代理的整体表现下钻到具体会话。"
+      ],
+      "url": "https://www.honeycomb.io/blog/agents-need-context-canvas-connectors-ai-agent-visibility"
+    },
+    {
+      "title": "Meta 为 Muse 增加小企业技能与设计、文档、项目工具连接",
+      "paragraphs": [
+        "Meta 宣布 Muse for Small Business，为现有个人代理增加技能与连接器。官方列出的可连接工具包括 Asana、Canva、Figma、Notion、Slack、Box、Dropbox 和 Shopify，也支持接入 Facebook、Instagram 商业账户及自定义连接器。",
+        "官方展示的任务包括汇总销售与活动数据、拟定内容活动方案、标记需要回复的邮件并起草回复。Canva 连接可把模板和品牌上下文带入对话，帮助制作可编辑内容。Meta 明确表示，发布、发送或支出均须用户批准；公告未披露游戏团队的落地案例。"
+      ],
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/"
+    },
+    {
+      "title": "Airia 的 Claude 推理钩子集成正式可用，检查提示与外部工具结果",
+      "paragraphs": [
+        "Airia 宣布其 Claude inference hooks 支持由早期访问转为正式可用，可通过组织级配置覆盖 Claude chat、Claude Code 和 Claude Cowork。当用户提交提示，或 Claude 收到工具、MCP 服务、技能及插件返回的结果时，Airia 会在 Claude 处理内容前依据组织策略作出允许或拒绝决定。"
+      ],
+      "url": "https://www.globenewswire.com/news-release/2026/09/29/3370769/0/en/airia-makes-real-time-policy-enforcement-for-claude-generally-available.html"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "n8n 实作：表单触发 AI 分类，再分发到 Telegram、Gmail 与表格",
+        "body": "一名开发者公开了其完成的 n8n 工作流：表单在 Google Sheets 中新增行后，由 DeepSeek 提取类别、意向、预算、紧急程度及优先级；结果与原始数据合并，再分发为 Telegram 通知、Gmail 确认邮件及另一张表格中的评分记录。作者称，加入 Structured Output Parser 后解决了输出格式不稳定的问题，并提供工作流仓库链接。以上为作者展示与自述，本次未独立运行验证。",
+        "url": "https://www.reddit.com/r/n8n/comments/1wt203w/built_an_n8n_workflow_that_scores_new_form/"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期可核验新增材料集中在 AI 与既有软件、团队及审批流程的衔接，游戏研发案例不足以形成新的事实结论。",
+      "共享上下文进一步具体化：Canvas 将代码、工单与遥测放入人和代理共同使用的调查环境。",
+      "跨应用操作保留人工决定：Muse 的发布、发送和支出，以及 Canvas 的配置修改，均有明确批准环节。",
+      "工具返回内容成为独立处理步骤：Airia 在结果进入 Claude 前检查策略，n8n 实作则先规范 AI 输出再交给后续应用。"
+    ]
+  }
+}
