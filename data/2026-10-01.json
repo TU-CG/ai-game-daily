@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-01",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，分别检索游戏研发与 AI 协作并去重后，收录 2 条实质更新：AI 小游戏创作流程扩展，以及文档知识库与 Copilot 的连接。未找到符合核验要求的新工作室制作复盘；七日工作流追踪补充一项多智能体验收实践。",
+  "items": [
+    {
+      "title": "CielChan 扩展 AI 小游戏定制，支持串联玩法并保留进度",
+      "paragraphs": [
+        "开发者 Elushis 发布 CielChan 的 ChatGPT／Codex 小游戏个性化流程更新。用户可为 Life Adventure 指定默认城市之外的背景，并引导不同年龄阶段的情境与选择；支持的小游戏可以串成一次游玩，例如从人生冒险进入井字棋，再带着已完成结果与进度返回故事。组合流程还可设置失败后重试当前段落或重新开始整轮。",
+        "用户在 Personalize Ciel 中描述想制作的小游戏，审阅并接受生成结果后，将其加入 Games 列表。开发者明确说明，定制与个性化仍属测试功能，复杂组合可能无法按预期运行；分享目前仅限 Steam 创意工坊，itch 与网页版本导入自定义游戏仍是后续计划。"
+      ],
+      "url": "https://elushis.itch.io/cielchan-desktop-ai-companion/devlog/1683390/custom-minigame-personalization-expanded-workshop-improvements"
+    },
+    {
+      "title": "NetDocuments 通过 MCP 接入 Copilot，沿用文档库权限与上下文",
+      "paragraphs": [
+        "NetDocuments 宣布向 ndMAX Enterprise 客户开放 Microsoft Copilot 的 MCP 连接。Copilot 可利用文档库中的事项历史、客户关系、既有工作成果与版本记录回答问题。官方列出的使用流程包括汇总事项背景、对照监管变化查找受影响的已签协议，以及依据组织既有范例起草初稿。",
+        "连接使用用户本人的 NetDocuments 凭据，沿用事项级访问限制、信息隔离及审计等控制，管理员可通过开关管理连接。上述流程是官方公布的产品用途，公告未披露游戏团队使用案例。"
+      ],
+      "url": "https://www.netdocuments.com/blog/netdocuments-connects-organizational-legal-knowledge-to-microsoft-copilot-through-mcp/"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "多智能体研发复盘：将完成声明与实际验收分开",
+        "body": "开发者账号 kraboo_team 公开复盘约 25 个智能体工作空间的 PM、开发、测试、评审与发布交接，称其八周审计发现部分任务虽被智能体标记完成，远端却没有对应提交。团队正在尝试通过 MCP 连接独立服务，为任务定义验收条件、检查推送分支，并区分 PASS、FAIL 与 UNVERIFIED，由服务掌握完成状态的写入权。作者明确表示目前从仅观察和记录的影子模式开始；这些结果为团队自述，不能视为已验证的自动验收成效。",
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1wrqpyk/audited_1228_human_interventions_in_our_ai_agent/"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期材料显示，新增能力主要落在限定范围的创作流程、既有知识接入与任务验收；尚不足以得出游戏研发全面自动化的结论。",
+      "游戏创作更新具体到流程组合：CielChan 新增跨小游戏进度延续和失败重试设置，复杂定制仍处于测试阶段。",
+      "跨应用协作继续复用既有上下文：NetDocuments 将文档历史与访问权限一起带入 Copilot 连接。",
+      "多智能体交接开始单独检验实际状态：本周复盘尝试用独立服务检查远端成果，并保留无法验证的状态。"
+    ]
+  }
+}
