@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-02",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，分别检索游戏研发与 AI 协作并去重后，收录 2 条实质更新：桌面智能体组合调用工具，以及 AI 客户端连接 After Effects。本期未找到符合时效与核验要求的新游戏团队制作案例；七日工作流追踪补充测试平台的远程 MCP 接入。",
+  "items": [
+    {
+      "title": "Pi Agent Desktop 增加原生 MCP 与工具组合执行",
+      "paragraphs": [
+        "开源项目 Pi Agent Desktop 发布 v0.9.0，桌面会话接入 Pi 原生 MCP 与工具搜索。配置界面支持本地进程和 Streamable HTTP 服务，连接测试会实际执行协议握手及工具发现；已发现的工具可在后续消息中继续使用。",
+        "新增 Codemode 开关允许智能体在隔离的 JavaScript 环境中组合工具调用、筛选和合并结果，调用仍遵守人工确认、计划模式及禁用工具设置。项目级 MCP 配置需要项目信任；发布说明同时明确，桌面端与终端端共同写入同一会话仍不受支持。"
+      ],
+      "url": "https://github.com/Chasen-Liao/pi-agent-desktop/releases/tag/v0.9.0"
+    },
+    {
+      "title": "After Effects 开源连接器新增 ChatGPT 网关与客户端安装入口",
+      "paragraphs": [
+        "Immersive Media Technologies 的 After Effects MCP 分支发布 v0.4 系列，增加 Claude Desktop 扩展包、Cursor 安装入口，以及 ChatGPT 的单命令连接方式。ChatGPT 路径会启动 MCP 服务、Streamable HTTP 网关和网络隧道，输出供连接器使用的公网地址；维护者称已通过 ngrok 完成端到端验证，从 After Effects 26.5 取得版本信息。",
+        "安装脚本还增加 Google Antigravity 配置支持。上述新增内容主要扩展既有 After Effects 操作服务的接入方式；维护者明确表示 Windows 安装脚本尚未由其运行验证，公开验证也不等于已完成完整动画制作流程。"
+      ],
+      "url": "https://github.com/Immersive-Media-Technologies/aftereffects-mcp-imt/releases"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "Currents：通过浏览器授权，将智能体接入测试平台",
+        "body": "Currents 本周上线托管的远程 MCP 服务。用户在支持的客户端添加服务地址后，通过浏览器登录、选择组织并批准权限，智能体便以该用户身份调用 Currents 工具，无需在每台机器安装服务包并复制组织密钥。用户可撤销自己的授权，管理员可撤销成员授权；不支持 OAuth 的客户端仍可使用 API 密钥或个人访问令牌，本地 MCP 包继续可用。",
+        "url": "https://currents.dev/changelog/remote-mcp-server"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期可核验增量集中在工具接入、组合调用与授权管理；游戏实际制作案例仍不足，不能据此推断研发自动化的普及程度。",
+      "工具调用开始支持组合处理：Pi Agent Desktop 可在同一执行环境中串联调用并整理返回结果。",
+      "创作软件接入覆盖更多客户端：After Effects 开源连接器补充 ChatGPT 网关与桌面客户端安装入口。",
+      "跨应用协作保留明确的用户身份：Currents 远程 MCP 使用浏览器授权，并提供用户和管理员撤销入口。"
+    ]
+  }
+}
