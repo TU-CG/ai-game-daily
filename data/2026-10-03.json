@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-03",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "今日可核验的新进展集中在跨设备接续研发任务，以及智能体调用团队内部工具。游戏研发方向未找到符合过去 24 小时时效要求的新团队制作案例；七日追踪补充 Unreal 多智能体制作流程与游戏资产命令行接入。",
+  "items": [
+    {
+      "title": "Conductor 推出 iOS 客户端，可接续云端智能体任务并合并 PR",
+      "paragraphs": [
+        "Conductor 发布 iOS 客户端，支持用户在手机上与智能体对话并合并拉取请求，适用于云工作区。云组织中的置顶工作区在设备间同步，自动合并、将可选检查视为阻塞条件及 PR 活动排序等设置也会延续到 iOS。",
+        "同次更新让智能体保存在云工作区 .context 目录中的文件同步到 Mac，并允许用户在云工作区合并 PR 堆栈时不再依赖 Mac 上的 GitHub stack 扩展。"
+      ],
+      "url": "https://www.conductor.build/changelog/0.90.0-conductor-for-ios"
+    },
+    {
+      "title": "Plain 工作流中的 Sidekick 可调用自定义 MCP 工具",
+      "paragraphs": [
+        "Plain 宣布，工作流中的内部智能体 Sidekick 步骤现在可以调用团队自建 MCP 服务的工具。处理新收到的客户会话时，工作流可在步骤之间查询内部系统，并把结果留在会话中，供后续接手的人或智能体读取。",
+        "用户还可在队列中一次选中多个会话，对每个会话运行同一手动工作流。若流程使用 Sidekick，每个处理后的会话会出现一条未读的 Sidekick 消息，标示已有结果等待查看。"
+      ],
+      "url": "https://www.plain.com/changelog/weekly-drop-october-2-2026"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "GameDev Core：Unreal 制作任务由规划、执行与审查角色接续",
+        "body": "BlueprintsLab 本周发布的 Ultimate Engine CoPilot V2 重建了 Crew 流程：Architect 对话管理计划，Worker 完成检查点，Reviewer 按成功标准给出通过或失败结论；每个检查点最多尝试三次，再交回用户，依赖项通过后才开始后续工作。官方还披露蓝图转 C++ 后的编译与修复，以及专用或监听服务器配合最多八个客户端的编辑器内测试。修改蓝图后主动提出的自动试玩仍属实验功能，需要用户点击后运行。这些是厂商公布的工具能力，未提供具体游戏团队的完整制作复盘。",
+        "url": "https://www.gamedevcore.com/docs/updates"
+      },
+      {
+        "heading": "Ludo：编码智能体生成资产后，将文件交给游戏项目",
+        "body": "Ludo 本周推出 CLI，提供 Claude Code 技能与其他智能体的项目说明。智能体可读取所需命令的帮助，提交精灵、动画、3D 或音视频生成任务，再取得包含本地文件路径的 JSON；本地参考文件可直接上传继续生成。精灵动画还能输出 Godot 4 的 SpriteFrames 资源，供 AnimatedSprite2D 使用。官方示例串联了骑士精灵与 3D 模型生成；CLI 向 Pro 和 Studio 用户开放，并提供生成前费用估算与显式预算设置。",
+        "url": "https://ludo.ai/whats-new"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期材料显示，新增协作能力主要落在任务接续、内部系统调用和资产交付；尚不足以证明 AI 已能独立完成游戏制作。",
+      "人工参与延伸到移动端：Conductor 将云工作区对话与 PR 合并带到手机。",
+      "工作流纳入团队自己的工具：Plain 的 Sidekick 步骤可查询自建 MCP 服务并留下结果。",
+      "游戏制作流程明确了交接产物：Crew 使用检查点与审查结论，Ludo 返回本地资产文件与引擎资源。"
+    ]
+  }
+}
