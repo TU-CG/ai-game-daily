@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-05",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时内，核验并去重后收录 1 条 AI 协作更新：安全扫描结果可自动进入 AI 修复与 GitHub PR 流程。游戏研发方向未找到符合时效要求的新制作案例；七日追踪补充《Crush Depth》的多智能体开发复盘与 Buildkite 的工具接入变化。",
+  "items": [
+    {
+      "title": "Checkmarx One 自动触发 AI 修复，并为 GitHub 项目创建 PR",
+      "paragraphs": [
+        "Checkmarx One 多租户当前版本 3.67 的官方说明将自动 AI 修复列为已开放功能。启用 AI Triage & Remediation 的客户可按项目、分支、扫描器和严重程度设置触发条件；当前支持静态应用安全测试（SAST）与软件成分分析（SCA），管理员也可决定是否允许项目覆盖账户设置。",
+        "符合条件的扫描完成后，系统自动生成 AI 修复建议；若同时开启自动分诊，则在分诊完成后执行。对于受支持的 GitHub 代码仓库集成项目，系统还会自动创建包含建议修复的拉取请求。官方披露的流程终点是提交修复建议与 PR，未说明自动合并。"
+      ],
+      "url": "https://docs.checkmarx.com/en/34965-281369-multi-tenant-current.html"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "《Crush Depth》：人负责方向与试玩，智能体并行开发和跨引擎试验",
+        "body": "开发者 Dan Malone 在近期复盘中自述，深海打捞游戏《Crush Depth》由 Claude Code 智能体编写代码，人负责提出要求、查看截图和试玩。多个智能体在独立 Git worktree 中工作；Godot 与 Unity 通过相同 JSON 指令桥接测试客户端及 MCP 工具，智能体据此读取状态、输入操作和截图。项目还用固定版本的 API 查询工具与编辑钩子约束过时接口。Unity 完整移植仍在进行；新增的 Unreal 试验已完成桥接与重复回放检查，但尚未完成视觉盲评。这是开发者对在研项目的自述，不能视为三引擎完整成品均已交付。",
+        "url": "https://www.dan-malone.com/blog/ai-agents-game-godot-to-unity"
+      },
+      {
+        "heading": "Buildkite：MCP 扩展至流水线验证、构建比较与测试轨迹",
+        "body": "Buildkite 官方周报披露，其 MCP 服务新增流水线验证、构建比较、测试执行轨迹和 webhook 修复能力；每条 Remote MCP 连接也会绑定到一个组织。更新把这些持续集成操作提供给智能体调用，官方材料未披露某款游戏团队采用后的制作成果。",
+        "url": "https://buildkite.com/resources/changelog/418-weekly-wrap-september-27-october-2-2026/"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期材料显示，AI 协作正在覆盖从任务执行到测试、修复与提交的更多环节；以下观察仅基于本期新闻与七日追踪。",
+      "事件触发进入修复流程：Checkmarx 可在扫描或分诊结束后启动 AI 修复，并把结果提交为 GitHub PR。",
+      "游戏开发出现明确的人机分工：《Crush Depth》由人确定方向和试玩，多个智能体分开处理实现任务，完整移植仍待完成。",
+      "验证能力成为工具接入的一部分：游戏项目通过指令桥接复用测试，Buildkite 则把流水线验证和测试轨迹开放给智能体。"
+    ]
+  }
+}
