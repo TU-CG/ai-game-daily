@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-06",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，分别检索游戏研发与 AI 协作并去重后，收录 1 条实质更新：Trigger.dev 将运行数据、部署代码和故障调查接入同一智能体。游戏研发方向未找到符合时效与核验要求的新制作案例；七日追踪补充 Unity 的智能体插件接入与 PostHog 的 MCP 权限操作。",
+  "items": [
+    {
+      "title": "Ask Trigger 开放测试，结合运行数据与 GitHub 代码调查故障",
+      "paragraphs": [
+        "Trigger.dev 在控制台上线 Ask Trigger 测试版。智能体能读取当前页面上下文，以及组织内的项目、环境、运行记录、错误、队列、任务和部署信息；它通过编写 TRQL 查询分析表、关联不同数据源，调查运行失败、耗时过长或重复出现的错误，并展示调查依据。",
+        "连接 GitHub 账户后，Ask Trigger 还可检查实际部署提交的源码，定位相关文件和代码行并提出修复建议。它也能生成自定义报告，汇总项目健康状态、指标和受影响资源。官方说明将代码处理描述为检查与建议，未宣布自动提交修复或合并代码。"
+      ],
+      "url": "https://trigger.dev/changelog/dashboard-agent-beta"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "Unity：Grok Build 接入与其他智能体共用的官方技能库",
+        "body": "Unity 本周将官方插件扩展至 Grok Build，适用于 Unity 6 及以上版本。插件与 Claude Code、Codex 版本共用同一仓库和 30 多项技能，覆盖界面、2D 与瓦片地图、渲染与 Shader Graph、音频、导航、物理、多人联机及本地化，由相应功能团队维护。公告同时展示了 Cam Ayres 用 Claude Code 和 Unity CLI 制作 Simon Says 游戏、Andrew Walko 用 Codex 和 Unity CLI 制作城市场景的示例；这些是官方展示的制作示例，公告未提供完整商业游戏交付或独立验证的效率数据。",
+        "url": "https://unity.com/blog/unity-plugin-grok"
+      },
+      {
+        "heading": "PostHog：MCP 智能体可在确认后修改访问规则",
+        "body": "PostHog 官方更新日志新增通过 MCP 管理访问规则的能力。智能体在确认后，可以为所有人、指定成员或角色设置或清除规则，操作范围覆盖项目、资源类型、单个对象及属性定义；该能力面向 Boost 及以上方案。这里开放的是明确的权限管理操作，并保留确认步骤。",
+        "url": "https://posthog.com/changelog?id=3064"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期可核验变化集中在运行上下文连接、跨智能体共享指导和有确认步骤的工具操作；新增游戏制作案例仍然有限。",
+      "故障调查连接运行与源码：Ask Trigger 可将运行数据与实际部署的 GitHub 提交一起检查，并给出依据和修复建议。",
+      "引擎知识跨智能体复用：Unity 将同一套官方技能扩展至 Grok Build，与既有客户端共享维护来源。",
+      "协作操作保留人工确认：PostHog 的 MCP 权限变更明确要求确认，新增能力具体到可设置和清除的访问规则。"
+    ]
+  }
+}
