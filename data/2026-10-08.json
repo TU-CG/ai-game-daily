@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-08",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，分别检索游戏研发与 AI 协作并去重后，收录 3 条材料：个人开发者公开 AI 游戏制作复盘，Atlassian 扩展文档与视频之间的智能体协作，Apollo 开放企业 API 智能体接入预览。七日工作流追踪补充 Miro 披露的产品团队实践。",
+  "items": [
+    {
+      "title": "开发者公开教育游戏复盘：AI 参与代码、素材与内容检查",
+      "paragraphs": [
+        "Sunghwan Yoo 发布个人制作复盘，介绍为女儿开发阅读与写作游戏的过程。他使用 React 和 Vite 构建游戏，由 AI 智能体编写大部分代码，并生成美术、音乐、视频、任务和对白；开发中同时运行多个 Claude 实例，再用自定义技能检查游戏故障、区域故事、视频画面和题目是否可依据屏幕内容作答。",
+        "作者自述，项目从原定三周延长至约两个月，完成了八个可贯通游玩的区域；女儿的实际游玩反馈驱动后续修复。这是新公开的既有项目复盘，游戏尚未向公众开放，完成程度与使用效果均为作者自述。"
+      ],
+      "url": "https://blog.sunghwanyoo.com/2026/10/07/six-lessons-from-building-a-game-with-ai/"
+    },
+    {
+      "title": "Atlassian 扩展 MCP 工具，让智能体从 Loom 视频生成 Confluence 文档",
+      "paragraphs": [
+        "Atlassian 在 Teamwork Collection 更新中宣布，智能体现可通过 MCP 工具与技能创建、编辑 Confluence 页面，并从 Loom 视频提取上下文。官方给出的流程是依据 Loom 录制内容起草 Confluence 发布说明，由用户给出任务要求并审核结果，智能体执行中间步骤，也可在智能体之间交接工作。",
+        "Jira 的 Slack 与 Microsoft Teams 应用还可将包含上下文的讨论串转为可追踪任务，交给 Jira 中相应的智能体或团队成员处理。相关协作以 Teamwork Graph 提供共享上下文，文档中的团队修改与决策可供后续工作继续使用。"
+      ],
+      "url": "https://www.atlassian.com/blog/company-news/team26-europe-teamwork-collection"
+    },
+    {
+      "title": "GraphOS Agent Services 开放预览，连接智能体与企业 API",
+      "paragraphs": [
+        "Apollo 推出 GraphOS Agent Services 公开预览，为智能体连接企业服务提供统一入口。服务目录描述 API、业务实体及其关系，智能体可搜索所需数据和工具；系统代理上游凭据，支持智能体独立身份或代表用户执行请求，并按字段实施访问策略、记录操作。",
+        "同时进入预览的 GraphOS Factory 技能可在 Apollo 团队指导下，让智能体读取 API 文档，将 REST API 接入服务目录。公告将这项接入流程描述为受指导的预览能力，并非已经普遍部署的全自动迁移服务。"
+      ],
+      "url": "https://www.apollographql.com/blog/announcement/introducing-graphos-agent-services"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "Miro：产品团队用 Claude 将共享画布内容转成研发需求",
+        "body": "Miro 本周披露 Fincore 产品团队的使用案例：产品经理在画布上整理想法，再由连接 Miro MCP 的 Claude 将其转为供开发者使用的需求。Miro 还说明，智能体既可读取画布上下文，也可在画布上创建图表、演示与可点击原型，并按要求局部修改；团队成员可以共同编辑结果，后续智能体读取时也能获取这些修改。团队收益来自客户陈述，本文是协作实践披露，不将既有 MCP 接入重新计作今日发布。",
+        "url": "https://miro.com/blog/miro-mcp-server/"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期材料的共同点是让 AI 参与具体制作与工具操作，同时保留人的任务设定、内容修订和结果检查。",
+      "游戏制作覆盖多个环节：个人开发复盘同时涉及代码、素材、任务对白及检查技能，实际游玩反馈仍用于修复。",
+      "协作上下文在软件之间流转：Atlassian 连接视频、文档与任务，Miro 案例连接共享画布与研发需求。",
+      "企业 API 接入增加明确的执行身份：Apollo 的预览将工具发现、凭据代理、字段策略与操作记录纳入同一流程。"
+    ]
+  }
+}
