@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-09",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，分别检索 AI 游戏研发与 AI 协作并去重后，收录 1 条实质更新：Google 公布连接企业软件、保留共享上下文并协调子智能体的 Gemini agent。游戏研发线未发现符合时效与核验要求的新团队落地案例；七日工作流追踪补充 Playground 游戏制作和 Cursor 手机端协作。",
+  "items": [
+    {
+      "title": "Google 公布 Gemini agent：跨应用执行任务并协调子智能体",
+      "paragraphs": [
+        "Google 在 Gemini at Work 公告中介绍 Gemini agent：用户可分派目标、设置定时任务或让事件触发工作；智能体在云端持续运行，保留跨设备的上下文和记忆，并动态创建具有独立身份的子智能体，按并行或顺序步骤协作。公告列出的接入系统包括 Workspace、Microsoft 365、Slack、Confluence、Git 和 Jira，也支持企业内外的 MCP 服务器。",
+        "团队可在共享注册表中发布工具与技能，并为项目配置上下文。Google 还介绍具有独立邮箱和存储的同事型智能体，以及按智能体身份记录操作的审计机制。以上为官方公布的产品能力，本文不将其视为已经核验的游戏团队交付案例。"
+      ],
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "Playground：通过对话制作、试玩和分享浏览器游戏",
+        "body": "Google 本周开放实验性 Playground，面向美国成年用户，创作权限按 Google AI 订阅分层推出。用户可从空白项目或起始提示出发，用对话修改物理、规则、角色和环境并立即试玩；完成后可保留私有、分享链接或发布到社区图库，部分类型支持多人玩法和排行榜。公告明确 Unity Spark 仍在测试、封闭测试即将推出，其高保真 3D 与 Unity 运行时能力属于后续集成内容。",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/"
+      },
+      {
+        "heading": "Cursor：从手机查看并继续指挥电脑上的本地智能体",
+        "body": "Cursor 本周上线本地智能体远程控制：用户在 iOS 应用选择同账户电脑，经桌面端批准配对后，可查看智能体进展并发送后续指令。任务继续在原电脑上执行，电脑必须保持开机和联网；该流程不要求使用云端智能体，企业组织需由管理员启用。",
+        "url": "https://cursor.com/changelog/remote-control-local-agents"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期材料显示，AI 协作正在连接持续执行、跨设备指挥与可反复修改的创作流程；游戏商业项目的新落地证据仍不足。",
+      "协作范围扩大到任务执行：Gemini 公告同时覆盖软件接入、任务触发与子智能体分工。",
+      "游戏创作围绕反复试玩修改：Playground 将提示生成、规则调整和浏览器试玩纳入同一流程，Spark 的后续能力仍需与现有功能区分。",
+      "跨设备协作有不同执行位置：Gemini 描述云端持续运行，Cursor 则让手机连接仍在电脑上运行的智能体。"
+    ]
+  }
+}
