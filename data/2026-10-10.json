@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-10",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，分别检索 AI 游戏研发与 AI 协作并去重后，收录 1 条实质更新：Thinkwise 开放可查询项目、登记工时和生成发票的 MCP 演示。游戏研发方向未找到符合时效与证据要求的新团队落地案例；七日工作流追踪补充 Scenario 的素材协作流程与 Ludo 的动画转向功能。",
+  "items": [
+    {
+      "title": "Thinkwise 开放 Insights MCP 演示，可查询项目并登记工时",
+      "paragraphs": [
+        "Thinkwise 将 Insights 演示应用通过 MCP 向社区用户开放，可从 ChatGPT 或 Claude 连接。官方列出的操作包括查询在研项目及高优先级任务、分析子项目预算工时、登记工时，以及汇总未开票工时并生成发票。",
+        "这是可供试用的演示应用，所有用户共享数据，数据库每晚重置。官方同时说明，Thinkwise Platform 2026.3 起支持 MCP，可在 Develop 和 Test 环境中免费使用。"
+      ],
+      "url": "https://community.thinkwisesoftware.com/news-blogs-21/try-mcp-on-our-insights-application-7044"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "Scenario：编码智能体串联素材生成、人工选择与资产归档",
+        "body": "过去7天更新的官方文档展示了 Claude Code、Cursor 或 Claude Desktop 连接 Scenario 工作区的流程：智能体选择模型、编写提示、执行生成并管理资产；使用者可先要求生成三种风格，选定一个后再制作动画。本地客户端还可批处理文件夹，生成结果进入同一项目的资产库。这是官方操作流程，未披露具体游戏团队的交付结果。",
+        "url": "https://help.scenario.com/articles/2664328768-getting-started-with-the-scenario-mcp-server"
+      },
+      {
+        "heading": "Ludo：从已有精灵动画生成其他朝向",
+        "body": "Ludo 的 New Direction 以已有动画和目标朝向首帧为输入，生成保持原动作及时间节奏的新朝向动画。使用者先选择源动画，再旋转或上传目标首帧，可补充结束帧与文字指令；功能也通过 API、MCP 和 CLI 提供。官方展示的是工具操作示例，未提供游戏制作团队的实际产能数据。",
+        "url": "https://ludo.ai/whats-new"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本次核验材料主要体现了跨应用执行与素材制作步骤的串联，尚不足以判断游戏团队规模化落地的变化。",
+      "项目管理连接器已提供写入操作：Thinkwise 演示覆盖工时登记和发票生成。",
+      "素材工作流保留人工选择环节：Scenario 文档展示生成多个候选、人工选定后继续动画制作。",
+      "动画制作支持复用已有成果：Ludo 用源动画与新朝向首帧生成方向变体，并向智能体开放调用。"
+    ]
+  }
+}
