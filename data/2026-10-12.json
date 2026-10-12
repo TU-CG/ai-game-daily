@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-12",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，分别检索 AI 游戏研发与 AI 协作并去重后，收录 2 条新材料：《Underbloom》开发者披露分阶段制作与人工验收流程，Hypertask 更新人工评论到智能体的通知链路。七日工作流追踪补充 Claude Code 云端并行任务实测。",
+  "items": [
+    {
+      "title": "《Underbloom》开发者分享 Claude 编排代码、美术工具与人工验收的制作流程",
+      "paragraphs": [
+        "开发者 Mohammed Motawea 以 Certain_Ad9908 账号分享 Unity 6 游戏《Underbloom》的制作复盘。他表示，先确定设计文档和美术参考，再让 Claude Code 按阶段启动编排会话、按需调用子智能体；Claude 通过 DreamLayer AI 和 Magnific 的 MCP 工具生成、去背景和整理美术。开发者负责设计、代码架构、美术方向及 QA，每阶段试玩通过后才允许进入下一阶段。作者称项目为游戏创作活动用时八天完成，这一工期属于开发者自述。",
+        "作品页面已提供桌面浏览器运行入口，并列出 Claude Code、DreamLayer、Magnific 等制作工具。作者进一步说明，Claude 编写了将地表纹理处理成无缝素材的 Unity 编辑器工具，并接入 Master Audio 2024 管理音频；音乐和音效混合使用现有素材库与生成内容。此次收录的是开发者新披露的流程与分工，游戏本体此前已上线。"
+      ],
+      "url": "https://www.reddit.com/r/aigamedev/comments/1x36ues/12_year_game_dev_and_this_is_my_first_ai_game/"
+    },
+    {
+      "title": "Hypertask 将人工工单评论送达智能体，并开放聊天与任务停止控制",
+      "paragraphs": [
+        "Hypertask 官方更新日志宣布，工单中的普通人工评论现在会通知被分配任务及关注该工单的智能体，消息同时进入应用内收件箱和已配置的 webhook 集成，无需额外 @ 提及。通知载荷包含评论作者和任务分配上下文，评论作者被排除在接收者之外；通过 webhook 接入的 Slack、邮件或其他工具也可收到对应通知。",
+        "同批更新将 Agent Chat 向所有用户开放，并加入停止长时间运行任务的按钮；停止时会清除排队消息。这些是项目协作产品的已发布功能说明，公告未披露具体游戏团队的使用结果。"
+      ],
+      "url": "https://docs.hypertask.ai/changelog/"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "Claude Code：以独立云端会话并行修复测试、更新文档与改写日志",
+        "body": "Anthropic 本周技术文章记录了 Addy Osmani 对示例 Node API 仓库的实测：三个云端会话各用独立机器和分支，分别修复缓存竞态、核对 API 文档、改写结构化日志。作者报告修复会话连续运行测试 40 次无失败；日志会话仍发现原有缓存测试失败，并如实报告，没有越过任务范围修改缓存。文章说明示例仓库和界面中的用户为虚构，但会话操作、输出及测量来自实际运行；这是一项示例研发实测，并非游戏团队生产交付。",
+        "url": "https://claude.dev/blog/claude-code-in-the-cloud/"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "今日材料呈现出分阶段执行、事件通知与独立任务验证三种协作方式；样本不足以推断整个游戏行业的效率变化。",
+      "游戏制作保留明确人工验收：《Underbloom》开发者让 Claude 执行分阶段工作，自己负责试玩、美术选择与继续推进的决定。",
+      "任务讨论连接智能体和外部工具：Hypertask 把人工评论路由到相关智能体收件箱及既有 webhook 集成。",
+      "并行执行仍需分别说明验证结果：Claude Code 示例中，缓存修复与日志改动处于不同环境，日志会话仍报告其分支上的测试失败。"
+    ]
+  }
+}
