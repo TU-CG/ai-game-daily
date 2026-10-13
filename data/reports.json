@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-10-13",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "过去 24 小时，收录 4 条经来源核验且未重复的材料：Epic 的 AI 制作要求报道，以及 MorningAI、Heym 和 Pathmode 的协作功能更新。具体游戏研发复盘补充在七日工作流追踪。",
+      "file": "2026-10-13.json"
+    },
+    {
       "date": "2026-10-12",
       "title": "每日 AI 游戏综合日报",
       "summary": "过去 24 小时，分别检索 AI 游戏研发与 AI 协作并去重后，收录 2 条新材料：《Underbloom》开发者披露分阶段制作与人工验收流程，Hypertask 更新人工评论到智能体的通知链路。七日工作流追踪补充 Claude Code 云端并行任务实测。",
