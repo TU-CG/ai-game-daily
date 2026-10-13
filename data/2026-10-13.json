@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-13",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，收录 4 条经来源核验且未重复的材料：Epic 的 AI 制作要求报道，以及 MorningAI、Heym 和 Pathmode 的协作功能更新。具体游戏研发复盘补充在七日工作流追踪。",
+  "items": [
+    {
+      "title": "Epic 迪士尼射击项目被报道转向 AI 优先制作",
+      "paragraphs": [
+        "Ars Technica 引述彭博社查阅的内部消息称，Epic 的迪士尼射击项目被要求使用 Claude 等工具生成代码，美术采用 AI 工作流，开发者负责管理和指导。Epic 发言人确认推进 AI 加速研发。报道披露的是制作要求，未展示对应代码或资产的完成成果。"
+      ],
+      "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/"
+    },
+    {
+      "title": "MorningAI 接入 GitHub 改站，并串联社交内容审查与排程",
+      "paragraphs": [
+        "MorningAI 发布 Website Agent：连接 GitHub 后，智能体读取网站、制定计划并修改页面、按钮、文案或图像，也可新建页面。用户先查看桌面、平板和手机预览，再手动发布；更新提供可分享的审查链接。",
+        "同批更新让社交智能体分析既有内容表现，生成文字和配图，预览 LinkedIn、Instagram、Facebook 帖子，再由用户批准并排程到 Calendar。聊天中可管理活动分组、调整时间和素材，日历随批准的变更更新。"
+      ],
+      "url": "https://www.morningai.com/blog/october-12-2026-product-updates"
+    },
+    {
+      "title": "Heym Work 连接聊天建流、试运行与团队操作页",
+      "paragraphs": [
+        "Heym 0.0.129 的官方发布说明宣布支持 Heym Work：用户在 Chat 描述任务，系统构建、试运行工作流并标记 Verified，团队通过带状态、详情、文件投放和运行组件的仪表盘操作流程。上传的文件可由其触发的工作流读取，聊天也能接收技能 ZIP 并将技能交给智能体。Heym Work 与 Heym 部署在用户自己的基础设施，采用单独许可。"
+      ],
+      "url": "https://github.com/heymrun/heym/releases/tag/v0.0.129"
+    },
+    {
+      "title": "Pathmode 让人工修改意见持续返回编码智能体",
+      "paragraphs": [
+        "Pathmode 更新浏览器提案审查流程：用户可用一句自然语言提出修改，原话及后续交流在提案多次更新间保留，编码智能体读取要求、修订提案并解释改动。未关闭的修改请求会阻止提案获批；用户关闭请求后，提案的批准仍需另行完成。审查页引用智能体原文，并标出每次修订中受用户答复影响的句子，供用户继续确认或要求修改。"
+      ],
+      "url": "https://pathmode.io/changelog"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "《The Laresian Order》：Claude、Godot、Obsidian 与 GitHub 的研发循环",
+        "body": "开发者 GlowingOrb 记录 Godot 游戏《The Laresian Order》的制作流程：Claude Code 智能体通过 MCP 查看运行中的游戏并截图，在各自项目副本内并行工作；Obsidian 保存需求、缺陷和数据，GitHub 管理代码。作者先明确设计和开放问题，再审查计划、截图与试玩结果，修正写回笔记；AI 负责代码、测试和素材档案检索，素材由作者选择。作者称已有 6,000 余项自动化测试，合并前执行完整测试并另做人工检查，项目仍在开发中。",
+        "url": "https://glowingorb.itch.io/the-laresian-order/devlog/1698184/devlog-18-how-ai-helps-build-this-game-and-what-stays-mine"
+      },
+      {
+        "heading": "射击游戏代码重建：智能体通过 GitHub、Discord 与 IDA 协作",
+        "body": "Maurice Heumann 与社区协作者复盘一项未公开游戏名称的 C++ 代码重建实验。Claude Code 和 Codex 智能体用 GitHub issues 按源文件领取工作，通过 Discord 协调，并接收 GitHub webhook 发送的 CI 失败通知；Hex-Rays 的 ida-mcp 提供反汇编访问。团队初期配置三个执行智能体和一个审查智能体，随后改用与原程序编译结果比较的自动验收。作者报告已重建 99% 的函数，其中 83% 逐字节匹配；这些是项目方自述，代码保持私有。",
+        "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/"
+      },
+      {
+        "heading": "AI Agent：外部助手操作工单与工作流，人工保留批准动作",
+        "body": "AI Agent 官方连接器将 Claude、Claude Code、ChatGPT 接入工单、项目、知识、表格和工作流。用户登录后选择读取、修改及运行权限；外部助手可更新工单、调用智能体和启动工作流，草稿回复仍等待收件箱中的人工批准，外部助手无法代为批准动作。",
+        "url": "https://docs.aiagent.app/changelog/use-ai-agent-from-claude-or-chatgpt/"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "今日新增材料同时覆盖游戏制作要求与已发布的协作功能；七日实测呈现人工定目标、智能体执行、外部工具反馈的共同流程。",
+      "游戏研发复盘保留人的设计与验收：GlowingOrb 决定功能、美术选择和试玩结论，Claude 负责代码及测试。",
+      "协作工具覆盖连续任务：MorningAI 串联 GitHub 改站与人工发布，Heym 将聊天建流、试运行和团队操作接起来。",
+      "人工审查成为明确动作：Pathmode 将关闭修改请求与批准分开，AI Agent 的外部助手也不能替用户批准。"
+    ]
+  }
+}
