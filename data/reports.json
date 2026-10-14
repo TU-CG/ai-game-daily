@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-10-14",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "过去 24 小时精选两条材料：《The Laresian Order》公布新一轮人工验收与回归修复记录，Notion 3.8 更新团队和智能体共用的数据库、权限与变更记录。七日工作流追踪补充独立 UE 原型复盘和 Pathmode 的批准版本同步。",
+      "file": "2026-10-14.json"
+    },
+    {
       "date": "2026-10-13",
       "title": "每日 AI 游戏综合日报",
       "summary": "过去 24 小时，收录 4 条经来源核验且未重复的材料：Epic 的 AI 制作要求报道，以及 MorningAI、Heym 和 Pathmode 的协作功能更新。具体游戏研发复盘补充在七日工作流追踪。",
