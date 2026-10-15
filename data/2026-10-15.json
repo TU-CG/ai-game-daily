@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-15",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时精选两条材料：《Mind Prison》开发者公开 Claude 与 Blender MCP 的制作分工，Open WebUI 将外部应用接入团队频道。七日工作流追踪补充 Scenario 的 Blender 资产流程和 LangChain 的研究智能体记忆示例。",
+  "items": [
+    {
+      "title": "《Mind Prison》开发者复盘 Claude 与 Blender MCP 制作流程",
+      "paragraphs": [
+        "《Mind Prison: The Last War》开发者 Impetigocheez 发布 AI 游戏制作复盘，称自己主要使用 Claude 与 Blender MCP 工具，借助 Blender 和 MCP 建立了几乎整个资产库，并把部分资产和系统改用于多个项目。《Mind Prison》已在 Steam 发售；文中另一个越战题材 FPS/RPG 仍在开发，跨玩法后果联动尚未完成验证。",
+        "作者在项目内维护持续更新的设计和开发文档，每次结束会话时让 Claude 写交接记录，再让其访问项目文件、按计划继续开发；人工负责设计方向、检查实现及纠正问题。作者同时表示，项目仍存在动画异常、模型悬浮等问题，自己的试玩频率不足。以上流程与进度均为开发者自述。"
+      ],
+      "url": "https://www.reddit.com/r/aigamedev/comments/1x5vjga/10_months_into_ai_game_dev_thoughts/"
+    },
+    {
+      "title": "Open WebUI 支持外部应用进入团队频道并异步回传结果",
+      "paragraphs": [
+        "Open WebUI 0.12.1 新增频道外部应用接入：管理员通过 HTTPS 地址连接应用，审查其读取提及、读取频道消息和发消息等权限，并选择可使用的人员；频道管理者随后将应用加入频道，成员可用 @ 提及调用。",
+        "应用可在频道回传卡片、按钮、链接或 Markdown 文件，也可仅向请求者显示回复，并在较长任务完成后追加消息。同一版本加入文本修订对比，用户可把模型生成的修改与草稿并排查看，逐项复制、合并后再应用到提示词、技能文件或聊天文本。"
+      ],
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.1"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Scenario Blender 插件：准备任务、人工批准、应用资产结果",
+        "body": "Scenario 的 Blender 插件 0.10.0 公布共享的费用预览、任务准备与审批、结果应用流程。场景截屏和选中网格可作为生成输入，本地 MCP 将智能体接到打开的场景；材质槽应用、模型导入和影片时间线组装具有明确的批准步骤。插件仍标注为实验性，需要 Blender 5.0 及以上版本和 Scenario API 账号，材料未披露具体游戏的交付结果。",
+        "url": "https://github.com/scenario-labs/blender-plugin/releases/tag/blender-plugin-v0.10.0"
+      },
+      {
+        "heading": "LangChain：分工研究、按需读取资料、跨会话保留记忆",
+        "body": "LangChain 以每周研究五家竞争对手并编写报告为示例，说明 Deep Agents 如何把各公司的检索交给独立子智能体，主智能体只接收摘要。较大的工具结果保存到文件后按需读取，旧会话压缩后仍可回查，格式偏好等长期记忆保存在用户管理的 Markdown 文件中，供后续会话或其他模型加载。这是官方流程示例，未指向具体游戏团队的部署。",
+        "url": "https://www.langchain.com/blog/context-engineering-deep-agents-remember"
+      }
+    ]
+  }
+}
