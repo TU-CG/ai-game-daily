@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-10-15",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "过去 24 小时精选两条材料：《Mind Prison》开发者公开 Claude 与 Blender MCP 的制作分工，Open WebUI 将外部应用接入团队频道。七日工作流追踪补充 Scenario 的 Blender 资产流程和 LangChain 的研究智能体记忆示例。",
+      "file": "2026-10-15.json"
+    },
+    {
       "date": "2026-10-14",
       "title": "每日 AI 游戏综合日报",
       "summary": "过去 24 小时精选两条材料：《The Laresian Order》公布新一轮人工验收与回归修复记录，Notion 3.8 更新团队和智能体共用的数据库、权限与变更记录。七日工作流追踪补充独立 UE 原型复盘和 Pathmode 的批准版本同步。",
