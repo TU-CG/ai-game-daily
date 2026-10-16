@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-16",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时精选两条新闻：Skywork 开源结合游戏引擎与 AI 画面生成的 Matrix-Game 4.0，GitLab MCP 正式上线并支持外部智能体交接研发任务。七日工作流追踪补充 Prismatic 的跨客户端集成技能。",
+  "items": [
+    {
+      "title": "Matrix-Game 4.0 开源：游戏引擎运行规则，AI 生成画面",
+      "paragraphs": [
+        "昆仑万维旗下 Skywork AI 发布 Matrix-Game 4.0，公开推理代码、模型权重、游戏资产及三款示例游戏源码：Medieval Castle、Ancient Egypt 和 City Racing。游戏引擎负责玩法、物理和玩家输入，视频模型将低多边形场景画面转换为细节更丰富的连续画面；发布内容包括离线渲染和单人浏览器演示。",
+        "官方文档提供借助编程智能体修改地形、物体摆放、NPC 行为和游戏规则的路径，修改后可先运行原生游戏测试，无需加载模型权重。项目已提供 RTX 5090 优化推理配置；RTX 5080 和 RTX 5070 支持仍列为后续计划。"
+      ],
+      "url": "https://github.com/SkyworkAI/Matrix-Game"
+    },
+    {
+      "title": "GitLab MCP 正式上线，外部智能体可交接任务并等待人工决定",
+      "paragraphs": [
+        "GitLab 宣布 MCP server 随 19.5 正式可用，Claude Code、Cursor 等兼容客户端可按用户既有权限操作代码、合并请求、工作项和流水线。新增能力包括创建分支、读取指定版本文件、查看流水线及按需获取任务产物中的单个文件；工具也可按工作流分组启用。",
+        "外部智能体现在可发现并启动 GitLab Duo Agent Platform 的流程，随后查询执行进度和结果。任务在 GitLab 的 CI 作业中运行，沿用平台的策略检查与审计记录；需要决定时会暂停，用户可通过输入工具批准、拒绝或回答问题，再继续执行。官方演示了由 Claude Code 发起 Fix Pipeline 流程。"
+      ],
+      "url": "https://about.gitlab.com/blog/mcp-server-ga/"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Prismatic：用共用技能衔接集成开发、验证和部署",
+        "body": "Prismatic 公布采用开放 Agent Skills 格式的开源技能，支持 Claude Code、Codex、Cursor、Antigravity 和 GitHub Copilot。官方仓库将职责分为环境查询与故障排查、自定义连接器开发、代码式集成、工作流迁移和应用内嵌入；集成技能要求本地检查与获授权的平台执行验证，迁移技能以原流程证据和行为验证为依据。这是官方提供的工具流程，未披露具体游戏团队的交付案例。",
+        "url": "https://prismatic.io/docs/changelog/2026/10/15/prismatic-agent-skills/"
+      }
+    ]
+  }
+}
