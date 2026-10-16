@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-10-16",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "过去 24 小时精选两条新闻：Skywork 开源结合游戏引擎与 AI 画面生成的 Matrix-Game 4.0，GitLab MCP 正式上线并支持外部智能体交接研发任务。七日工作流追踪补充 Prismatic 的跨客户端集成技能。",
+      "file": "2026-10-16.json"
+    },
+    {
       "date": "2026-10-15",
       "title": "每日 AI 游戏综合日报",
       "summary": "过去 24 小时精选两条材料：《Mind Prison》开发者公开 Claude 与 Blender MCP 的制作分工，Open WebUI 将外部应用接入团队频道。七日工作流追踪补充 Scenario 的 Blender 资产流程和 LangChain 的研究智能体记忆示例。",
