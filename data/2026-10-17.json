@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-17",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时精选一条 AI 协作更新：Cursor 云智能体可创建并分享交互式画布，同时开放云环境管理 API。七日工作流追踪补充 Blender 与 Unity 串联制作游戏资产的案例，以及 Claude Code 团队的实际代码审查流程。",
+  "items": [
+    {
+      "title": "Cursor 云智能体支持交互式画布，成果可分享给团队查看",
+      "paragraphs": [
+        "Cursor 宣布，云智能体现在可在执行任务时创建交互式画布，用户可让智能体制作仪表盘、分析或报告，再把完成的画布链接分享给团队。配套文档说明，用户在工具栏发布或刷新分享后，团队成员可在浏览器中以只读方式查看相同的布局、图表与表格，无需重新运行智能体。",
+        "同次更新将 Environments API 开放为测试版，允许通过程序创建和管理云智能体运行环境；单个环境现在支持最多 300 个代码仓库。"
+      ],
+      "url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "I Just Wanted to Fish：同一 Claude 会话串联 Blender 和 Unity",
+        "body": "MCP for Blender 公布独立开发者 Fork Dev 的制作案例：同一 Claude Code 会话通过 MCP 连接 Blender 5.2 和 Unity 6，依次编写建模、绑定、烘焙、动画及 FBX 导出脚本，再在 Unity 中导入资产、创建预制体和行为。开发者负责玩法、关卡布局与试玩；AI 先做多角度渲染和脚本化试玩检查，人工试玩后才提交。案例还展示了把 Unity 地形采样数据传回 Blender，让栈桥支柱贴合海床的过程。游戏仍计划于第四季度在 Steam 发布。上述流程来自工具方与开发者的案例披露。",
+        "url": "https://www.mcp-for-blender.com/creations/case-studies/i-just-wanted-to-fish/"
+      },
+      {
+        "heading": "Claude Code 团队：自动审查、人工批准与合并检查分工",
+        "body": "Anthropic 披露其 Claude Code 团队的实际流程：提交 PR 前先运行测试或构建，并让独立上下文的子智能体复查；每个 PR 再接受 AI 漏洞检查、安全审查及 CI，未处理的审查发现会阻止合并。可信作者的低风险修改在自动检查通过后可免人工批准，普通与高风险修改分别需要一人、两人批准，敏感路径另有强制条件；智能体批准不能代替人工批准。合并队列还会基于最新主分支重跑检查。团队称，6 月至 9 月合并 PR 数量翻倍以上、回滚占比下降超过 40%，这些数字为其内部统计。",
+        "url": "https://claude.dev/blog/solving-code-review-at-anthropic/"
+      }
+    ]
+  }
+}
