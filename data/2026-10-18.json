@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-18",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时精选一条 AI 协作更新：protoAgent 新增编码任务的草稿 PR 交接，并完善多智能体委派状态显示。游戏研发主线未检索到符合时效与去重要求的新消息；七日追踪补充 Unity 游戏制作记录与多方向精灵资产流程。",
+  "items": [
+    {
+      "title": "protoAgent 支持编码代理提交草稿 PR，展示并行委派进度",
+      "paragraphs": [
+        "protoLabsAI 在 protoAgent v0.208.0 中为通过 ACP 委派的编码智能体新增可选的 draft_pr 设置。启用受管 Git 并将该设置打开后，框架会为委派任务创建 GitHub 草稿 PR，留待人工处理合并；该选项默认关闭。",
+        "同版本还补齐 Fleet Room 对 A2A 委派任务的实时状态显示：可同时呈现多个成员或同一成员收到的并行任务，显示任务发起者与摘要，并在任务结束后更新状态。"
+      ],
+      "url": "https://github.com/protoLabsAI/protoAgent/releases/tag/v0.208.0"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Gambo7592：Claude 协调 Unity 开发，Gemini 与 Meshy 制作资产",
+        "body": "开发者 Gambo7592 在第六周制作记录中介绍，Claude Code 主智能体负责构思、规划与协调，其他 Opus、Sonnet 智能体分工执行，开发者反复检查结果并提出修改。资产流程为 Claude 编写图像提示、Gemini 生成二维参考、Meshy 转成三维模型，再由 Claude 在 Blender 中减面、清理和绑定，最后在 Unity 6 中组装。作者称另有自建的数千项自动化测试负责试玩；这些是开发者自述，游戏仍在制作中。",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1x721px/week_6_update_using_ai_to_build_a_game_with_no/"
+      },
+      {
+        "heading": "Ludo Directional Sprites：用同一三维角色生成八方向精灵动画",
+        "body": "Ludo 以测试版提供 Directional Sprites：从角色描述或已有模型出发，对同一三维模型绑定并选择二维风格、预设动作与最多八个视角，渲染各方向的精灵图集。Animation Pack 可对齐多段动画的尺寸与地面线，导出图集 ZIP、带 TexturePacker 格式 JSON 的图集或逐帧图片，可用于 Phaser、PixiJS、Cocos2d 等工具链。这是工具方披露的资产制作流程。",
+        "url": "https://ludo.ai/whats-new"
+      }
+    ]
+  }
+}
