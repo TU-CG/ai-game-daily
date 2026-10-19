@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-19",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时精选一条 AI 协作更新：endue 为智能体配置独立云电脑，由秘书代理分派并汇总任务。游戏研发主线未发现符合时效与去重要求的新消息；七日追踪补充《Second Chance》的制作记录与 Amp 的跨应用研发交接流程。",
+  "items": [
+    {
+      "title": "endue 为智能体配置独立云电脑，秘书代理负责分派与汇总",
+      "paragraphs": [
+        "据 endue 官方版本说明，智能体使用的云电脑已迁入 endue OS：每个智能体有独立 Station，可按任务启动 Linux 和 Chrome 工作区，空闲时暂停，恢复后保留文件。Linux 工作区支持克隆仓库、安装依赖、构建和运行测试。",
+        "账户内的秘书代理可将一个请求拆给多个智能体，显示各任务正在执行、等待人工确认或完成的状态，并汇总结果。用户还可逐个允许智能体通过 MCP 被 Claude Code、Cursor 等客户端调用，并选择连接器与输出的访问权限。"
+      ],
+      "url": "https://endue.ai/releases/2026-10-18"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "《Second Chance》：多个 Claude Code 会话轮流操作同一编辑器",
+        "body": "开发日志称，James 用 Claude Code 规划代理分派开锁、警局、住宅家具与新城区等任务，多个会话轮流操作同一 Unreal 编辑器，在编译占用时等待重试。智能体依据开发者提供的照片与建筑图在 Blender 建模，再通过脚本布置道路、住宅和家具；James 检查场景并提出修改。日志记录了新城区的 100 户住宅，以及保存前对导航覆盖的比较检查。这是仍在制作中的项目自述。",
+        "url": "https://secondchancegame.com/devlog/2026-10-17-clearance"
+      },
+      {
+        "heading": "Amp Puck：从外部助手交接需求，沿用已有项目上下文",
+        "body": "Amp 的官方流程允许用户先在 ChatGPT 或 Claude 中讨论需求，再通过 MCP 交给同一账户下的 Puck。Puck 可查找此前会话与项目，将任务路由到相应 Orb 编码环境并协调智能体；用户可留在原对话中查询进度。连接后提供 puck 与 orbs 两个工具，后者展示运行中的环境及访问入口。这是官方公布的跨应用研发交接流程。",
+        "url": "https://ampcode.com/news/take-puck-with-you"
+      }
+    ]
+  }
+}
