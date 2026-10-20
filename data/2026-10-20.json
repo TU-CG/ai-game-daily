@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-20",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时精选两条消息：《Starhex》公开 Claude 编码与人工试玩的迭代记录，Notion 更新智能体的长任务执行与动作复核能力。七日追踪补充《小王子》3D 游戏制作复盘，以及 KraigOS 的多智能体共享记录与任务协调实践。",
+  "items": [
+    {
+      "title": "《Starhex》公开 Claude 编码与人工试玩的迭代记录",
+      "paragraphs": [
+        "Kraig Adams 的《Starhex》开发日志记录了明确的人机分工：他负责玩法设计和试玩，Claude 负责代码。最新迭代中，Claude 按他的反馈加入铜矿守卫遭遇、激光攻击、陨石防御、自动维修与空间站热量系统，并补充钢板、电路和马达三类生产部件及就地升级机制。",
+        "日志还记录了试玩后的调试：Claude 读取第一至六章的通关记录，调整耗时过长的信号解码目标，修复记录捕获到的点击错误，再按开发者要求保留手动速度控制。这些实现来自开发者自述，游戏仍处于早期测试。"
+      ],
+      "url": "https://kraigadams.com/starhex/devlog/"
+    },
+    {
+      "title": "Notion 更新智能体执行框架，支持长任务持续运行与动作复核",
+      "paragraphs": [
+        "Notion 宣布为 Notion Agent 与 Custom Agents 更新执行框架。官方称，独立服务和队列工作循环让任务在重启或短暂中断后继续执行，单项任务可运行 24 小时；智能体可使用自己的电脑和浏览器，并编写短脚本完成部分工作。",
+        "新框架会压缩长对话，并把大型工具结果移出上下文窗口。“Review for me”模式在智能体执行动作前调用另一个模型检查。官方还称，外部智能体现在可将记忆同步到 Notion；通过 MCP 使用 Skills 仍标为即将推出。"
+      ],
+      "url": "https://www.notion.com/blog/notion-ai-more-for-less"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "《小王子》3D 游戏：从参考图到角色动作的制作复盘",
+        "body": "开发者 Sac 自述的制作流程由 Fable 整理需求与剧情，Image 2.5 生成场景和角色参考，Tripo 生成 3D 资产；Opus 通过 Blender 与 Unity 搭景并写代码，Astra 参与迭代修错。角色经过 Auto-Rig Pro 绑骨、Mixamo 动作适配，提水壶等接触动作再在 Blender 调整；作者用多角度截图反馈校正场景，并将完整源码公开列为后续计划。",
+        "url": "https://x.com/Saccc_c/status/2110694725640474759"
+      },
+      {
+        "heading": "KraigOS：共享记录、任务领取与并发写入检查",
+        "body": "作者日志记录了 Claude、Grok 与 Gemini 共用 KraigOS 规则及工作记录的实践。代理执行外部任务前须先领取任务，已完成或被占用的任务不能再次领取；补充记录采用带日期和来源的追加，覆盖笔记前须检查最新版本，作者称已用六个代理并发写入测试。Grok 代理目前共用一个身份，关闭旧数据库直连、分配独立身份及建设私人审批页仍待完成；发送邮件等操作继续由作者确认。",
+        "url": "https://kraigadams.com/kraigos/devlog/"
+      }
+    ]
+  }
+}
