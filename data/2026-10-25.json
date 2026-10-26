@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-25",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期关注 Claude 辅助游戏制作的新进展，以及设计画布、代码与团队沟通之间的协作流程。",
+  "items": [
+    {
+      "title": "《Solhex》用 Claude 完成第一部收尾，并按试玩录像调整开场引导",
+      "paragraphs": [
+        "独立创作者 Kraig Adams 在《Solhex》的 v173 开发日志中，为现有十章加入第一部结尾：读取关卡中的核心后，播放收尾场景并展示游玩时长与建造成果，玩家可以继续建造或返回标题画面。该版本已提供桌面浏览器试玩。作者说明，自己负责游戏设计和试玩，Claude 编写游戏代码；项目仍处于持续迭代的早期测试阶段。",
+        "据开发日志，网站试玩录像显示，新玩家经常在放下船坞后的收集矿石目标处停住。新版本因此把开场目标拆成依次点击飞船、附近铁矿和船坞的步骤，并加入勾选清单、目标高亮、屏幕外方向箭头和延迟提示；船坞放下后，飞船面板也会自动关闭，避免遮挡地图。上述制作与试玩观察均来自开发者公开记录。"
+      ],
+      "url": "https://kraigadams.com/solhex/devlog/#v173"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Figma：从静态设计生成交互，再在共享画布审阅修改",
+        "body": "Figma 新发表的团队案例中，Superside 设计师先让 Figma agent 将静态画面转换为代码层，再分步加入滚动、点击与翻面交互，用参考截图和明确的位置、尺寸及弹性参数修正结果。Checkout.com 则将代码层的全部屏幕抽到同一画布并排检查和修改，再把改动送回可运行原型，供团队共同审阅。",
+        "url": "https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/"
+      },
+      {
+        "heading": "GitHub 与 Teams：从缺陷通知进入 Copilot 修复，再由团队审核合并",
+        "body": "GitHub 的新版 Teams 应用将通知与 Copilot 放到同一流程：缺陷通知进入频道、群聊或私聊后，成员可通过 @GitHub 请求调查问题、修改代码并创建拉取请求，随后由团队审查、测试和合并。用户需关联 GitHub 账号并选择仓库；原有通知功能保留在整合后的应用中。",
+        "url": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/"
+      }
+    ]
+  }
+}

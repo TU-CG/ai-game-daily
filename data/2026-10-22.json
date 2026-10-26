@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-22",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期精选两条更新：Unity 扩充智能体操作编辑器的能力，Claude Duet 开启跨应用后台协作预览；工作流追踪关注 Roblox 的技能分工与实测记录。",
+  "items": [
+    {
+      "title": "Unity CLI 扩充智能体工具范围控制与多编辑器操作",
+      "paragraphs": [
+        "Unity 发布 CLI 1.0.0-beta.14，可筛选向智能体开放的编辑器 MCP 工具，并按端口、进程或实例指定操作对象，覆盖同时打开多个编辑器及多人游玩模式实例的情况。新版本还加入 Antigravity 配置入口，延续对 Claude、Codex 和 Grok 的接入支持。",
+        "无人值守流程可以等待编辑器准备完成、无界面启动，并预先接受升级或软件条款；遇到阻塞对话框会返回具体信息。智能体还能持续读取带文件、行号与编译错误码的控制台日志，获取版本对应的文档，并统一检索 CLI、插件和编辑器命令。"
+      ],
+      "url": "https://discussions.unity.com/t/unity-cli-1-0-0-beta-14-is-rolling-out/1739999"
+    },
+    {
+      "title": "Claude Duet 开启预览：连接应用、后台执行并等待人工确认",
+      "paragraphs": [
+        "Anthropic 开放 Claude Duet 研究预览候补名单，首批面向美国 Pro、Max 用户，提供独立手机应用及网页入口。Duet 继承账户的记忆、技能和已连接应用，在自带浏览器的云端虚拟机中持续处理任务，用户设备离线后仍可继续工作，并在完成或需要审查时通知用户。",
+        "官方列出的协作流程包括读取 Gmail、Slack 后准备回复，结合 HubSpot 客户记录起草跟进邮件，以及用 Canva 制作推广内容；也可承接仪表板、原型和网页应用任务。Duet 每隔数小时检查连接账户，可自行阅读和准备草稿，但发送消息、付款、签署文档或删除内容前会展示待执行操作并等待用户批准。"
+      ],
+      "url": "https://claude.com/resources/articles/claude-duet"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Scenario：总控与专项技能共同操作 Roblox Studio",
+        "body": "Scenario Skills 0.59.0 公开一个总控技能与 13 个专项技能，为 Claude Code、Codex 分派 Luau、场景、UI、动画及测试工作，并通过 Roblox Studio 内置 MCP 执行脚本、启动试玩、模拟输入和截图核对。维护者公开的实测记录展示了角色依次踩亮目标点、NPC 追逐和光照切换；测试范围是 macOS 上的本地未发布项目，尚未覆盖 Windows、真机及多客户端。",
+        "url": "https://github.com/scenario-labs/skills/blob/skills-v0.59.0/tests/scenario-roblox-expert/evidence/README.md"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-23",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期精选 1 条 AI 协作更新，并追踪 2 项独立游戏研发复盘。过去 24 小时的游戏研发材料中，暂未筛得可核验且未重复的重要新进展。",
+  "items": [
+    {
+      "title": "Linear Loops 新增 Slack、GitHub 事件触发，Agent 可读写 Figma",
+      "paragraphs": [
+        "Linear 为 Loops 增加 Slack 与 GitHub 事件触发。官方示例包括在 Slack 频道回答产品问题，以及在 GitHub 拉取请求被加上“ready for testing”标签时起草 QA 计划。更新还加入工作区循环模板和可选推理级别，供团队复用流程并调整任务设置。",
+        "Linear Agent 同时接入 Figma 远程 MCP，可在用户已有文件权限内读取和修改设计；官方列举的流程包括根据设计画框整理实现要求，以及从工单生成设计提案。此外，Linear 新增 Cursor Origin 同步，可依据关联拉取请求的进展自动更新工单状态。"
+      ],
+      "url": "https://linear.app/changelog/2026-10-22-slack-and-github-loops"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Inselnova：工单驱动的多会话开发与独立审查",
+        "body": "浏览器策略游戏 Inselnova 的独立开发者 Darren 复盘了自己的 Claude Code 流程：从工单载入上下文，复杂功能先生成计划包并由本人确认架构；同一发布工作树中开启三至五个会话，尽量错开编辑文件。完成后，由使用全新上下文的并行代理检查界面、数值、文案、测试和后端，再由本人试玩。作者记录的一次十路审查覆盖 329 个文件，提出 43 项主要问题，随后修复了其中 41 项；这些数字来自其开发记录。",
+        "url": "https://inselnova.com/chronicle/2026-10-21-typical-week/"
+      },
+      {
+        "heading": "ReTzar：逐系统重写、测试记忆与原版对照试玩",
+        "body": "开发者 ColCarlo99 介绍了用 Claude Code 将《Tzar: The Burden of the Crown》重写为 Rust 与 Bevy 项目 ReTzar 的过程：把原程序反汇编成文本，由 AI 逐项迁移战斗、电脑对手、地图生成和任务脚本；本人并排试玩原版与重制版，反馈差异，再让 Claude 追溯原程序。作者称使用了 600 余项测试和跨会话记忆笔记，并在代码旁记录原程序地址。项目仓库已公开，运行仍需自备原版游戏数据；上述研发过程与测试数量为开发者自述。",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1x91lor/rebuilt_a_2000_rts_from_scratch_with_claude_code/"
+      }
+    ]
+  }
+}

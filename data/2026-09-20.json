@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-20",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，本期核验收录 1 项 AI 协作工具更新，涉及内容处理智能体与临时执行沙箱。游戏研发主线未找到同时满足时效、实质变化与去重要求的新案例；七日工作流追踪补充任务分派、跨智能体调用和浏览器操作三项独立材料。",
+  "items": [
+    {
+      "title": "Magine 新增九种任务智能体，并为 Catbots 开放临时沙箱",
+      "paragraphs": [
+        "Magine 在 v1.5.5 中向市场加入九种官方任务智能体，覆盖视频转录、PDF 文本与表格提取、电子表格清理、网页归档、文件转换、批量图片处理、音频转录与字幕、列表抓取为 CSV，以及文档合并与拆分。",
+        "同次更新允许 Catbots 智能体在网页无法提供答案时创建临时沙箱。官方说明称，此类沙箱不携带用户文件，并在当前步骤结束后删除。公告披露的是工具能力，未提供具名游戏团队使用这些功能的制作结果。"
+      ],
+      "url": "https://magine.cloud/docs"
+    }
+  ],
+  "workflow": {
+    "items": [
+      {
+        "heading": "Claude Projects：协调器分派云端线程，共享项目记忆",
+        "body": "Anthropic 本周开放新版 Projects 的有限 beta：协调器拆分任务、分派并行线程、审查输出并汇总结果，用户可在主对话或单个线程中调整工作。各线程使用独立分支和仓库副本，可运行测试、提交 PR，并读写共享记忆；重叠代码仍需处理合并冲突。首批面向符合条件的部分 Pro、Max 用户，线程当前运行在云端，本地执行尚属后续计划。",
+        "url": "https://claude.com/blog/projects-redesigned"
+      },
+      {
+        "heading": "Microsoft Foundry：通过 A2A 与 MCP 串联不同智能体",
+        "body": "微软本周技术说明展示三种协作路径：外部智能体发现并调用 Foundry 智能体；Foundry 智能体通过 A2A Tool 调用远端智能体；Hosted Agent 先连接 MCP 形式的 Foundry Toolbox，再由工具箱调用远端 A2A 服务。调用者通过 agent card 获取能力说明，Foundry 入站访问须经 Entra ID 认证及授权。入站接口目前仅支持文本，不支持流式响应；文中的研究智能体调用数据分析智能体属于示例流程。",
+        "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/a2a-endpoints-and-a2a-tool-in-microsoft-foundry-agents/4557115"
+      },
+      {
+        "heading": "Playwright Workspaces：以远程 MCP 提供浏览器执行环节",
+        "body": "微软将 Playwright Workspaces 远程 MCP 服务器开放为预览。兼容客户端连接工作空间专属 HTTPS 端点后，可使用 22 项工具执行导航、页面检查、交互、标签页操作、文件上传、截图和浏览器诊断。服务托管浏览器，无需在智能体环境内安装本地服务器及浏览器；官方流程同时包含工具审批和页面、控制台、网络证据采集。",
+        "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/announcing-the-playwright-workspaces-remote-mcp-server-for-agentic-browser-autom/4555698"
+      }
+    ]
+  },
+  "trend": {
+    "points": [
+      "本期可核验材料集中在 AI 协作的分工与执行能力，尚无足够新增证据判断游戏制作采用情况发生变化。",
+      "内容处理任务继续被封装为专用智能体：Magine 将转录、表格清理及批量图片处理等加入官方市场。",
+      "协作分工同时覆盖项目内部与服务之间：Claude Projects 使用并行线程与共享记忆，Foundry 展示跨服务智能体调用流程。",
+      "执行环境成为协作工具的一部分：Magine 提供步骤结束即删除的沙箱，Playwright Workspaces 预览托管浏览器与操作工具。"
+    ]
+  }
+}

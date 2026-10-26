@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-21",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时精选两条消息：Wombo 更新游戏角色多视图参考图与动画衔接流程，Jan 增加按职责分工的子智能体。七日追踪补充《Amara》的 AI 编码与人工验收记录，以及通过 MCP 完成本地游戏音频制作的开源工具。",
+  "items": [
+    {
+      "title": "Wombo 更新角色多视图生成，可上传参考图继续制作动画",
+      "paragraphs": [
+        "开发者 Platypus 公布开源游戏资产工具 Wombo（AI Game Studio）v0.2.6 的更新：新增左视图和逐视图上传参考图的入口，开发者可导入在其他工具生成或手工制作的图像，再继续生成动画。角色参考图改用四宫格模板，在一次 API 调用中生成正面、背面及左右视图，替代原先逐次生成、以前一视图作为条件的四次调用。",
+        "作者称，新流程改善了视图一致性，并减少调用成本与等待时间；这些效果属于开发者自述，未提供独立测试数据。当前工具通过 OpenRouter 调用 OpenAI 模型；ComfyUI 接入、地图图块与背景生成仍列在后续待开发事项中。"
+      ],
+      "url": "https://community.openai.com/t/ai-game-studio-dev-log-by-platypus/1397035/12"
+    },
+    {
+      "title": "Jan 增加探索、研究、审查与调试子智能体",
+      "paragraphs": [
+        "Jan v0.8.7 为 Jan Agent 增加 explore、research、review 和 debug 四类内置子智能体，各自可使用不同模型，explore 默认用于只读探索。官方文档说明，主智能体可分派独立任务，让子智能体在各自上下文中并行工作并返回结果；运行中的任务可以接收补充说明，也可以被单独停止。",
+        "新版同时加入协作权限约束：工具调用超出该次运行的允许范围时会被拒绝，子智能体请求授权而无人能够回应时不会自动放行；用户按下 Stop 会结束整个当前回合，包括仍在执行或等待批准的工具。"
+      ],
+      "url": "https://www.jan.ai/changelog/2026-10-20-jan-v0.8.7"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "《Amara》：Claude Code 编码，开发者在引擎中验收效果",
+        "body": "XenoState 的开发日志明确由作者负责创作决策与试玩，Claude Code 智能体写代码。最新复盘记录了 GPU 流体模拟营火、矿井水体、首领战后返乡升降机及试玩问题修复；作者称营火的热量与火焰高度通过研究范围检查，但闪烁过快、颜色偏冷两项仍未通过，接入游戏后继续与真实营火对照。游戏处于早期开发，尚无可下载版本；概念图使用 Grok Imagine，游戏内美术另用免费、CC0 资源及自制内容。",
+        "url": "https://xenostategames.itch.io/amara/devlog/1709112/dev-log-were-back-and-our-first-simulated-fire"
+      },
+      {
+        "heading": "Audio Studio MCP：从自然语言需求到游戏音频导出",
+        "body": "Tokyo AI Visuals 开源的 Audio Studio MCP 将 Claude Code、Claude Desktop、Cursor 等客户端连接到本机 Stable Audio 3，支持生成音乐与音效、改写或延长片段，再制作无缝循环、调整响度，导出 WAV、OGG 或 FLAC。仓库展示了 Claude 为 Godot 生成候选背景音乐并制作循环的会话，每个输出附提示词、随机种子和设置记录；支持 Apple Silicon Mac 与配备 NVIDIA GPU 的 Windows，属于公开工具及示例流程。",
+        "url": "https://github.com/kanaworksai-hue/audio-studio-mcp"
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-24",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期精选 2 条更新：独立游戏的 AI 制作复盘，以及跨智能体知识共享的新审查功能；工作流栏另追踪 2 项团队协作与自动化实践。",
+  "items": [
+    {
+      "title": "《Kanto Tactics》开发者复盘 AI 助手分工、回放测试与人工发布",
+      "paragraphs": [
+        "独立开发者 Einoow 发布了浏览器自走棋《Kanto Tactics》的 AI 辅助制作复盘。这款游戏已在本月初上线；作者为平衡、战斗塔、冒险、在线对战、移动端和安全等主题分别配置助手与专属笔记，再由一个统筹助手协调、整合工作并准备版本。每个助手结束任务时留下交接记录，供后续会话继续处理。",
+        "作者称，战斗引擎每次修改后都会回放数百局已记录对战，结果必须保持一致才能发布，以保证在线对战双方模拟相同的战斗。游戏方向、美术与手感判断、社区反馈取舍，以及每次版本上线，仍由开发者本人决定。上述制作流程与测试规模均来自开发者自述。"
+      ],
+      "url": "https://einoow.com/devblog/how-i-made-kanto-tactics-with-ai"
+    },
+    {
+      "title": "Lore 新增私有知识草稿，团队成员可参与共享知识审查",
+      "paragraphs": [
+        "用于在 Claude Code、Codex 等工具及团队成员之间复用项目知识的 Lore 发布 0.2.28。新增的知识草稿仅作者本人及其智能体可见，分享后才进入共享范围；工作区拥有者与管理员可以设置由作者以外的团队成员审批新知识，也可以关闭审查。",
+        "当 Context Guard 请求操作批准时，界面现在会显示触发规则所依据的知识记录。集成令牌可访问的会话范围也收窄为共享工作及该令牌自己记录的会话。"
+      ],
+      "url": "https://docs.uselore.co/changelog/"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Make Maia：先审规划，再根据运行记录修复流程",
+        "body": "Make 的官方更新展示了 Maia 在 Scenario Builder 中的协作方式：Plan 模式先收集问题、列出模块与假设，用户批准后才构建；也可上传流程草图或截图，让助手据此搭建。Memory 在不同流程间保留用户可编辑的偏好。运行失败时，Resolve error 会读取各模块处理的数据并提出流程修改，由用户审查后保存。",
+        "url": "https://www.make.com/blog/plan-and-build-better-workflows-with-maia-by-make-upgraded"
+      },
+      {
+        "heading": "SAM：团队批注与限时接管同一智能体会话",
+        "body": "Simple Agent Manager 的开发日志与协作文档说明，项目成员可以对同事的智能体会话消息或选段批注、提及他人；有会话操作权限的人可将批注连同原消息和发送者信息交给智能体。会话拥有者还能授予同事 5、10、30 或 60 分钟的临时权限，用于发消息、回答智能体提问和操作会话；授权到期后自动收回操作权限。",
+        "url": "https://www.simple-agent-manager.org/blog/sams-journal-a-chat-is-better-with-a-teammate/"
+      }
+    ]
+  }
+}

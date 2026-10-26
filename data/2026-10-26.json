@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-26",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期精选两条，分别记录手游开发中的人机分工，以及设计软件接入外部 AI 助手的实质更新。",
+  "items": [
+    {
+      "title": "《Critical Crossing》开发者复盘 Claude Code 编程与人工真机测试",
+      "paragraphs": [
+        "开发者 th3strang3rr 公开了交通信号控制手游《Critical Crossing》的制作复盘：项目采用 Unity，代码主要由 Claude Code 编写；本人负责设计决策、运行各版构建和试玩，并邀请测试者反馈。作者表示，游戏已在 Android 免费提供。",
+        "据作者自述，美术采用 AI 生成的铅笔画风素材，再处理车辆与角色的风格一致性、透明度、尺寸和色调；预告片及短视频由 Claude 辅助编辑 Unity 录屏。音效试用 AI 后改用 Freesound 实录素材；真机测试还发现了编辑器中未复现的帧率相关闯红灯问题。"
+      ],
+      "url": "https://www.reddit.com/r/aigamedev/comments/1xeybpe/made_my_first_mobile_game_with_claude_code_and_ai/"
+    },
+    {
+      "title": "SolidCraft 0.22.1 自动连接 Claude、Codex 等外部 AI 助手",
+      "paragraphs": [
+        "开源参数化 CAD 工具 SolidCraft 发布 0.22.1，启动时可为本机的 Claude Desktop、Claude Code、Codex、Cursor 等客户端配置 MCP 连接，让外部助手操作当前打开的 SolidCraft 窗口。用户可在帮助菜单重新连接，也可在设置中关闭自动连接。",
+        "本次更新还让每个设计标签页保留自己的代理聊天，并在 Windows、macOS 和 AppImage 分发中将 solidcraft-cli 加入 PATH，供外部工具调用。"
+      ],
+      "url": "https://github.com/tangency-labs/solidcraft/releases/tag/v0.22.1"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "《Cruising Bones》：Claude 串联美术工具与人工试玩反馈",
+        "body": "开发者 Apprehensive-Law77 公开了 BabylonJS 滑板游戏《Cruising Bones》的制作流程：以自己制作并 3D 打印的骷髅滑手为视觉参考，让 Claude 在浏览器中使用其已登录的 Magnific、Tripo 账户协助生成美术，再用 Claude Code 开发游戏。作者每轮试玩后列出修改、补充需求，继续迭代关卡和玩法；项目目前为可免费试玩的 Alpha。以上为开发者自述。",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xe7kwg/built_a_downhill_skateboarding_game_with_claude/"
+      },
+      {
+        "heading": "Agensh：通过共享代码、消息与上下文自行分工",
+        "body": "微软公开的 Agensh 研究框架让代理通过 Gitea 共享工作区、Mattermost 消息和共享上下文，自行认领子任务、交换发现、验证结果并异步合并进度，无需中央编排者。仓库同时提供基于原生 Copilot ACP 会话的 Docker Compose 单机团队环境、单代理基线和复现实验指南；研究任务是在限定时间、无互联网环境下重建参考程序。",
+        "url": "https://github.com/microsoft/Agensh"
+      }
+    ]
+  }
+}
