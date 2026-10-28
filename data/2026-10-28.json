@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-28",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期精选一项 AI 游戏制作复盘和一项项目协作更新，并追踪独立游戏的关卡验证与发布流程。",
+  "items": [
+    {
+      "title": "《Engines of Hate》公开多 Claude 分工与 Unity 自动录制流程",
+      "paragraphs": [
+        "独立开发者 Failosipher 公开了 Unity 机甲即时战略游戏《Engines of Hate》的制作复盘。据作者介绍，他通常同时运行 5 至 6 个 Claude Code 会话，通过工作看板登记任务、协调文件修改，另设一个会话每半小时检查冲突与重复工作。AI 通过自建桥接操作 Unity，执行试玩、生成单位、下达指令、移动镜头、截图和录制；一个编辑器与两个后台 Unity 实例采用租约轮流使用。",
+        "作者还将已购素材整理为可搜索的特效、音效、模型与动画库，AI 制作内容前先检索这些资源，并参考人工评分选择素材。迭代流程包括记录现状、生成概念、制定计划和分轮对照制作，作者负责选择概念、批准计划和最终验收。上述流程为开发者自述，项目目前处于试玩阶段。"
+      ],
+      "url": "https://failosipher.itch.io/engines-of-hate/devlog/1733187/im-so-glad-i-taught-claude-how-to-cook"
+    },
+    {
+      "title": "Plane 4.0 将 Agents 带到自托管项目管理，支持事件触发与 MCP 工具",
+      "paragraphs": [
+        "Plane 发布自托管版本 4.0.0，提供可直接利用项目与工单上下文工作的 Plane Agents，官方列举了缺陷关联检查、需求遗漏检查和发布情况汇总等任务。团队可为智能体配置职责、可复用 Skills、跨运行记忆和 MCP 外部工具，并通过任务分配、提及、新建工单或定时计划触发执行。",
+        "每次运行都有进度与工具使用面板，工单修改以智能体身份记录。需要人工判断时，智能体可在工单内请求输入；完成后回帖并标记运行结束，成员可以再次 @ 提及它继续处理。团队可限定每个智能体能够访问的项目。"
+      ],
+      "url": "https://plane.so/changelog/release-v4-0-0-plane-agents-ui-refresh-work-item-security"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "《Luxaplex》：生成关卡后自动求解，人工试玩并掌握发布",
+        "body": "《Luxaplex: Restore Point》开发者介绍，Claude Code 编写了大部分 GDScript、关卡生成器和 BFS 解题机器人，每次修改后重跑关卡，检查可解性、界面流程与翻译。作者先批准版本范围，再筛选关卡、真机试玩，并另请 ChatGPT 审查构建。AI 还编写了生成像素图集的 Pillow 脚本，以及打包 Android AAB 的 GitHub Actions；平台配置、商店页面和发布由作者完成。以上为开发者复盘，itch.io 已提供 Windows 版本下载。",
+        "url": "https://www.reddit.com/r/aigamedev/comments/1xfworh/i_shipped_my_first_game_in_3_weeks_of_evenings/"
+      }
+    ]
+  }
+}
