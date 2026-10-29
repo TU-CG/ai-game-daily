@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-29",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期精选一份 AI 游戏制作复盘和一项多智能体协作更新，并追踪引擎研发与 AI 测试的实际流程。",
+  "items": [
+    {
+      "title": "Simon Willison 公开 Claude 制作浏览器游戏的原型与试玩纠错过程",
+      "paragraphs": [
+        "Simon Willison 新公开的制作复盘展示了多款 HTML、JavaScript 浏览器游戏。在《Emberwick》中，他用 Claude 聊天界面逐步生成 three.js 村庄、地形和地下通道，再加入剧情与魔法系统；试玩后发现角色位置变化导致任务无法完成，继续反馈修正，并公开了聊天记录和可玩版本。作者将图形、剧情、音乐与对话归于模型生成。",
+        "另一项目《Quarter Sun Cove》先通过头脑风暴形成规格文件，再交给 Opus 5.5 Ultracode 构建，围绕南瓜种植、售卖与比赛设计循环，目前仍在迭代玩法。以上为作者的个人实验与复盘。"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/"
+    },
+    {
+      "title": "GitHub Copilot Projects 开启公开预览，协调跨仓库智能体并操作桌面应用",
+      "paragraphs": [
+        "GitHub 为 Copilot 应用推出 Projects 公开预览：用户提供目标、代码仓库、设计稿、Slack 讨论等上下文并选择模型与工具，Copilot 在后台调度多个智能体，把会话、产物和待人工处理事项集中到项目中，提交的拉取请求由用户审查。项目还支持重复执行的自动化任务。",
+        "同轮更新将 Computer Use 公开预览带到 Windows 和 macOS 本地会话。Copilot 可读取应用内容、点击控件、输入文字并跨应用处理流程，覆盖缺少 API、命令行或 MCP 接口的软件。应用提供控制前授权和组织级禁用设置，用户可随时停止操作。"
+      ],
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases/"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Epic：AI 参与引擎修复与重构，工程师持续掌握架构约束",
+        "body": "Epic 开发执行副总裁 Marcus Wassmer 向 This Week in Video Games 介绍，团队使用 Claude Code、Codex 处理 Unreal Engine 的非确定性资源烘焙错误、部分 D3D12 渲染层重写及测试维护，并开始在《Fortnite》中部署稳定性监测、根因分析与修复生成。工程师持续引导架构、内存、性能和可扩展性边界。上述成果为 Epic 的研发自述。",
+        "url": "https://thisweekinvideogames.com/news/epic-games-confirms-ai-is-being-used-to-develop-code-for-unreal-engine/"
+      },
+      {
+        "heading": "AWS QA Studio：把 AI 浏览器测试纳入应用归属与团队协作",
+        "body": "AWS 的 QA Studio 参考方案使用 Amazon Nova Act 按自然语言执行浏览器测试，配合测试套件和 CLI 接入持续集成。本轮材料补充应用级测试归属、CloudWatch 执行指标与团队角色管理；失败结果可回看智能体轨迹和会话录像。跨团队共享可分别授予查看、执行或完整访问，但实际权限仍受接收者自身角色上限约束。",
+        "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-software-delivery-with-agentic-qa-automation-using-amazon-nova-act-part-3/"
+      }
+    ]
+  }
+}
