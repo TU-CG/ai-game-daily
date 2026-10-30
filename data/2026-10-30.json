@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-30",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期精选一项游戏 AI 开发工具开放更新和一项多智能体协作发布，并追踪游戏资产生成与代码审查工作流。",
+  "items": [
+    {
+      "title": "Atelico 将自研游戏的本地 AI 工具打包为引擎，开放限额早期访问",
+      "paragraphs": [
+        "Studio Atelico 将为《Bobium Brawlers》开发的 AI 组件打包为 Atelico AI Engine，向其他开发团队开放限额早期访问。该游戏让玩家用文字描述生物，再在手机上生成角色画像和可用卡组；公司在采访中说明，游戏尚未正式发行。",
+        "据官方介绍，引擎原生接入 Godot、Unity 和 Unreal，在游戏进程内执行语言模型、图像生成、语音识别与合成、口型动画及语义检索。开发者可组合结构化输出、原创对白检索、角色状态与内容过滤组件。官方已公开代码示例和演示，外部团队的具体游戏案例尚未披露。"
+      ],
+      "url": "https://atelico.studio/blog/the-atelico-ai-engine-is-here"
+    },
+    {
+      "title": "LobeHub 发布项目化多智能体协作，接入 Linear 并补齐人工验收流程",
+      "paragraphs": [
+        "LobeHub 2.2.21 稳定版将对话、频道和任务集中到项目中。多个智能体可在频道内协作，各频道继承对应智能体的设备与工作目录；子智能体在后台执行后以消息回传结果。新增 Linear OAuth 集成，可把问题单同步为项目任务。",
+        "目标工作区新增跨智能体目标视图和供用户签核前审阅的交付报告；验收可绑定项目、附带终端证据，并将反馈交回原智能体。Discord、Slack 与飞书机器人还可按职责判断是否回复，在被提及时唤醒，或先确认接收、再在线程中给出结果。"
+      ],
+      "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.21"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "3D AI Studio：从草图、概念图到可导入引擎的低多边形道具",
+        "body": "3D AI Studio 新增的模板包含 32 项游戏制作流程。低多边形道具模板先由 Image Studio 把文字或草图转为概念图，再交给 Tripo P2 生成模型；用户可在转为 3D 前检查或重做图片，按引擎预设导出 FBX、GLB。模板也提供给 Claude、ChatGPT、Cursor 的任务说明，通过 MCP 执行并保存结果；下载文件需要付费方案。",
+        "url": "https://www.3daistudio.com/Updates"
+      },
+      {
+        "heading": "Android Studio：外部智能体调用开发工具，人工按主题审阅改动",
+        "body": "Rabbit 2 稳定版通过 BYOA 接入 Claude Agent、Codex、Junie 等四十余种智能体，使其调用模拟器、构建系统与 Logcat，并用 Skills 管理专门流程。Change Review 可检查智能体改动、待提交内容和 Git 历史，先给出建议修复，再把相关差异按主题组织为人工审阅导览。",
+        "url": "https://developer.android.com/blog/posts/ai-agents-android-studio-integration?hl=en"
+      }
+    ]
+  }
+}
