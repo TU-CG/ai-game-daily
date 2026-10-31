@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-31",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期精选一篇已发售游戏的 AI 制作复盘，以及一项跨项目智能体与 MCP 工具发现更新；另追踪旧游戏重制和素材整理工作流。",
+  "items": [
+    {
+      "title": "开发者复盘《戦う情報システム部》：Gemini 策划，Claude Code 实现与检查",
+      "paragraphs": [
+        "开发者 candynex 公开了 Unity 游戏《戦う情報システム部》的制作复盘，Steam 商店已显示 Windows 版发售。其分工是由 Gemini 负责剧本原案、命令谜题关卡与审核，Claude Code 负责 C# 实现、Python 剧本生成、自动检查和 Steam 功能，NanoBananaPro2 制作商店横幅，作者负责体验判断和试玩。",
+        "据作者记录，编码至 v1.0 冻结共用 26 天，完成了 104 话剧情；命令解析等核心独立于 Unity 编辑器，每次修改后可执行 1,646 项自动检查。跨会话资料保存在 Markdown 中，提交前另设 AI 评审与反证角色；作者仍进行了两轮人工试玩，并提供截图修正界面问题。"
+      ],
+      "url": "https://qiita.com/candynex/items/6dadfad94c9e2b197f7a"
+    },
+    {
+      "title": "Google Cloud 开放跨项目智能体与 MCP 工具目录预览",
+      "paragraphs": [
+        "Google Cloud 在 Agent Registry 中开放跨项目管理边界预览。中央管理项目可统一发现、搜索和管理多个成员项目登记的 AI 智能体、MCP 服务器与工具，将目录范围从默认的单个治理项目扩展到多个项目。",
+        "管理边界可按组织或文件夹建立，也可使用 Resource Manager 标签划分开发、生产等项目集合。符合标签条件的项目会自动纳入边界，组织或文件夹上的标签也可继承到下属项目。"
+      ],
+      "url": "https://docs.cloud.google.com/agent-registry/release-notes"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Morikatron：AI 重写旧游戏，人工保留美术与发布决策",
+        "body": "Morikatron CTO 松原披露，将 2012 年手游《猫来了》重制为 Godot 的 Steam 版本：Claude Code 先读取旧代码整理规则，再重写程序、导出原作动画帧、编写测试并制作宣传视频；另一段独立会话评审视频。团队保留原作动物美术，由人决定玩法改动、检查 Windows 表现并执行提交审核与发售。团队称自动测试通过后，人工试玩仍累计发现 23 项问题，其中 6 项仅在 Windows 出现。",
+        "url": "https://tech.morikatron.ai/entry/nekogakita"
+      },
+      {
+        "heading": "Ludo：智能体测量、整理素材，再输出引擎文件",
+        "body": "Ludo CLI 新增 32 项本地素材工具，供 Claude Code、Codex、Cursor 等智能体调用。官方示例依次测量精灵尺寸与脚底锚点、拟合避开武器的碰撞体，再生成 Unity 或 Godot 所需文件；还可对齐动画帧、检查循环、读取音频与 3D 模型信息，并盘点缺失素材。工具可离线运行且无需账号或点数；生成新的 AI 素材仍需付费方案和额度。",
+        "url": "https://ludo.ai/developers/toolbox"
+      }
+    ]
+  }
+}
