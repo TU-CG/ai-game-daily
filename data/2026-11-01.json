@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-01",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期关注 AI 在编辑器内执行游戏测试，以及在 Teams 中衔接知识库问答、人工确认与工单处理；工作流栏另追踪两份独立的研发协作记录。",
+  "items": [
+    {
+      "title": "Ramen 披露 Autopilot 自动试玩系统的技术说明与测试记录",
+      "paragraphs": [
+        "Aura 开发团队 Ramen 发布 Autopilot 的技术说明和白皮书，介绍其在 Unreal Engine 5、Unity 6 和 Godot 4 编辑器内执行探索、功能验证与目标任务的方式。按官方说明，编码智能体读取项目代码和运行状态，编写针对该游戏的操作逻辑，再由决策模型选择动作，通过真实用户输入事件操作游戏；每个项目保存事实笔记、可复用代码和历次报告，供后续测试调用。",
+        "团队同时披露了生存制作游戏中的验证与目标任务测试：各次测试从空记忆开始，将传送角色、凭空生成物品等行为判为失败。这些结果属于开发方评测。公开仓库已提供源代码、三种引擎的安装说明，以及通过 Skills 和 MCP 接入 Claude Code、Codex 的路径。"
+      ],
+      "url": "https://www.tryaura.dev/updates/autopilot-continually-learning-real-time-general-playtesting-system/"
+    },
+    {
+      "title": "Desk365 AI Agent 上线 Teams，串联知识库问答与人工确认工单",
+      "paragraphs": [
+        "Desk365 宣布其 AI Agent 已可在 Microsoft Teams 中使用。员工直接在聊天中提问，Agent 从管理员配置的知识库等支持内容中寻找答案；问题未解决时，它会追问所需信息并起草工单，由员工检查后提交，表单可包含自定义字段和附件。",
+        "工单创建、客服回复、状态变化和分派通知会回到同一段 Teams 对话，审批请求及满意度调查也可在那里处理。管理员可按邮箱域名限定使用者；该功能面向已启用 AI Agent 的 Plus 和 Premium 账户开放。"
+      ],
+      "url": "https://www.desk365.io/blog/introducing-the-desk365-ai-agent-for-microsoft-teams/"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Swarmlight：保留人工试玩原话，Claude 实现后分三路检查",
+        "body": "Kraig Adams 的 Swarmlight 开发日志逐轮保留本人原话、Claude 修改说明和对应构建截图：人负责玩法取舍与试玩，Claude 编码并运行脚本玩家。最新一轮先由人把范围收缩为手机优先的单一枢纽和模块，再实现采矿、无人机运输、加工与发货；随后分别核对原始需求、手机浏览器表现和代码。日志称三路检查找出并修复了40项问题，并在8张地图上运行通关脚本。项目仍是持续迭代的浏览器原型。",
+        "url": "https://kraigadams.com/swarmlight/devlog/"
+      },
+      {
+        "heading": "ISUCON2026：并行实现、独立审查，串行测量后保留或回退",
+        "body": "TAK848 的参赛复盘披露，Claude Code 主会话分派假设，多个实现代理在独立 worktree 中修改代码，只读 Codex 审查差分；自建 isud 逐个部署候选、运行基准、收集测量并决定保留或回退，难以决定时先交指挥代理、再交人。作者报告执行了123轮基准，末段仍发生数据库崩溃和最终基准失败，重试后才完成提交；名次与复测结果在发文时尚未确认。这是参赛者公开的协作记录，工具仓库当时仍未公开。",
+        "url": "https://zenn.dev/tak848/articles/20261031-isucon2026-writeup"
+      }
+    ]
+  }
+}
