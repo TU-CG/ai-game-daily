@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-03",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期精选两项 AI 协作工具更新，并追踪一份 AI 参与游戏制作的开发复盘。",
+  "items": [
+    {
+      "title": "Mastra 新增可恢复的 MCP 长任务与频道附件处理",
+      "paragraphs": [
+        "Mastra 为 MCP 工具、智能体和工作流加入实验性长任务支持：调用可先返回任务，客户端再查询结果、补充输入或取消。显式启用并配置共享持久化存储后，不同服务实例可以接手管理同一任务；工作流可在服务中断后由恢复机制继续运行。",
+        "同一轮更新还让 Slack 等频道中的智能体读取需要鉴权下载的 ZIP、DOCX 附件，将文件保存到工作区供后续处理；CSV、JSON 等文本附件可直接作为文本上下文传入。文件下载和保存受工作区写入权限及容量限制。"
+      ],
+      "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.81.0"
+    },
+    {
+      "title": "Letta Code 新增子智能体实时进度与执行记录",
+      "paragraphs": [
+        "Letta Code v0.34.38 把后台 Letta 子智能体的工具调用和消息持续写入任务输出文件，主智能体可在任务结束前读取进度。本地子任务与通过远端电脑执行的子任务均已纳入。",
+        "每项任务同时新增 JSONL 事件记录，涵盖工具参数、工具结果及后台命令通知等内容，并接入 Claude Code、Codex 等外部执行器。远端执行器的事件可分页回传主智能体；超出单事件大小限制的内容会标明截断。"
+      ],
+      "url": "https://github.com/letta-ai/letta-code/releases/tag/v0.34.38"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "tibo.dog：AI 编码、lint 规则与状态机验证",
+        "body": "开发者 Lauren（@poteto）称，浏览器游戏 tibo.dog 由她借助 Grok bot 和 Cursor 制作；她会在发现代码问题后要求 AI 补上相应 lint 规则，并使用 TLA+ 检查剧情与过场等状态机。作者自述，该业余项目四天合入约 1,150 个 PR。游戏官网已提供浏览器游玩入口。",
+        "url": "https://x.com/poteto/status/2117043478140276847"
+      }
+    ]
+  }
+}
