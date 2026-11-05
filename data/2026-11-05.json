@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-05",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期精选材质与配音制作、定时分析与跨工具集成两项更新，并追踪一份已发布游戏的美术制作复盘与一项并行编码协作流程。",
+  "items": [
+    {
+      "title": "ComfyUI 正式版接入材质生成与视频多语配音",
+      "paragraphs": [
+        "ComfyUI 0.44.0 正式版收录三个 Patina 合作节点：从纹理图生成 PBR 贴图、按文字描述生成无缝材质，以及从图片选定区域提取无缝材质。材质生成还可结合参考图或局部重绘。",
+        "同版新增 VEED Dubbing 节点，可将带语音的视频翻译为目标语言，并生成保留说话者音色、同步口型的视频，提供标准与专业两种模式。这些功能通过外部合作服务 API 执行。"
+      ],
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0"
+    },
+    {
+      "title": "Smartsheet 加入定时 AI 分析与跨工具数据集成",
+      "paragraphs": [
+        "Smartsheet 上线 Agentic Workflows：用户可在 Smart Assist 或接入 Smartsheet MCP 的 AI 助手中，用自然语言设置定时任务，分析表格、报告、仪表盘或工作区并通过邮件分发结果。创建前需确认任务设置，也可要求每次发送前由人工审核；定时提示仅执行只读分析。",
+        "Integration Agent 同时进入早期试用，首批连接 GitHub、Zendesk、Airtable 和 Monday.com，按用户请求把这些工具的数据拉入 Smartsheet。"
+      ],
+      "url": "https://www.smartsheet.com/content-center/news/smartsheet-adds-new-ai-agents-integrations-and-security-advancements-engage"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "《Gorash》：批量生成美术、人工筛选与引擎导入",
+        "body": "据 Ludo 对 Morgan Vincent 的案例访谈，《Gorash》由 Claude Code 调用 Ludo API 批量生成美术，并用 MCP 查询参数与文档；开发者为每类资产指定风格参考、查看候选合集并筛选，再经脚本清理、切九宫格和打包后导入 Godot 4。3D 部分先生成概念图，再转模型并在 Blender 中处理。开发者称已发布版本的 692 个 2D 文件可追溯到 Ludo；日常试玩和修改意见由本人提供，儿子参与玩法设计。",
+        "url": "https://ludo.ai/blog/indie-spotlight-gorash"
+      },
+      {
+        "heading": "Copilot 与 JetBrains Air：并行会话、人工审查与云端执行",
+        "body": "GitHub 披露 Copilot 在 JetBrains Air 中的协作流程：开发者选择 Copilot、分派任务并查看多个并行会话，智能体结合项目上下文和 IDE 工具执行，人在代码旁审查改动。集成采用 ACP，任务可在本地运行，也可通过 Air Teams 在云端独立虚拟机中的 Docker 容器构建、测试和安装依赖；云端任务需组织启用 Air Teams、管理员允许 Copilot，并使用现有 Copilot 订阅。",
+        "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/"
+      }
+    ]
+  }
+}
