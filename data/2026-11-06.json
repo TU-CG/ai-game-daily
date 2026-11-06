@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-06",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期精选过去 24 小时内的两条材料：《Mach-X》的 AI 研发复盘，以及 Arcade 企业自托管 MCP 更新。工作流追踪关注 Arnis 的人工审查与子智能体回归检查。",
+  "items": [
+    {
+      "title": "《Mach-X》开发者公开 Claude Code 多分支研发与自动回归流程",
+      "paragraphs": [
+        "独立开发者 W1zzle 公布 Android 飞行射击游戏《Mach-X: Roguelite Air Shooter》的制作复盘，称几乎全部代码由 Claude Code 智能体编写，自己负责功能取舍、逐项审查改动和手机试玩。游戏使用 JavaScript 与 Canvas，封装后运行于 Android，画面由代码绘制；目前已可在 Google Play 下载。",
+        "据开发者介绍，多个智能体在各自分支并行处理基地军衔系统、联机延迟和飞艇绘制。每次构建前，一套 147 步的无界面测试覆盖关卡、首领、模式、天气及机器人联机，另一套检查以手机尺寸截取七种语言的菜单，标记重叠和截断。上述研发分工与测试覆盖均为开发者自述。"
+      ],
+      "url": "https://www.reddit.com/r/aigamedev/comments/1xoueix/live_on_play_store_an_android_roguelite_almost/"
+    },
+    {
+      "title": "Arcade 将自定义 MCP 服务部署扩展到企业自托管环境",
+      "paragraphs": [
+        "Arcade 发布 Enterprise MCP Hosting，将此前面向 Arcade Cloud 的自定义 MCP 服务部署能力扩展到企业自有环境。开发者可以从本地项目或持续集成流水线运行 arcade deploy，由平台打包并运行服务，再通过组织的网关向智能体提供内部业务工具；自托管部署中的服务及其访问的数据留在企业环境内。",
+        "新部署的服务沿用 Arcade 的授权、策略执行和审计记录，每次调用按用户与智能体各自权限的交集检查，管理界面提供版本、状态、日志和重启等操作。目前支持以 Arcade MCP 框架编写的 Python 服务，FastMCP 支持仍在计划中。官方称该能力已广泛开放，并已由 Duracell 等客户用于生产环境。"
+      ],
+      "url": "https://www.arcade.dev/blog/enterprise-mcp-hosting/"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Arnis：维护者审查每个 PR，Copilot 子智能体专项检查回归",
+        "body": "在 GitHub 的维护者访谈中，Louis Erbkamm 介绍了 Minecraft 世界生成工具 Arnis 的协作流程：用 Copilot 汇总问题、追查缺陷来源并生成修复；遇到大型 PR，先让 Copilot 做概览和性能审查，再启动数个子智能体，针对容易出错的代码区域寻找边界情况和回归测试。Louis 仍亲自审查每个 PR。Arnis 根据 OpenStreetMap 等地理数据生成世界，访谈披露的 AI 用途是项目维护与审查。",
+        "url": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/"
+      }
+    ]
+  }
+}

@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-11-06",
+      "file": "2026-11-06.json",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "本期精选过去 24 小时内的两条材料：《Mach-X》的 AI 研发复盘，以及 Arcade 企业自托管 MCP 更新。工作流追踪关注 Arnis 的人工审查与子智能体回归检查。"
+    },
+    {
       "date": "2026-11-05",
       "file": "2026-11-05.json",
       "title": "每日 AI 游戏综合日报",
