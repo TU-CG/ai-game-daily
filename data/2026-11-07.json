@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-07",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本期聚焦 AI 操作 Unreal 编辑器，以及围绕文档产物和跨应用工具的协作更新。",
+  "items": [
+    {
+      "title": "ForgeMind 公开 Unreal 编辑器批量生成蓝图与材质演示",
+      "paragraphs": [
+        "开发者 Hoshino Kennji 公开 ForgeMind 的六组 Unreal 编辑器执行演示，展示 AI 客户端经 MCP、ForgeMindServer 和 Companion 插件创建 Actor 蓝图、查询样条位置、生成材质，以及一次调用同时处理蓝图和材质。作者称资产会在编辑器内完成节点连接、编译与保存。",
+        "此次披露属于开发者演示，作者明确表示这些案例不构成完整测试覆盖或通过率证明。项目文档还区分了开源与商业功能：演示中的 DSL 资产生成功能不包含在公开开源版本内。"
+      ],
+      "url": "https://forums.unrealengine.com/t/editor-side-batching-recorded-six-demos-of-the-instruction-tool-editor-path/2851556"
+    },
+    {
+      "title": "Glean 将产物评论接入 AI 后续指令，智能体服务凭据正式可用",
+      "paragraphs": [
+        "Glean 新版支持在 HTML、图片、表格和文档产物的具体位置添加评论，成员可回复、@同事、解决讨论，并将评论发送给 Glean 作为后续指令。能查看产物的人可以评论，修改产物仍需编辑权限。",
+        "智能体服务凭据同时进入正式可用阶段。管理员可为 Atlassian、Coda、Datadog、incident.io、Intercom、Linear 和 Zendesk 等 MCP 工具配置共享服务账号，让智能体通过该账号访问工具，不再依赖每名用户单独提供授权。"
+      ],
+      "url": "https://docs.glean.com/release-notes/releases/2026-11-06-november-release"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Cursor：从云端智能体开发到人工确认上线",
+        "body": "Cursor 将云端智能体编写应用、按需创建 Postgres 数据库、配置 Cursor SSO 和托管部署串成流程，支持从 Cursor Origin 或 GitHub 仓库发布。上线前运行确定性与智能体安全检查，并需用户明确发布；适用于启用云端智能体的付费计划。",
+        "url": "https://cursor.com/changelog/build-live-apps"
+      },
+      {
+        "heading": "Perplexity Teammates：跨运行记忆与智能体交接",
+        "body": "Perplexity Teammates 可连接 Slack、GitHub、Gmail，在多次运行间保留项目目标、任务历史与共享文件，并协调 Computer 会话或把任务交给其他 teammate。成员可在 Slack 分派工作；用户可检查结果、调整方向或接管桌面。首发面向网页端 Max 用户。",
+        "url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work"
+      }
+    ]
+  }
+}

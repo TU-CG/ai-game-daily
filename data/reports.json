@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-11-07",
+      "file": "2026-11-07.json",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "本期聚焦 AI 操作 Unreal 编辑器，以及围绕文档产物和跨应用工具的协作更新。"
+    },
+    {
       "date": "2026-11-06",
       "file": "2026-11-06.json",
       "title": "每日 AI 游戏综合日报",
