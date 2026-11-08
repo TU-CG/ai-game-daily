@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-08",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时精选两条：原作者披露 Claude 重建 DOS 游戏的完整过程，Google ADK 更新 Teams 接入与智能体协作能力。工作流栏补充语音调度及移动审查、文件协作的新流程。",
+  "items": [
+    {
+      "title": "Beer Manager 原作者复盘：Claude 从旧程序重建浏览器版游戏",
+      "paragraphs": [
+        "《Beer Manager》共同作者 Christoph Janz 公开了这款 DOS 经营游戏的浏览器移植复盘。在源代码丢失的情况下，Claude 通过 Ghidra 反编译 1997 年可执行程序，并在 DOSBox 中观察运行行为，先整理规格，再用 TypeScript、Canvas 2D 和 WebAudio 重建引擎，沿用原版画面与音频；作者已提供网页试玩。",
+        "按作者披露，Opus 5.5 负责主会话和模拟逻辑，Sonnet 5.5 子智能体承担对话框、音频等独立模块，由主会话审查整合，每次提交均经作者批准。他报告约 34 小时的 AI 工作量、跨六天完成，并通过同种子回放、状态及像素比较检查两个版本；约 2,800 项测试通过等结果均为开发者自述，技术复盘主要由 Claude 起草、作者编辑。"
+      ],
+      "url": "https://writing.pointnine.com/p/my-personal-navier-stokes-or-how"
+    },
+    {
+      "title": "Google ADK 2.14.0 接入 Teams，并稳定智能体互联与执行环境",
+      "paragraphs": [
+        "Google 发布 Python Agent Development Kit（ADK）2.14.0，将 A2A 智能体互联及本地、E2B、Daytona 等执行环境接口转为稳定，并加入 TeamsRunner。开发者可把 ADK 智能体接入 Microsoft Teams 的个人聊天、群聊和频道，接收用户消息并将回复发回原会话。",
+        "该版本支持对同一评测用例并发运行多次、汇总得分或通过率，并为工具调用参数提供精确匹配、数值容差及语义比较。Teams 接入文档说明，同一频道线程中不同用户各自保留会话，单个进程内同一会话的消息按顺序处理。"
+      ],
+      "url": "https://github.com/google/adk-python/releases/tag/v2.14.0"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Cursor：语音智能体接收指令，编码智能体执行并播报进展",
+        "body": "Cursor 的实时语音功能让语音智能体接收口述任务、回答进度问题，再把编码工作交给当前会话中的编码智能体。编码执行期间，用户仍可继续交谈、询问代码差异、检索该智能体的历史消息与通话，并在设有多个工作者的 Project 中切换；编码智能体会播报简短进展和完成答复。功能覆盖 IDE、Agents Window、网页及 iOS。",
+        "url": "https://cursor.com/changelog/voice-chat"
+      },
+      {
+        "heading": "DigitalOcean 与 Box：手机审查云端智能体，文件同步回团队资料库",
+        "body": "DigitalOcean 的 Cuttlefish iPhone 应用可查看 Managed Agents 的实时会话、工具调用及文件差异，批准或拒绝操作，并纠偏、暂停或停止任务；队友可加入或接管会话，支持 Claude Code、Codex CLI 等既有智能体工具。Box Mount 将 Box 文件夹双向同步进执行环境，沿用用户的 Box 权限、版本记录和审计轨迹，产物回到 Box 供团队审阅。Cuttlefish 已上架，Managed Agents 为公开预览，Box Mount 为私有预览。",
+        "url": "https://www.digitalocean.com/blog/introducing-cuttlefish"
+      }
+    ]
+  }
+}

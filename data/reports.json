@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-11-08",
+      "file": "2026-11-08.json",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "过去 24 小时精选两条：原作者披露 Claude 重建 DOS 游戏的完整过程，Google ADK 更新 Teams 接入与智能体协作能力。工作流栏补充语音调度及移动审查、文件协作的新流程。"
+    },
+    {
       "date": "2026-11-07",
       "file": "2026-11-07.json",
       "title": "每日 AI 游戏综合日报",
