@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-09",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时，核验到两项有实质功能变化的 AI 协作更新；游戏研发主线未发现符合时效且未重复的新增材料。本周工作流补充一项 Godot 制作复盘与一项跨应用研发协作更新。",
+  "items": [
+    {
+      "title": "Open WebUI 接入本机编码代理，支持在对话中审查工具请求",
+      "paragraphs": [
+        "Open WebUI 发布 v0.13.1。在提供代理的 Open Terminal 上，Claude Code、Codex、Pi 等编码代理可出现在模型选择器中，用户能通过文字或语音交付任务、选择推理强度与服务档位，并在聊天中批准工具请求。每段对话使用一个代理。",
+        "新桌面伴侣 Tether 支持 Windows、macOS 和 Linux，将用户电脑上的文件、仓库与工具连接到 Open WebUI，也可从手机浏览器访问。该版另增默认关闭的 Auto 工具权限模式：审查模型判断是否需要确认，无法完成审查的调用转交用户批准。"
+      ],
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.1"
+    },
+    {
+      "title": "Activepieces 0.93.0 扩展跨应用代理工具与 MCP 连接",
+      "paragraphs": [
+        "Activepieces 发布稳定版 0.93.0，将 MCP 客户端的 OAuth2 授权连接纳入本次发行。Letta 集成增加 28 个代理工具，允许其他 AI 代理和 MCP 客户端创建、更新及联系 Letta 代理，读取运行与消息历史，并管理记忆块、工具和归档记忆。",
+        "同版还扩展了设计与知识工具的操作：Figma 集成可读取文件结构、导出图像，并以文件、版本和组件库事件触发流程；Mem 集成允许代理检索、读取和整理笔记与集合，PDF 组件增加表单填写与字段检查。"
+      ],
+      "url": "https://github.com/activepieces/activepieces/releases/tag/0.93.0"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "AZTechnology：Claude Code 制作 Godot 原型，人工试玩决定调校",
+        "body": "AZTechnology 的制作复盘记录了防空、点球与峡谷飞行原型：人先确认一页计划，Claude Code 编写场景与脚本、将已有 Blender 资产导出为 glTF，并运行无窗口检查；人负责试玩和提出修改。作者称防空原型经过五轮人工试玩调整难度，峡谷飞行原型分四阶段完成并导出 Windows 与 Web 版本，18 项自动检查通过。这些结果属于开发者自述的原型实验。",
+        "url": "https://aztech3d.com/en/guides/claude-code-godot-game-scene/"
+      },
+      {
+        "heading": "GitHub：从 Slack／Teams 讨论衔接编码与共同审查",
+        "body": "GitHub 宣布 @GitHub 在 Slack 和 Teams 中正式可用，可从对话调查 Bug、创建 Issue、实施修改并发起 PR。Teams Canvas 支持在讨论旁查看实现计划、代码变更与预览，由团队继续反馈和迭代；代理可从消息识别仓库并启动编码会话，生成的 Issue 与 PR 会标记发起对话及用户。",
+        "url": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available/"
+      }
+    ]
+  }
+}
