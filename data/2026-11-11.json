@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-11",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "过去 24 小时精选两项研发与创作协作实践：让共享规格贯穿任务交接，以及在原生创作软件内委托多步操作。工作流栏补充 Epic 的引擎开发复盘，重点保留人工审查与预览版质量限制。",
+  "items": [
+    {
+      "title": "Atlassian：共享规格贯穿 Jira 任务，代理先修复和测试再交人审",
+      "paragraphs": [
+        "Atlassian 11月10日披露内部研发改造：团队与 AI 共同维护可审阅的共享规格，再将规格转成由代理执行、更新的 Jira 任务，减少产品、设计与工程交接时重建上下文。漏洞流水线先识别问题、提出修复并运行测试，再由工程师决定能否发布。公司称代理已为 52% 的漏洞准备修复；Confluence 试点的两项功能分别耗费 2 和 4 个开发者周，对照的是历史预估的 30 和 40 周。这些是公司披露的内部数据，不能视作同条件效率实验。",
+        "可以借鉴（基于案例的建议）：为一个小功能维护同一份需求、设计决策与验收条件，让 AI 执行任务时回写变更，并把修复方案和测试结果一起交给负责人审查。"
+      ],
+      "url": "https://www.atlassian.com/blog/how-we-build/3-lessons-from-rebuilding-atlassians-product-development-lifecycle-for-people-and-agents"
+    },
+    {
+      "title": "Adobe 把多步创作交给桌面代理，本地 MCP 仍待私测",
+      "paragraphs": [
+        "Adobe 11月10日宣布扩展 Creative Agent：Premiere 中可委托代理为序列内所有片段应用效果、跟踪遮罩对象，或统一调整颜色与曝光。桌面 AI 助手处于 Beta；Photoshop 助手需使用 Beta 应用。另一项本地 MCP 集成仅作预告，计划 2027 年初私测：第三方代理直接修改 Photoshop、Illustrator、Premiere、After Effects 的原生工程，保留可编辑图层、矢量和序列，供人继续调整。公告还描述了从 Google Docs 取简报、经 Adobe 工具制作、向 Slack 交付的衔接方案，尚不能当成已全面开放的流程。",
+        "可以借鉴（基于更新的建议）：游戏宣传片或美术团队可先在可用 Beta 中试一项批量操作，保留可编辑工程并人工抽查；跨应用链路待相应集成开放后再验证。"
+      ],
+      "url": "https://news.adobe.com/news/2026/11/adobe-transforms-creative-cloud-tools"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Epic：多人指挥代理移植引擎能力，工程师负责审查与测试",
+        "body": "Epic 11月9日披露 UE 5.9 MegaJam Preview 的制作过程：少数人员指挥多批代理，将 UE6 分支的 AI 工具移植到 UE5，并以退役的 UE4 HTML5 平台为起点编写 Web 平台代码；工程师负责指导、审查和测试。团队明确说明开发约一周，QA 周期短于平时，部分代理代码仍在清理，Web 渲染器也含待重构原型；建议仅在项目副本中试用。这是官方预览版研发复盘，未公布可对比的效率测量。\n\n可以借鉴（基于案例的建议）：并行试作时按移植模块明确负责人和验收条件，把“能运行的原型”与“可合入正式版”分开验收，并为人工审查和补测预留时间。",
+        "url": "https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840"
+      }
+    ]
+  }
+}
