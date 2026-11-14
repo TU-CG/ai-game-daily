@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-14",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "今天关注两种具体协作方式：让玩家反馈进入 AI 制作循环，以及用脚本明确多个代理的执行顺序和交付格式。本周工作流补充打包后验证与可审查的操作经验复用。",
+  "items": [
+    {
+      "title": "Lets Make Game：观众提需求、AI 制作，再由社区试玩推动修复",
+      "paragraphs": [
+        "开发者 billy_bonus 披露了 Lets Make Game 实验：Twitch 观众提交建议并投票，系统筛选后把最多 12 条高票建议合成开发简报；Hermes Agent 协调轮次、交付指令和发布，独立编码环境中的 DeepSeek 4.1 Flash 负责改文件、执行测试和调试。游戏发布到 Cloudflare Pages 后，观众每小时提交并投票选择修复，最多循环六轮，更新沿用同一网址。",
+        "作者自报 11月1日至11日制作了 13 款可玩游戏，并在这次披露中新增社区试玩循环；这些是非商业实验，自动测试通过不代表好玩或没有 Bug。作者仍将长任务上下文、建议之间的冲突及公众输入带来的提示注入列为未解决问题，未声称筛选措施万无一失。",
+        "可以借鉴（基于案例的建议）：把玩家建议整理成带优先级和冲突说明的任务清单，每轮修复保留对应反馈与验证记录，再请试玩者确认问题是否消失。"
+      ],
+      "url": "https://www.reddit.com/r/aigamedev/comments/1xvfg5s/i_built_an_autonomous_game_development_loop_where/"
+    },
+    {
+      "title": "Antigravity App 加入动态工作流：用脚本安排并行审查与修复顺序",
+      "paragraphs": [
+        "Google 11月13日的 Antigravity App v2.32.0 更新加入 Dynamic Workflows：代理生成 Python 脚本，用 parallel() 并行处理独立任务、用 pipeline() 顺序推进阶段。官方文档说明，各代理使用独立对话，按 JSON Schema 返回结果；同一审查代理可保留上下文，在修复后再次核验。阶段、日志和等待批准的状态可在界面查看。",
+        "该功能面向 Google AI Pro／Ultra，版本分批推送。运行前通常需批准脚本，子代理仍遵循各自权限请求；并行修改可显式选择独立 Git worktree，默认继承当前工作区。官方提供逐文件审查、先写失败测试再修复等示例，未披露团队效率测量。",
+        "可以借鉴（基于案例的建议）：先用只读的逐文件审查试跑，固定每项返回的文件、问题和证据；涉及共享文件的修复按顺序执行，确需并行修改时显式分配独立工作区。"
+      ],
+      "url": "https://antigravity.google/docs/changelog"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "《TAKES》原型：把完整流程冒烟测试带到打包后的程序",
+        "body": "classnow 11月13日的制作日志记录了 Claude Code 为 Unreal 原型加入 -autoplay：重放经验证的脚本输入，跑完五个场景、影片和字幕，再检查抽帧联系表。作者报告打包后的 Windows 程序无崩溃，但验证仍发现字幕黑屏、文字过小与目标标签残留，随后逐项修正；同时将运行时依赖的基础形状加入强制打包清单。这是开发者自述的原型验证。\n\n可以借鉴（基于案例的建议）：保留一条能在最终安装包复现的完整演示路径，同时检查画面与资源加载，别只验收编辑器内的测试结果。",
+        "url": "https://classnow.itch.io/takes/devlog/1774139/2026-11-13-1230-jst-take-2-first-build-first-look-first-package"
+      },
+      {
+        "heading": "OpenBot 1.0：操作示范先成为待审技能，再供代理复用",
+        "body": "CopilotKit 11月10日的官方更新介绍了 OpenBot 1.0：用户可在内置浏览器录制任务并讲解，Automatic Learning 将其变成技能草案，审查批准后才能复用。任务可拆给最多五个子代理；同一用户的 Bots 默认共享一台电脑，Business 版可为指定 Bot 单独隔离。官方还披露操作审批与审计能力，未提供真实团队效率数据。\n\n可以借鉴（基于案例的建议）：先录制一个重复的素材整理或报表流程，审查生成技能的输入范围、例外处理和完成条件，再让其他代理复用。",
+        "url": "https://www.copilotkit.ai/blog/openbot-whats-new"
+      }
+    ]
+  }
+}
