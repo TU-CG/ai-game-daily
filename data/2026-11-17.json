@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-17",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "今天精选一条把会议决策、任务与 AI 执行接起来的团队案例；本周工作流补充两份游戏制作复盘，重点看共享状态、验收补漏和集成交接。",
+  "items": [
+    {
+      "title": "Lendi：让会议决策沿着文档、任务和事件触发进入研发流程",
+      "paragraphs": [
+        "Atlassian 11月16日发布 Team ’26 客户案例复盘：Lendi Group 用 Rovo 将 Loom 会议转录整理成 Confluence 项目启动文档，再拆成 Jira epic 和带明确验收标准的用户故事，供 Cursor、Claude Code 等开发工具接续。负责人会在录制会议结束时明确复述决策，临时通话改变的需求也补回 Slack；文档负责人每六个月收到复核提醒，过期内容归档。",
+        "Lendi 自报约 90% 的代理交互由系统事件和流程状态变化触发，六个月减少逾 1.6 万次手工操作；这是客户在供应商案例中的自述，不能换算成工时收益。会议分享时，首条完整端到端 AI 研发流程才开始试跑，不能据此认定全链路已经成熟。",
+        "可以借鉴（基于案例的建议）：先选一条需求到开发任务的流程，把决策同步、文档负责人和验收标准固定下来，再让任务状态触发代理执行，并保留人工核对环节。"
+      ],
+      "url": "https://www.atlassian.com/blog/ai-at-work/lendi-group-and-chg-healthcare-modern-agentic-workflows"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "《Malasorte》：共享状态文件配合统一验收，把试玩失败变成检查",
+        "body": "Fantastico Studio 11月16日（北京时间）的第一手复盘：三人用四天制作 Unreal 游戏原型《Malasorte》，Claude Code 负责协调与实现，Codex 复核；实现会话各用独立 worktree，共享 Docs/Stato.md 记录主分支状态、文件占用和规则，统一串行验收后合并。试玩发现打包程序 62 秒后崩溃、HUD 挡准星，团队补上强制垃圾回收、100 秒存活和截图禁入区检查。人员仍负责试玩与素材取舍。团队将用量按 API 标价折算约 5,000 美元，含缓存读取且部分实际使用订阅，不能当作实付成本或提效证明。\n\n可以借鉴（基于案例的建议）：维护一份开工前必读、交付时更新的状态文件；把试玩失败补进验收，并将占用同机端口或输入设备的测试排队执行。",
+        "url": "https://fantastico-studio.itch.io/malasorte/devlog/1780578/how-we-made-malasorte-three-people-four-days-about-230-ai-agent-sessions"
+      },
+      {
+        "heading": "Parafacet：任务图完成后，仍要带着原始设计做系统集成",
+        "body": "Parafacet 11月15日的制作复盘披露：用自建 ShrimpHub 将三个 Unreal 原型拆成约 210 项初始任务，并发代理从八个增至二十个；Claude Code 承担实现和 QA，其他模型辅助代码、素材与基础设施。作者发现任务做完后系统仍可能没有接通，交接必须带回原始设计文档，随后继续修复武器不触发、车辆卡住等问题；最终由本人试玩，选定《SCRAPHEAP》继续打磨。工具链涉及共享编辑器和远程构建调度，这是一项依赖自建基础设施的开发者实验。\n\n可以借鉴（基于案例的建议）：在任务完成与可交付之间增加集成验收，交接原始目标、当前状态和未解决问题，再由人完整走一遍核心玩法。",
+        "url": "https://www.parafacet.com/directors-cut/journal/the-whole-jam-in-one-post/"
+      }
+    ]
+  }
+}
