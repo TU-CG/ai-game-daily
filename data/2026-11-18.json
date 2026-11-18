@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-18",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "今天精选两条减少 AI 研发质量漂移的材料：先核实再交付的漏洞修复试点，以及可重复运行的代理行为测试。本周工作流补充一条带测量门槛与人工接管的游戏角色制作管线。",
+  "items": [
+    {
+      "title": "MDASH：把 AI 扫描结果先筛选、核实，再交给维护者修复",
+      "paragraphs": [
+        "GitHub 与 Microsoft 11月17日披露 Codename MDASH 试点：经六个开源项目维护者同意，用 MAI Cyber 模型扫描并建议修复，再由 GitHub Security Lab 的 Copilot Skills 代理去重、检查有效性并筛选高影响问题。Microsoft FORGE Lab 研究者逐项手工核查后，才通过 GitHub 私密漏洞报告提交复现证据与建议补丁，由维护者决定如何修、何时发布。参与项目包括 Express、FastMCP 和 ImageMagick。",
+        "官方称，截至11月15日，数千条原始发现收敛为 99 份报告，其中 55 项已修复，14 项修复已进入发布版本。七名研究者承担人工核查，每个项目约需两天；这是六个项目的早期试点，团队也承认这种人工投入尚难扩展，不能视为全自动修复或普遍提效证明。",
+        "可以借鉴（基于案例的建议）：让 AI 缺陷报告先经去重与人工复现，再把问题、复现步骤和候选补丁一起交给责任人；不要用原始发现数量代替有效修复数量。"
+      ],
+      "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/"
+    },
+    {
+      "title": "Copilot Evals：修改 Skills 或 MCP 后，用同一任务检查行为回归",
+      "paragraphs": [
+        "GitHub 11月17日推出 Copilot Evals 公共预览，面向项目中的 Skills、自定义代理和 MCP 工具创建可重复测试：给出真实任务及合格标准，同时检查结果和执行过程；修改配置后重跑，对比通过与失败项，定位行为回归。用户可用自然语言或 /eval 操作，每次运行开始前都须批准。",
+        "其评估引擎是本地工具 Vally，可通过 VS Code 扩展或 Copilot CLI、Copilot app 插件使用，面向 Individual、Business 和 Enterprise 计划开放预览。公告披露的是测试能力，没有给出已降低缺陷率或节省工时的实测结果。",
+        "可以借鉴（基于案例的建议）：选几项反复出错的研发任务，固定输入、验收标准和所需工具证据；更新团队规则、Skills 或 MCP 后重跑，人工查看失败轨迹再决定是否采用改动。"
+      ],
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview/"
+    }
+  ],
+  "workflow": {
+    "title": "AI 研发工作流追踪",
+    "items": [
+      {
+        "heading": "Character Factory：用测量证据串起角色制作，并保留艺术负责人接管",
+        "body": "Lucca Cerf 自11月15日（北京时间）起公开七项 Claude Code Skills：从一页角色说明，经 Tripo 生成模型、Blender MCP 与 Rigify 绑定和制作动作，再交 Unity 导入。三个独立只读评审代理分别检查动画原则、身体力学与技术美术，读取固定机位、游戏尺寸轮廓和接触测量等证据；作者将循环闭合误差不超过 2 毫米、脚着地时每帧滑动不超过 0.1 厘米等写成阶段门槛。作者称已用于七个角色，但仓库明确说明配套 Python、Shell 和 Unity 工具并未全部公开，Skills 应作为流程模板使用；评审也允许艺术负责人批准接管，不能把代理评分当作独立质量认证。\n\n可以借鉴（基于案例的建议）：先挑一个角色，把动作循环、脚部接触和导入结果做成可重复测量的证据包；让评审代理只读证据，保留人工试玩和美术批准，再逐步扩展资产类型。",
+        "url": "https://github.com/luccacerfz/character-factory-skills"
+      }
+    ]
+  }
+}
