@@ -2,6 +2,12 @@
   "defaultLimit": 14,
   "reports": [
     {
+      "date": "2026-11-22",
+      "file": "2026-11-22.json",
+      "title": "每日 AI 游戏综合日报",
+      "summary": "今天精选两项协作实践更新：vLLM 把历史漏洞转成代理审查流程，Qwen Code 把 GitHub 线程、PR 状态与代理会话连接起来。七日工作流另看 Godot 场景如何统一视觉参照，以及 Airbnb 如何用真实任务评测和上线监测约束编码代理。"
+    },
+    {
       "date": "2026-11-21",
       "file": "2026-11-21.json",
       "title": "每日 AI 游戏综合日报",
