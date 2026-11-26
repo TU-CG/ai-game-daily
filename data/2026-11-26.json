@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-26",
+  "title": "每日 AI 游戏综合日报",
+  "summary": "本次从过去24小时的公开材料中精选一条 Grok Bot 使用案例：用每日邮箱检查接续礼物追踪。七日项目管理实践关注工单代理的纠错与维护，以及 AI 转人工时的上下文交接；案例自述与教程演示均按来源范围表述。",
+  "items": [
+    {
+      "title": "Grok Bot 追踪节日礼物：每日检查邮箱，持续整理到货与开销",
+      "paragraphs": [
+        "《大西洋月刊》11月25日报道，Cynthia Bell McGillis 让专用 Grok Bot“Mrs. Claus”每日扫描邮箱，记录礼物到货及赠送对象、从订阅通讯寻找优惠，并累计开销。报道给出的具体例子是找到 Old Navy 节日睡衣优惠。",
+        "这是受访者使用自述，未附提示词、完整账目或准确率测评。产品身份按 x.ai 的 Grok Bot 官方页面核对；该案例没有证明自动记账无误，也未披露这位用户让机器人代为下单。",
+        "可以借鉴（基于材料的建议）：把持续追踪任务写清为“每天检查、按对象归档、附原邮件、更新待办”，先用一小批订单核对漏记和重复记录，再扩大范围。"
+      ],
+      "url": "https://www.theatlantic.com/technology/2026/11/ai-agents-holiday-shopping-muse/689587/"
+    }
+  ],
+  "workflow": {
+    "title": "AI 项目管理实践",
+    "items": [
+      {
+        "heading": "ActivTrak：把错分理由变成规则，部署后继续维护",
+        "body": "ActivTrak CTO Matthew Finlayson 在 CIO 复盘工单分派代理：经历 Claude Code＋Jira MCP、n8n 等方案，最终选择能接入现有代码和工单的 Google 平台。经理在 Jira 标记错分及正确归属，作者手动更新规则；代理解释分派原因并收集反馈，不自动学习。作者称正确率从约60%升至95%，七名经理各省约两小时/周，未披露样本规模或独立测评。团队职责变化后须调整规则，换模型也须重新验证；其极低运行费不包含开发与改进时间。\n\n可以借鉴（基于材料的建议）：为持续运行的代理保存错例、纠正理由、规则版本与负责人，把团队调整和模型升级列为复验触发条件；用实际减少的人工工作衡量收益，并单独计算维护投入。",
+        "url": "https://www.cio.com/article/4252552/i-built-an-ai-agent-it-broke-my-assumptions-about-my-own-team.html"
+      },
+      {
+        "heading": "Twilio：交接任务同时带上摘要、原始对话和最后诉求",
+        "body": "Twilio 的 Amanda Lange 在官方教程中，用 .NET、OpenAI、Conversation Relay 和 TaskRouter 演示 IT 电话支持转人工：先配置可接单的 Worker，AI 收到转人工请求后，按通话 ID 暂存对话，再将摘要、完整记录及来电者最后一句话写入任务属性，交给人工接续。教程要求语音号码、API 访问和 ngrok；验证方式是拨号请求转接，并查看 TaskRouter 任务和控制台 JSON。它尚需另建坐席界面，示例上下文仅在进程内存中保存，不是已验证的完整生产方案。\n\n可以借鉴（基于材料的建议）：AI 项目换人或换会话时，也用任务 ID 关联目标、尝试记录、证据和最后待办；先让接手者检查交接包是否可读取，再确认交接完成。长期任务应另行设计持久保存与故障恢复。",
+        "url": "https://www.twilio.com/en-us/blog/developers/tutorials/product/conversation-relay-graceful-ai-to-human-handoff"
+      }
+    ]
+  }
+}
