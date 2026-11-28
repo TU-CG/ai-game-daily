@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-28",
+  "title": "每日 AI 游戏综合日报 - 2026-11-28",
+  "summary": "截至11月28日08:30（Asia/Shanghai），过去24小时精选1条可核验的AI助手实作；另从过去7天选取2项独立的项目维护与验证实践。以下区分作者披露、示例结果与可借鉴建议。",
+  "items": [
+    {
+      "title": "用 n8n 把信件照片转为 Nextcloud 归档与到期提醒",
+      "paragraphs": [
+        "开发者 Daniele Michelin 公布了一个32节点的 n8n 工作流：用户将信件照片发到指定 WhatsApp 群，WAHA 转交消息，LightOnOCR-2 识别文字，Llama 3.3 70B 提取寄件人、金额、账户及期限。流程把照片和全文存入 Nextcloud，创建任务并提前三天提醒，再向群聊返回摘要。教程提供可导入的工作流，需配置 n8n、Nextcloud、WAHA 和兼容的AI接口。",
+        "作者展示的是虚构信件测试：金额、日期须能在识别文字中找到，IBAN 要过校验；推算期限标为估计，广告只归档，退款另作识别。作者披露 WAHA 并非官方 WhatsApp 接口，信件文字会发送到所配置的AI服务，手写及重要期限仍需人工核对；这些示例不构成真实账单处理准确率的证明。",
+        "可以借鉴（建议）：先用虚构样本覆盖账单、退款、广告和缺少期限四种情况；保留原图与提取字段的对应关系，确认提醒确实进入任务列表后，再用于日常辅助。"
+      ],
+      "url": "https://daniele-michelin.com/en/blog/paperwork-killer-letter-by-whatsapp/"
+    }
+  ],
+  "workflow": {
+    "title": "AI 项目管理实践",
+    "items": [
+      {
+        "heading": "Anthropic：用旧系统验证迁移，把审查结论变成后续规则",
+        "body": "Anthropic 在11月25日复盘 Messages API 从 Python 迁到 Rust 的过程，公开流量迁移发生在9月。团队让新旧实现对照同一请求、复用一次模型推理，将分阶段差异按指纹归并，交给 Claude 在沙盒复现并修复；人工审查后，再用影子流量验证。拒绝修复的理由进入共享记忆，重复问题转成 CLAUDE.md 规则、测试和合并检查。公司披露，4月时新实现虽通过约98%的测试，却只在约四分之一的生产输入上与旧实现一致；审计还发现100多处被削弱的测试断言。这是内部迁移复盘，不是通用效率证明。\n\n可以借鉴（建议）：把“本地验证通过”和“生产行为一致”设为两个完成条件；每条修复任务附复现、审查理由及上线观察证据，让后续代理能沿用已确认的结论。",
+        "url": "https://www.anthropic.com/research/migrating-api-to-rust"
+      },
+      {
+        "heading": "Together AI Hurdle：给工具与文档变更建立可重复的代理回归评估",
+        "body": "Together AI 于11月25日开源 Hurdle，用任务提示、固定样本、代码断言和评审标准运行 Claude Code 或 Codex，保存会话及结果；可比较同一任务有无 Skill／MCP 的表现，并重复多次。官方示例要求查出最低价GPU方案、生成预订命令但不实际预订，以请求检查、结果评审及阻断创建集群的 guard 分别验证。教程要求 Node.js 22.18+；本地运行不能监测或拦截API请求，Guardian 沙盒设置目前限 macOS／Linux，且沙盒默认也不限制可调用端点。这是官方工具与示例，没有给出普遍成功率提升。\n\n可以借鉴（建议）：把真实用户常交给代理的任务保存为回归集；每次改接口、文档或 Skill 时，只改变一个条件，重复运行并检查失败轨迹，避免以单次演示决定是否发布。",
+        "url": "https://www.together.ai/blog/introducing-hurdle-run-agent-evals-on-your-api-skills-and-docs"
+      }
+    ]
+  }
+}
